@@ -5,6 +5,7 @@ const useEventsResults = create((set) => ({
     data: [],
     error: null,
     isLoading: false,
+
     fetchEvents: async (params) => {
         try {
             await set(() => ({ isLoading: true }));
@@ -13,10 +14,12 @@ const useEventsResults = create((set) => ({
             const data = await response.json();
 
             await set(() => ({ data, isLoading: false }));
+
         } catch (error) {
             await set(() => ({ error }));
         }
     },
 }));
+
 
 export default useEventsResults;
