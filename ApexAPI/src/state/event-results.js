@@ -9,7 +9,7 @@ const useEventsResults = create((set) => ({
         try {
             await set(() => ({ isLoading: true }));
 
-            const response = await fetch(`https://api.mozambiquehe.re/maprotation.?auth=${import.meta.env.VITE_APEX_API_KEY}&version=2${params?.length ? params : ''}`);
+            const response = await fetch(`https://api.mozambiquehe.re/maprotation?auth=${import.meta.env.VITE_APEX_API_KEY}&version=2${params?.length ? params : ''}`);
             const data = await response.json();
 
             await set(() => ({ data, isLoading: false }));

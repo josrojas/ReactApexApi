@@ -17,15 +17,15 @@ const router = createBrowserRouter([
         errorElement: <Error404 />
     },
     {
-        path: '/detail/:eventId',
-        element: (
-            <Suspense fallback={<div>Cargando...</div>}>
-                <ErrorBoundary fallback={<div>Ha ocurrido un error al obtener el detalle</div>}>
-                    <Detail />
-                </ErrorBoundary>
-            </Suspense>
-        )
+        path: '/detail/:id',
+        element: <ErrorBoundary><Suspense fallback={<div>Cargando...</div>}><Home /></Suspense></ErrorBoundary>,
+        errorElement: <Error404 />
     },
+    {
+        path: '*',
+        element: <Error404 />
+    },
+
 ]);
 
 const MyRoutes = () => <RouterProvider router={router} />

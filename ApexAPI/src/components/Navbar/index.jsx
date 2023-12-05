@@ -47,6 +47,7 @@ const Navbar = forwardRef(({ onSearch }, ref) => {
                         width: '200px',
                     }}
                 />
+                
             </div>
         </div>
     );
