@@ -34,8 +34,10 @@ const MapRotation = () => {
         //Consume data from the API
         <div>
             <h2>Battle Royale</h2>
-            <div id="current">{`Mapa actual: ${currentMap}`}</div>
+            <div id="current" >{`Mapa actual: ${currentMap}`}</div>
+            <br></br>
             <div id="remainingTimer">{`Tiempo restante: ${remainingTimer}`}</div>
+            <br></br>
             <div id="next">{`Siguiente mapa: ${nextMap}`}</div>
             <h2>Ranked</h2>
             <p id="rank" />
@@ -45,7 +47,9 @@ const MapRotation = () => {
             <p id="rankNext" />
             <h2>LTM</h2>
             <div id="ltm">{`LTM actual: ${currentLtm}`}</div>
+            <br></br>
             <div id="remainingTimerLtm">{`Tiempo restante: ${remainingTimerLtm}`}</div>
+            <br></br>
             <div id="ltmNext">{`LTM Siguiente: ${nextLtm}`}</div>                     
         </div>
     );
