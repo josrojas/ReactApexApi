@@ -33,7 +33,6 @@ const Events = ({ searchTerm, events }) => {
 
     return (
         <div>
-            Maps
             {renderEvents()}
         </div>
     );

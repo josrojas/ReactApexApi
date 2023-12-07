@@ -1,0 +1,76 @@
+.mapContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+  
+}
+
+h1,
+h2 {
+    color: #666;
+}
+
+/*
+.mapContainer h1,
+.mapContainer h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mapContainer div {
+    margin-bottom: 5px;
+}*/
+
+.pbContainer{
+    /*TODO fix img
+    background: url(../../assets/Olympus.jpg) no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));*/
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.rankContainer{
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.ltmContainer{
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.currentMap,
+.nextMap,
+.currentRankMap,
+.nextRankMap,
+.currentLtm,
+.nextLtm {
+    font: bold;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.currentMap,
+.nextMap,
+.currentRankMap,
+.nextRankMap,
+.currentLtm,
+.nextLtm {
+    font: bold;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.remainingTimer,
+.remainingTimerLtm {
+    font-size: 17px;
+    color: #fff;
+    font-style: italic;
+    margin-bottom: 15px;
+}

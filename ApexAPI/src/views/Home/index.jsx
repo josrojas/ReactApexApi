@@ -42,6 +42,7 @@ const Home = () => {
         return (
             <div>
                 <>
+                    <Events searchTerm={searchTerm} events={events} />
                     <MapRotation />
                 </>
             </div>

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import styles from './Map.module.css';
+
 const MapRotation = () => {
     // Define state for each piece of data
     const [currentMap, setCurrentMap] = useState('');
@@ -32,25 +34,23 @@ const MapRotation = () => {
 
     return (
         //Consume data from the API
-        <div>
-            <h2>Battle Royale</h2>
-            <div id="current" >{`Mapa actual: ${currentMap}`}</div>
-            <br></br>
-            <div id="remainingTimer">{`Tiempo restante: ${remainingTimer}`}</div>
-            <br></br>
-            <div id="next">{`Siguiente mapa: ${nextMap}`}</div>
-            <h2>Ranked</h2>
-            <p id="rank" />
-            <div id="rank">{`Mapa actual: ${currentRankMap}`}</div>
-            <p>From 12:00pm to 12:00pm</p>
-            <div id="rankNext">{`Siguiente mapa: ${nextRankMap}`}</div>
-            <p id="rankNext" />
-            <h2>LTM</h2>
-            <div id="ltm">{`LTM actual: ${currentLtm}`}</div>
-            <br></br>
-            <div id="remainingTimerLtm">{`Tiempo restante: ${remainingTimerLtm}`}</div>
-            <br></br>
-            <div id="ltmNext">{`LTM Siguiente: ${nextLtm}`}</div>                     
+        <div className={styles.mapContainer}>
+            <h1>Current Apex Legends map rotation</h1>
+            <div className={styles.pbContainer}><h2>Battle Royale </h2>
+                <div className={styles.currentMap}>{`Current map: ${currentMap}`}</div>
+                <div className={styles.remainingTimer}>{`Remaining Time: ${remainingTimer}`}</div>
+                <div className={styles.nextMap}>{`Next map: ${nextMap}`}</div>
+            </div>
+            <div className={styles.rankContainer}><h2>Ranked</h2>
+                <div className={styles.currentRankMap}>{`Current map: ${currentRankMap}`}</div>
+                <p>From 12:00pm to 12:00pm</p>
+                <div className={styles.nextRankMap}>{`Next map: ${nextRankMap}`}</div>
+            </div>
+            <div className={styles.ltmContainer}><h2>LTM</h2>
+                <div className={styles.currentLtm}>{`Current LTM: ${currentLtm}`}</div>
+                <div className={styles.remainingTimerLtm}>{`Remaining Time: ${remainingTimerLtm}`}</div>
+                <div className={styles.nextLtm}>{`Next LTM: ${nextLtm}`}</div>
+            </div>
         </div>
     );
 };

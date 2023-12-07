@@ -32,11 +32,11 @@ const Navbar = forwardRef(({ onSearch }, ref) => {
                 <p style={{
                     fontSize: '24px',
                     fontWeight: 'bold',
-                }}>Maps</p>
+                }}></p>
             </div>
             <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
                 <input
-                    placeholder="Buscar"
+                    placeholder="Search"
                     onChange={handleInputChange}
                     onKeyDown={handleInputKeyDown}
                     value={search}
