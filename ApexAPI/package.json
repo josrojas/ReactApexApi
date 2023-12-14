@@ -1,7 +1,7 @@
 {
   "name": "api",
   "private": true,
-  "homepage": "https://josrojas.github.io/ReactApexApi",
+  "homepage": "https://josrojas.github.io/React-Apex-api",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
