@@ -1,14 +1,13 @@
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 
-import Navbar from '../../components/Navbar';
 import Events from '../../components/events';
-import useEventResults from '../../state/event-results';
-import MapRotation from '../../components/events/Maps/MapRotation';
-import styles from './Home.module.css';
+import useEventsResultsServer from "../../state/event-result-server";
+import ServerStatus from "../../components/events/Servers/ServerStatus"
+import styles from "./ServerS.module.css";
 
-const Home = () => {
-    const { data, isLoading, error, fetchEvents } = useEventResults();
+const Server = () => {
+    const { data, isLoading, error, fetchEvents } = useEventsResultsServer();
     const events = useMemo(() => data?._embedded?.events || [], [data?._embedded?.events]);
     const page = useMemo(() => data?.page || {}, [data?.page]);
 
@@ -43,16 +42,16 @@ const Home = () => {
         return (
             <div>
                 <>
-                    <Link to="/crafting" className={styles.homeLink}>Crafting Rotation</Link>
+                    <Link to="/" className={styles.homeLink}>Home</Link>
                     <div className={styles.TabsContainer}>
 
-                        <Link to="/server-status" className={styles.homeLink}>Server status</Link>
+                        <Link to="/crafting" className={styles.homeLink}>Crafting Rotation</Link>
                         <div className={styles.TabsContainer}></div>
                     </div>
                     <Outlet />
 
                     <Events searchTerm={searchTerm} events={events} />
-                    <MapRotation />
+                    <ServerStatus />
                 </>
             </div>
         );
@@ -61,10 +60,9 @@ const Home = () => {
     //Loading or show events or error
     return (
         <>
-            <Navbar onSearch={handleNavbarSearch} ref={containerRef} />
             {renderEvents()}
         </>
     )
 };
 
-export default Home;
+export default Server;

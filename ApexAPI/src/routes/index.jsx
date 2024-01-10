@@ -6,6 +6,8 @@ import {
 import { Suspense } from "react";
 
 import Home from "../views/Home";
+import Crafting from "../views/Crafting";
+import Server from "../views/ServerStatus";
 import Error404 from "../views/Error404";
 import ErrorBoundary from "../components/ErrorBoundary";
 
@@ -17,8 +19,13 @@ const router = createBrowserRouter([
         errorElement: <Error404 />
     },
     {
-        path: '/detail/:id',
-        element: <ErrorBoundary><Suspense fallback={<div>Cargando...</div>}><Home /></Suspense></ErrorBoundary>,
+        path: '/crafting',
+        element: <Crafting />,
+        errorElement: <Error404 />
+    },
+    {
+        path: '/server-status',
+        element: <Server />,
         errorElement: <Error404 />
     },
     {

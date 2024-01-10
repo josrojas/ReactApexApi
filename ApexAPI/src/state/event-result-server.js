@@ -1,16 +1,16 @@
 import { create } from "zustand";
 
-//Store data in global state Map
-const useEventsResults = create((set) => ({
+//Store data in global state server
+const useEventsResultsServer = create((set) => ({
     data: [],
     error: null,
     isLoading: false,
 
-    fetchEvents: async (params) => {
+    fetchEvents: async () => {
         try {
             await set(() => ({ isLoading: true }));
 
-            const response = await fetch(`https://api.mozambiquehe.re/maprotation?auth=${import.meta.env.VITE_APEX_API_KEY}&version=2${params?.length ? params : ''}`);
+            const response = await fetch(`https://api.mozambiquehe.re/servers?auth=${import.meta.env.VITE_APEX_API_KEY}`);
             const data = await response.json();
 
             await set(() => ({ data, isLoading: false }));
@@ -22,4 +22,4 @@ const useEventsResults = create((set) => ({
 }));
 
 
-export default useEventsResults;
+export default useEventsResultsServer;

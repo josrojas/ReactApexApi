@@ -50,7 +50,7 @@ const MapRotation = () => {
                 <div className={styles.remainingTimer}>{`Remaining Time: ${remainingTimer}`}</div>
                 <div className={styles.nextMap}>{`Next map: ${nextMap}`}</div>
             </div>
-            <div className={styles.img}><img src={assetRk} alt="Maps" />
+            <div className={styles.imgRk}><img src={assetRk} alt="Maps" />
                 <div className={styles.rankContainer}><h2>Ranked</h2></div>
                 <div className={styles.currentRankMap}>{`Current map: ${currentRankMap}`}</div>
                 <div className={styles.p}><p>From 12:00pm to 12:00pm</p></div>

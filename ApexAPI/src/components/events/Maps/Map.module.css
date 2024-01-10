@@ -13,34 +13,48 @@
 h1,
 h2 {
     padding-top: 30px;
-    color: #777;
+    color: #999;
 }
 
 .img{
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 350px;
     margin-top: 100px;
+}
+
+.imgRk{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    margin-top: 100px;
+    margin-bottom: 80px;
 }
 
 .imgLtm{
     display: flex;
     flex-direction: column;
-    height: 10%;
     width: 100%;
-    margin-top: 80px;
-
+    height: 350px;
 }
 
 .pbContainer{
-    margin-top: -400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -650px;
 }
 
 .rankContainer{
-    margin-top: -400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -700px;
 }
 
 .ltmContainer{
+    display: flex;
+    flex-direction: column;
     margin-top: -350px;
 }
 

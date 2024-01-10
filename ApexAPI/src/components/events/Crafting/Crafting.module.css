@@ -1,0 +1,15 @@
+.craftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+  
+}
+
+.dailyRotation{
+    font-size: 18px;
+}
