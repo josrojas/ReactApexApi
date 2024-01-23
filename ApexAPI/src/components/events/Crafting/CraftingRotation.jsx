@@ -26,11 +26,13 @@ const CraftingRotation = () => {
         //Consume data from the API
         <div className={styles.craftContainer}>
             <h1>Crafting rotation</h1>
-            <div>
-                <div className={styles.pbContainer}><h2>Daily </h2></div>
+
+            <div className={styles.pbContainer}>
+                <h2>Daily </h2>
                 <div className={styles.img}><img src={assetDa} alt="Crafting" /></div>
                 <div className={styles.dailyRotation}>{`Daily rotation: ${craft}`}</div>
             </div>
+            <h5>{`Data from apexlegendsstatus.com`}</h5>
         </div>
     );
 };

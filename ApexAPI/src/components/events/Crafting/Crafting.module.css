@@ -1,3 +1,11 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #242424;  
+}
+
 .craftContainer {
     display: flex;
     flex-direction: column;
@@ -8,6 +16,14 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     width: 100%;
   
+}
+
+.pbContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 300px;
 }
 
 .dailyRotation{

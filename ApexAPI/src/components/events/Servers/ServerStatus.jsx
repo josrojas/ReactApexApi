@@ -16,9 +16,9 @@ const ServerStatus = () => {
         fetch(`https://api.mozambiquehe.re/servers?auth=${import.meta.env.VITE_APEX_API_KEY}${params?.length ? params : ''}`)
             .then(res => res.json())
             .then(data => {
-                
+
                 setServerEuw(data.Origin_Login?.SouthAmerica?.Status);
-                setServerEue(data.EA_accounts?.Eu-East?.Status);
+                setServerEue(data.EA_accounts?.Eu - East?.Status);
 
             })
             .catch(e => console.error(new Error(e)));
@@ -28,15 +28,16 @@ const ServerStatus = () => {
         //Consume data from the API
         <div className={styles.serverContainer}>
             <h1>Servers Status</h1>
-            <h5>{`Data from apexlegendsstatus.com`}</h5>
-            <div>
-                <div className={styles.pbContainer}><h2>Servers List </h2></div>
+
+            <div className={styles.pbContainer}>
+                <h2>Servers List </h2>
                 <div className={styles.dailyRotation}>{`EU-West: ${ServerEuw}`}</div>
                 <div className={styles.dailyRotation}>{`EU-East: ${ServerEue}`}</div>
             </div>
+            <h5>{`Data from apexlegendsstatus.com`}</h5>
         </div>
 
-        
+
     );
 };
 

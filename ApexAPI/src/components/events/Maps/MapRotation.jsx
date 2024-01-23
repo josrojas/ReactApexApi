@@ -66,6 +66,7 @@ const MapRotation = () => {
                 <div className={styles.remainingTimerLtm}>{`Remaining Time: ${remainingTimerLtm}`}</div>
                 <div className={styles.nextLtm}>{`Next LTM: ${nextLtm}`}</div>
             </div>
+            <h5>{`Data from apexlegendsstatus.com`}</h5>
         </div>
     );
 };
