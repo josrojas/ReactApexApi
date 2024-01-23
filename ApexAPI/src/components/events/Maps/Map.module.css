@@ -1,3 +1,11 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #242424;  
+}
+
 .mapContainer {
     display: flex;
     flex-direction: column;
@@ -6,57 +14,55 @@
     margin-top: 50px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    width: 100%;
-  
+    background-color: #242424;  
+    max-width: 1280px;
+    height: 1400px;
 }
 
-h1,
-h2 {
-    padding-top: 30px;
+
+h1 {
+    margin-top: 100px;
     color: #999;
 }
 
-.img{
+h2 {
+    color: #999;
+    margin-top: -300px;
+}
+
+.container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 350px;
-    margin-top: 100px;
+    
+}
+
+.imgPb{
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    width: 1280px;
+    margin-top: 50px;
 }
 
 .imgRk{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 350px;
-    margin-top: 100px;
-    margin-bottom: 80px;
+    height: 540px;
+    width: 1280px;
+    margin-top: 0px;
+   
 }
 
 .imgLtm{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 350px;
+    height: 540px;
+    width: 1280px;
+    margin-top: 0px;
 }
 
-.pbContainer{
-    display: flex;
-    flex-direction: column;
-    margin-top: -650px;
-}
-
-.rankContainer{
-    display: flex;
-    flex-direction: column;
-    margin-top: -700px;
-}
-
-.ltmContainer{
-    display: flex;
-    flex-direction: column;
-    margin-top: -350px;
-}
 
 .currentMap,
 .nextMap,
