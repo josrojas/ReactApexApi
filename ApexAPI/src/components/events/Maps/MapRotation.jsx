@@ -36,6 +36,29 @@ const MapRotation = () => {
                 setCurrentLtm(`${data.ltm?.current?.eventName} ${data.ltm?.current?.map}`);
                 setRemainingTimerLtm(data.ltm?.current?.remainingTimer);
                 setNextLtm(`${data.ltm?.next?.eventName} ${data.ltm?.next?.map}`);
+
+                let remainingTimeLtm = new Date(`1970-01-01T${data.ltm?.current?.remainingTimer}Z`);
+                // update remaining time in real time
+                const intervalId = setInterval(() => {
+                    if (remainingTimeLtm.getUTCSeconds() > -1) {
+                        remainingTimeLtm.setUTCSeconds(remainingTimeLtm.getUTCSeconds() - 1);
+                        setRemainingTimerLtm(`${remainingTimeLtm.toISOString().slice(11, 19)}`);
+                    } else {
+                        // If the remaining time is 0, stop the interval and get the data again
+                        clearInterval(intervalId);
+                    }
+                }, 1000);
+
+                let remainingTime = new Date(`1970-01-01T${data.battle_royale?.current?.remainingTimer}Z`);
+                const intervalId2 = setInterval(() => {
+                    if (remainingTime.getUTCSeconds() > -1) {
+                        remainingTime.setUTCSeconds(remainingTime.getUTCSeconds() - 1);
+                        setRemainingTimer(`${remainingTime.toISOString().slice(11, 19)}`);
+                    } else {
+                        // Si el tiempo restante es 0, detener el intervalo y obtener los datos de nuevo
+                        clearInterval(intervalId2);
+                    }
+                }, 1000);
             })
             .catch(e => console.error(new Error(e)));
     }, []);
