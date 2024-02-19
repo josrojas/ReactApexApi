@@ -20,7 +20,9 @@ Before initialize the project you need to install:
 # Start project ▶️
 
 To run the project you need to use the next command:
+
 npm run dev
+
 This will initialize the server and you can access the app in your browser with this URL: `http://localhost:5173`. 
 
 # Preview 🗺
