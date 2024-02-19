@@ -9,7 +9,9 @@ const MapRotation = () => {
     const [nextMap, setNextMap] = useState('');
 
     const [currentRankMap, setCurrentRankMap] = useState('');
+    const [remainingTimerRk, setRemainingTimerRk] = useState('');
     const [nextRankMap, setNextRankMap] = useState('');
+
     const [currentLtm, setCurrentLtm] = useState('');
     const [remainingTimerLtm, setRemainingTimerLtm] = useState('');
     const [nextLtm, setNextLtm] = useState('');
@@ -31,6 +33,7 @@ const MapRotation = () => {
                 setNextMap(data.battle_royale?.next?.map);
                 setAssetRk(data.ranked?.current?.asset);
                 setCurrentRankMap(data.ranked?.current?.map);
+                setRemainingTimerRk(data.ranked?.current?.remainingTimer);
                 setNextRankMap(data.ranked?.next?.map);
                 setAssetLtm(data.ltm?.current?.asset);
                 setCurrentLtm(`${data.ltm?.current?.eventName} ${data.ltm?.current?.map}`);
@@ -55,8 +58,17 @@ const MapRotation = () => {
                         remainingTime.setUTCSeconds(remainingTime.getUTCSeconds() - 1);
                         setRemainingTimer(`${remainingTime.toISOString().slice(11, 19)}`);
                     } else {
-                        // Si el tiempo restante es 0, detener el intervalo y obtener los datos de nuevo
                         clearInterval(intervalId2);
+                    }
+                }, 1000);
+
+                let remainingTimeRk = new Date(`1970-01-01T${data.ranked?.current?.remainingTimer}Z`);
+                const intervalId3 = setInterval(() => {
+                    if (remainingTimeRk.getUTCSeconds() > -1) {
+                        remainingTimeRk.setUTCSeconds(remainingTimeRk.getUTCSeconds() - 1);
+                        setRemainingTimerRk(`${remainingTimeRk.toISOString().slice(11, 19)}`);
+                    } else {
+                        clearInterval(intervalId3);
                     }
                 }, 1000);
             })
@@ -79,7 +91,7 @@ const MapRotation = () => {
             <div className={styles.container}>
                 <h2>Ranked</h2>
                 <div className={styles.currentRankMap}>{`Current map: ${currentRankMap}`}</div>
-                <div className={styles.p}><p>From 12:00pm to 12:00pm</p></div>
+                <div className={styles.remainingTimerRk}>{`Remaining Time: ${remainingTimerRk}`}</div>
                 <div className={styles.nextRankMap}>{`Next map: ${nextRankMap}`}</div>
             </div>
             <div className={styles.imgLtm}><img src={assetLtm} alt="Maps" /></div>
