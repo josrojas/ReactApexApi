@@ -2,12 +2,13 @@
 
 App to see the current maps rotation in Apex Legends using an API from `apexlegendsstatus.com`.
 
-
 This project was made using the next technologies:
 
 **HTML - CSS - JSX**
 
 **REACT**
+
+**VITE**
 
 # Requirements 📋
 
