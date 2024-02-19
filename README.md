@@ -1,9 +1,20 @@
-HTML - CSS - JS
+# APEX MAPS - Documentation 🔎
+
+This project was made using the next technologies:
+
+**HTML - CSS - JSX**
+
+**React**
+
+#  📋
 
 App to see the current maps rotation in Apex Legends using an API from apexlegendsstatus.com
 
+# Start project ▶️
 
-Preview
+http://localhost:5173
+
+# Preview 🗺
 
 ![image](https://github.com/josrojas/ReactApexApi/assets/73319827/f4f06e54-2e2a-45be-891d-60768f4c6810)
 
