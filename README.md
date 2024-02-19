@@ -1,8 +1,13 @@
+HTML - CSS - JS
+
+App to see the current maps rotation in Apex Legends using an API from apexlegendsstatus.com
+
+
 Preview
 
-![image](https://github.com/josrojas/React-Apex-api/assets/73319827/e0383b84-ab5e-4652-ac18-d49e33f14ba9)
+![image](https://github.com/josrojas/ReactApexApi/assets/73319827/f4f06e54-2e2a-45be-891d-60768f4c6810)
 
+![image](https://github.com/josrojas/ReactApexApi/assets/73319827/db038de1-b991-40e2-85ea-cf7edd5e1ba0)
 
-![image](https://github.com/josrojas/ApexAPI/assets/73319827/adee6ddd-8a9a-4188-b81a-3997d1219dd6)
 
 https://josrojas.github.io/ApexAPI/
