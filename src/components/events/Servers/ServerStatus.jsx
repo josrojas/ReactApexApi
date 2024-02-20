@@ -1,4 +1,4 @@
-/*"https://api.mozambiquehe.re/servers?auth=YOUR_API_KEY"*/
+
 import React, { useState, useEffect } from 'react';
 
 import styles from './Server.module.css';
@@ -11,14 +11,13 @@ const ServerStatus = () => {
 
 
     useEffect(() => {
-        const params = '';
 
-        fetch(`https://api.mozambiquehe.re/servers?auth=${import.meta.env.VITE_APEX_API_KEY}${params?.length ? params : ''}`)
+        fetch(`https://api.mozambiquehe.re/servers?auth=${import.meta.env.VITE_APEX_API_KEY}`)
             .then(res => res.json())
             .then(data => {
 
-                setServerEuw(data.Origin_Login?.SouthAmerica?.Status);
-                setServerEue(data.EA_accounts?.Eu - East?.Status);
+                setServerEuw(data.Origin_Login?.West?.Status);
+                setServerEue(data.EA_accounts?.East?.Status);
 
             })
             .catch(e => console.error(new Error(e)));

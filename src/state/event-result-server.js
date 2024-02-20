@@ -7,6 +7,7 @@ const useEventsResultsServer = create((set) => ({
     isLoading: false,
 
     fetchEvents: async () => {
+        
         try {
             await set(() => ({ isLoading: true }));
 

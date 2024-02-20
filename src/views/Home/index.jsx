@@ -43,12 +43,9 @@ const Home = () => {
         return (
             <div>
                 <>
-                    <Link to="/crafting" className={styles.homeLink}>Crafting Rotation</Link>
-                    <div className={styles.TabsContainer}>
+                    <Link to="/server-status" className={styles.homeLink}>Server status</Link>
+                    <div className={styles.TabsContainer}></div>
 
-                        <Link to="/server-status" className={styles.homeLink}>Server status</Link>
-                        <div className={styles.TabsContainer}></div>
-                    </div>
                     <Outlet />
 
                     <Events searchTerm={searchTerm} events={events} />

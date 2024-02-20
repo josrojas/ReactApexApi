@@ -43,11 +43,8 @@ const Server = () => {
             <div>
                 <>
                     <Link to="/" className={styles.homeLink}>Home</Link>
-                    <div className={styles.TabsContainer}>
-
-                        <Link to="/crafting" className={styles.homeLink}>Crafting Rotation</Link>
-                        <div className={styles.TabsContainer}></div>
-                    </div>
+                    <div className={styles.TabsContainer}></div>
+                    
                     <Outlet />
 
                     <Events searchTerm={searchTerm} events={events} />

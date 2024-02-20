@@ -6,7 +6,6 @@ import {
 import { Suspense } from "react";
 
 import Home from "../views/Home";
-import Crafting from "../views/Crafting";
 import Server from "../views/ServerStatus";
 import Error404 from "../views/Error404";
 import ErrorBoundary from "../components/ErrorBoundary";
@@ -16,11 +15,6 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <Home />,
-        errorElement: <Error404 />
-    },
-    {
-        path: '/crafting',
-        element: <Crafting />,
         errorElement: <Error404 />
     },
     {
