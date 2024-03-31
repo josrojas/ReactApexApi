@@ -1,25 +1,21 @@
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 
+import Navbar from '../../components/Navbar';
 import Events from '../../components/events';
-import useEventsResultsServer from "../../state/event-result-server";
-import ServerStatus from "../../components/events/Servers/ServerStatus"
-import styles from "./ServerS.module.css";
+import useEventResults from '../../state/event-results';
+import styles from "./UpgradeStatus.module.css";
+import UpgradesStatus from "../../components/events/UpgradeLegends/UpgradeLegends";
 
-const Server = () => {
-    const { data, isLoading, error, fetchEvents } = useEventsResultsServer();
+const Upgrades = () => {
+
+    const { data, isLoading, error, fetchEvents } = useEventResults();
     const events = useMemo(() => data?._embedded?.events || [], [data?._embedded?.events]);
     const page = useMemo(() => data?.page || {}, [data?.page]);
 
     const [searchTerm, setSearchTerm] = useState('')
     const containerRef = useRef();
     const fetchMyEventsRef = useRef();
-
-    fetchMyEventsRef.current = fetchEvents;
-
-    useEffect(() => {
-        fetchMyEventsRef.current();
-    }, []);
 
     const handleNavbarSearch = (term) => {
         setSearchTerm(term);
@@ -48,7 +44,7 @@ const Server = () => {
                     <Outlet />
 
                     <Events searchTerm={searchTerm} events={events} />
-                    <ServerStatus />
+                    <UpgradesStatus />
                 </>
             </div>
         );
@@ -57,9 +53,10 @@ const Server = () => {
     //Loading or show events or error
     return (
         <>
+            <Navbar onSearch={handleNavbarSearch} ref={containerRef} />
             {renderEvents()}
         </>
     )
 };
 
-export default Server;
+export default Upgrades;

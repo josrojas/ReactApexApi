@@ -6,7 +6,7 @@ import {
 import { Suspense } from "react";
 
 import Home from "../views/Home";
-import Server from "../views/ServerStatus";
+import Upgrades from "../views/UpgradeStatus";
 import Error404 from "../views/Error404";
 import ErrorBoundary from "../components/ErrorBoundary";
 
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
         errorElement: <Error404 />
     },
     {
-        path: '/server-status',
-        element: <Server />,
+        path: '/upgrade-status',
+        element: <Upgrades />,
         errorElement: <Error404 />
     },
     {
