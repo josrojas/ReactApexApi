@@ -8,7 +8,6 @@ import styles from './Home.module.css';
 const Home = () => {
     const { isLoading, error, fetchEvents } = useEventResults();
 
-    const containerRef = useRef();
     const fetchMyEventsRef = useRef();
 
     fetchMyEventsRef.current = fetchEvents;
