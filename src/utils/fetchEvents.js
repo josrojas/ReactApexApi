@@ -1,8 +1,8 @@
 import wrapPromise from "./wrapPromise";
 
-const fetchEventDetail = async (version) => {
+const fetchEventDetail = async () => {
     try {
-        const response = await fetch(`https://api.mozambiquehe.re/maprotation${version}?auth=${import.meta.env.VITE_APEX_API_KEY}`);
+        const response = await fetch(`https://api.mozambiquehe.re/maprotation?auth=${import.meta.env.VITE_APEX_API_KEY}`);
         const data = await response.json();
 
         return data;
@@ -11,9 +11,9 @@ const fetchEventDetail = async (version) => {
     }
 };
 
-const fetchData = (version) => {
+const fetchData = () => {
     return {
-        eventDetail: wrapPromise(fetchEventDetail(version))
+        eventDetail: wrapPromise(fetchEventDetail())
     };
 };
 
