@@ -4,8 +4,11 @@ import { useState, useRef, useCallback, useMemo } from 'react';
 import Navbar from '../../components/Navbar';
 import Events from '../../components/events';
 import useEventResults from '../../state/event-results';
-import styles from "./UpgradeStatus.module.css";
 import UpgradesStatus from "../../components/events/UpgradeLegends/UpgradeLegends";
+import { Tabs } from "../../components/events/UpgradeLegends/tabs";
+
+import styles from "./UpgradeStatus.module.css";
+import styled from "styled-components";
 
 const Upgrades = () => {
 
@@ -44,12 +47,18 @@ const Upgrades = () => {
                     <Outlet />
 
                     <Events searchTerm={searchTerm} events={events} />
-                    <UpgradesStatus />
+                    <Container>
+                    <h1>Legends Upgrades</h1>
+                        <Tabs />
+                        <UpgradesStatus />
+                    </Container>       
                 </>
             </div>
         );
     };
-
+    const Container = styled.main`
+    height: 100vh;
+`
     //Loading or show events or error
     return (
         <>

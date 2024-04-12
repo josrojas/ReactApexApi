@@ -6,13 +6,7 @@ body {
     background-color: #242424;  
 }
 
-.Container{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.upgradeContainer {
+.Container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +16,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.pbContainer{
+.UpgradeContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
