@@ -25,6 +25,9 @@ npm run dev
 
 This will initialize the server and you can access the app in your browser with this URL: `http://localhost:5173`. 
 
+# Additional Comments 🗨
+- If you want to see current map and next map in your stream deck you can visit my other project https://github.com/josrojas/apexMapsSD
+
 # Preview 🗺
 
 https://react-apex-api.vercel.app
