@@ -1,4 +1,4 @@
-/*import { useState } from 'react';
+import { useState } from 'react';
 
 //Hook to call API and save local state
 const useEventsData = () => {
@@ -27,4 +27,4 @@ const useEventsData = () => {
     };
 };
 
-export default useEventsData;*/
+export default useEventsData;
