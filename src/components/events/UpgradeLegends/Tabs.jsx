@@ -1,5 +1,9 @@
 import { useState } from "react";
+import Assault from "./Assault";
+import Skirmisher from "./Skirmisher";
 import styled from "styled-components";
+
+import styles from './Tabs.module.css';
 
 export function Tabs() {
     const [activetab, setactivetab] = useState(0);
@@ -28,11 +32,11 @@ export function Tabs() {
             </ul>
 
             <div className="tab-content">
-                {activetab === 0 && <h1>Ashe</h1>}
-                {activetab === 1 && <h1>Tab 2</h1>}
-                {activetab === 2 && <h1>Tab 3</h1>}
-                {activetab === 3 && <h1>Tab 4</h1>}
-                {activetab === 4 && <h1>Tab 5</h1>}
+                {activetab === 0 && <div className={styles.assault}><Assault /></div>}
+                {activetab === 1 && <div className={styles.skirmisher}><Skirmisher /></div>}
+                {activetab === 2 && <div className={styles.assault}><Assault /></div>}
+                {activetab === 3 && <div className={styles.skirmisher}><Skirmisher /></div>}
+                {activetab === 4 && <div className={styles.assault}><Assault /></div>}
 
             </div>
         </Container>
@@ -45,6 +49,7 @@ position: relative;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 550px;
     width: 100%;
     height: 30%;
     background-color: #242424;

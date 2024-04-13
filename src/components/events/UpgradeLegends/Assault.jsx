@@ -9,12 +9,12 @@ const UpgradesStatus = () => {
       
             <div className={styles.Container}>
                 <div className={styles.UpgradeContainer}>
-                    <h2></h2>
+                    <h2>ASHE</h2>
                     <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/ash.jpg" width={300} height={500}></img>
                     <h4>Level 2 Upgrade Options</h4>
-                    <p>Murder Machine.</p>
+                    <p>Murder Machine</p>
                     <p>Call out the number of squads within 150 meters after a squad wipe.</p>
-                    <p>One Minute to Live.</p>
+                    <p>One Minute to Live</p>
                     <p>	Using Passive tracks enemy position on map for 60 seconds.</p>
 
                     <h4>Level 3 Upgrade Options</h4>

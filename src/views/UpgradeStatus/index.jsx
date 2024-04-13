@@ -4,8 +4,7 @@ import { useState, useRef, useCallback, useMemo } from 'react';
 import Navbar from '../../components/Navbar';
 import Events from '../../components/events';
 import useEventResults from '../../state/event-results';
-import UpgradesStatus from "../../components/events/UpgradeLegends/UpgradeLegends";
-import { Tabs } from "../../components/events/UpgradeLegends/tabs";
+import { Tabs } from "../../components/events/UpgradeLegends/Tabs";
 
 import styles from "./UpgradeStatus.module.css";
 import styled from "styled-components";
@@ -50,7 +49,6 @@ const Upgrades = () => {
                     <Container>
                     <h1>Legends Upgrades</h1>
                         <Tabs />
-                        <UpgradesStatus />
                     </Container>       
                 </>
             </div>
