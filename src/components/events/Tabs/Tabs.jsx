@@ -1,6 +1,10 @@
 import { useState } from "react";
-import Assault from "./Assault";
-import Skirmisher from "./Skirmisher";
+import Assault from "../UpgradeLegends/Assault";
+import Skirmisher from "../UpgradeLegends/Skirmisher";
+import Recon from "../UpgradeLegends/Recon";
+import Controller from "../UpgradeLegends/Controller";
+import Support from "../UpgradeLegends/Support";
+
 import styled from "styled-components";
 
 import styles from './Tabs.module.css';
@@ -32,13 +36,14 @@ export function Tabs() {
             </ul>
 
             <div className="tab-content">
-                {activetab === 0 && <div className={styles.assault}><Assault /></div>}
-                {activetab === 1 && <div className={styles.skirmisher}><Skirmisher /></div>}
-                {activetab === 2 && <div className={styles.assault}><Assault /></div>}
-                {activetab === 3 && <div className={styles.skirmisher}><Skirmisher /></div>}
-                {activetab === 4 && <div className={styles.assault}><Assault /></div>}
+                {activetab === 0 && <div className={styles.class}><Assault /></div>}
+                {activetab === 1 && <div className={styles.class}><Skirmisher /></div>}
+                {activetab === 2 && <div className={styles.class}><Recon /></div>}
+                {activetab === 3 && <div className={styles.class}><Controller /></div>}
+                {activetab === 4 && <div className={styles.class}><Support /></div>}
 
             </div>
+            <h5>{`Data from ea.com/games/apex-legends`}</h5>
         </Container>
     );
 }
@@ -49,7 +54,7 @@ position: relative;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 550px;
+    margin-top: 650px;
     width: 100%;
     height: 30%;
     background-color: #242424;

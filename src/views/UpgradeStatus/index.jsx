@@ -4,7 +4,7 @@ import { useState, useRef, useCallback, useMemo } from 'react';
 import Navbar from '../../components/Navbar';
 import Events from '../../components/events';
 import useEventResults from '../../state/event-results';
-import { Tabs } from "../../components/events/UpgradeLegends/Tabs";
+import { Tabs } from "../../components/events/Tabs/Tabs";
 
 import styles from "./UpgradeStatus.module.css";
 import styled from "styled-components";

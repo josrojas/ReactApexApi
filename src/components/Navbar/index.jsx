@@ -25,7 +25,7 @@ const Navbar = forwardRef(({ onSearch }, ref) => {
     return (
         <div ref={ref} style={{
             marginBottom: '14px',
-            width: '100%',
+            width: '1380px',
             display: 'flex',
         }}>
             <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
