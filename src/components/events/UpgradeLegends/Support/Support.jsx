@@ -1,8 +1,8 @@
 import React from 'react';
 
-import styles from './Upgrade.module.css';
+import styles from '../../UpgradeLegends/Upgrade.module.css';
 
-const UpgradesStatus = () => {
+const Support = () => {
 
     return (
         //Show legends upgrades
@@ -30,4 +30,4 @@ const UpgradesStatus = () => {
     );
 };
 
-export default UpgradesStatus;
+export default Support;

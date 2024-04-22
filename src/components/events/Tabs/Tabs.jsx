@@ -1,13 +1,13 @@
 import { useState } from "react";
-import Assault from "../UpgradeLegends/Assault";
-import Skirmisher from "../UpgradeLegends/Skirmisher";
-import Recon from "../UpgradeLegends/Recon";
-import Controller from "../UpgradeLegends/Controller";
-import Support from "../UpgradeLegends/Support";
+import Recon from "../UpgradeLegends/Recon/Recon";
+import Controller from "../UpgradeLegends/Controller/Catalyst";
+import Support from "../UpgradeLegends/Support/Support";
 
 import styled from "styled-components";
 
 import styles from './Tabs.module.css';
+import AssaultSlide from "../UpgradeLegends/Slider/Assault.slide";
+import SkirmSlide from "../UpgradeLegends/Slider/Skirm.slide";
 
 export function Tabs() {
     const [activetab, setactivetab] = useState(0);
@@ -36,8 +36,8 @@ export function Tabs() {
             </ul>
 
             <div className="tab-content">
-                {activetab === 0 && <div className={styles.class}><Assault /></div>}
-                {activetab === 1 && <div className={styles.class}><Skirmisher /></div>}
+                {activetab === 0 && <div className={styles.class}><AssaultSlide /></div>}
+                {activetab === 1 && <div className={styles.class}><SkirmSlide /></div>}
                 {activetab === 2 && <div className={styles.class}><Recon /></div>}
                 {activetab === 3 && <div className={styles.class}><Controller /></div>}
                 {activetab === 4 && <div className={styles.class}><Support /></div>}
