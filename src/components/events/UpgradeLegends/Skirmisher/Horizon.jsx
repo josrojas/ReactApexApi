@@ -12,7 +12,7 @@ const Horizon = () => {
                 <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/horizon.jpg" width={300} height={500}></img>
                 <h4>Level 2 Upgrade Options</h4>
                 <p>Battery Collection</p>
-                <p>	Shield Battery count shown above Death Boxes.</p>
+                <p>Shield Battery count shown above Death Boxes.</p>
                 <p>Big Bang</p>
                 <p>See nearby ordnance through walls and on Death Boxes.</p>
 

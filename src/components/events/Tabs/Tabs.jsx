@@ -1,13 +1,13 @@
 import { useState } from "react";
-import Recon from "../UpgradeLegends/Recon/Recon";
-import Controller from "../UpgradeLegends/Controller/Catalyst";
-import Support from "../UpgradeLegends/Support/Support";
-
-import styled from "styled-components";
 
 import styles from './Tabs.module.css';
 import AssaultSlide from "../UpgradeLegends/Slider/Assault.slide";
 import SkirmSlide from "../UpgradeLegends/Slider/Skirm.slide";
+import ReconSlide from "../UpgradeLegends/Slider/Recon.slide";
+import ControlSlide from "../UpgradeLegends/Slider/Control.slide";
+import SuppSlide from "../UpgradeLegends/Slider/Supp.slide";
+
+import styled from "styled-components";
 
 export function Tabs() {
     const [activetab, setactivetab] = useState(0);
@@ -38,9 +38,9 @@ export function Tabs() {
             <div className="tab-content">
                 {activetab === 0 && <div className={styles.class}><AssaultSlide /></div>}
                 {activetab === 1 && <div className={styles.class}><SkirmSlide /></div>}
-                {activetab === 2 && <div className={styles.class}><Recon /></div>}
-                {activetab === 3 && <div className={styles.class}><Controller /></div>}
-                {activetab === 4 && <div className={styles.class}><Support /></div>}
+                {activetab === 2 && <div className={styles.class}><ReconSlide /></div>}
+                {activetab === 3 && <div className={styles.class}><ControlSlide /></div>}
+                {activetab === 4 && <div className={styles.class}><SuppSlide /></div>}
 
             </div>
             <h5>{`Data from ea.com/games/apex-legends`}</h5>

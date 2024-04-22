@@ -12,6 +12,10 @@ import styles from './slide.module.css';
 
 import Horizon from '../Skirmisher/Horizon';
 import Octane from '../Skirmisher/Octane';
+import Pathfinder from '../Skirmisher/Pathfinder';
+import Revenant from '../Skirmisher/Revenant';
+import Valkyrie from '../Skirmisher/Valkyrie';
+import Wraith from '../Skirmisher/Wraith';
 
 
 export default () => {
@@ -29,10 +33,10 @@ export default () => {
     >
       <SwiperSlide><Horizon /></SwiperSlide>
       <SwiperSlide><Octane /></SwiperSlide>
-      <SwiperSlide><Horizon /></SwiperSlide>
-      <SwiperSlide><Horizon /></SwiperSlide>
-      <SwiperSlide><Horizon /></SwiperSlide>
+      <SwiperSlide><Pathfinder /></SwiperSlide>
+      <SwiperSlide><Revenant /></SwiperSlide>
+      <SwiperSlide><Valkyrie /></SwiperSlide>
+      <SwiperSlide><Wraith /></SwiperSlide>
     </Swiper>
   );
 };
-

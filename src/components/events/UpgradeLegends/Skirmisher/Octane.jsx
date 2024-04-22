@@ -11,16 +11,16 @@ const Octane = () => {
                 <h2>OCTANE</h2>
                 <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/octane.jpg" width={300} height={500}></img>
                 <h4>Level 2 Upgrade Options</h4>
-                <p>Battery Collection</p>
-                <p>	Shield Battery count shown above Death Boxes.</p>
-                <p>Big Bang</p>
-                <p>See nearby ordnance through walls and on Death Boxes.</p>
+                <p>Thick Skin</p>
+                <p>Take 25% less Stim damage.</p>
+                <p>Wreckless</p>
+                <p>Take 50% less explosive damage.</p>
 
                 <h4>Level 3 Upgrade Options</h4>
-                <p>Tactical Cooldown</p>
-                <p>Reduce Tactical cooldown by 5 seconds.</p>
-                <p>Ultimate Cooldown</p>
-                <p>Reduce Ultimate cooldown by 30 seconds.</p>
+                <p>Airborne Agility</p>
+                <p>Change directions with the Launch Pad double-jump.</p>
+                <p>Mad Hops</p>
+                <p>Gain an extra Launch Pad charge.</p>
             </div>
         </div>
     );
