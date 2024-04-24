@@ -2,14 +2,17 @@ import React from 'react';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
-const Ashe = () => {
+const Ash = () => {
 
     return (
         //Show legends upgrades
         <div className={styles.Container}>
+            <div className={styles.CharacterContainer}>
+                <h2>ASH</h2>
+                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/ash.jpg" alt="Ash image"
+                    width={300} height={500}></img>
+            </div>
             <div className={styles.UpgradeContainer}>
-                <h2>ASHE</h2>
-                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/ash.jpg" width={300} height={500}></img>
                 <h4>Level 2 Upgrade Options</h4>
                 <p>Murder Machine</p>
                 <p>Call out the number of squads within 150 meters after a squad wipe.</p>
@@ -26,4 +29,4 @@ const Ashe = () => {
     );
 };
 
-export default Ashe;
+export default Ash;

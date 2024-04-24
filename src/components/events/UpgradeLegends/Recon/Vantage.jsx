@@ -7,9 +7,12 @@ const Vantage = () => {
     return (
         //Show legends upgrades
         <div className={styles.Container}>
-            <div className={styles.UpgradeContainer}>
+            <div className={styles.CharacterContainer}>
                 <h2>VANTAGE</h2>
-                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/recon/vantage.jpg" width={300} height={500}></img>
+                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/recon/vantage.jpg" alt="Vantage image"
+                    width={300} height={500}></img>
+            </div>
+            <div className={styles.UpgradeContainer}>
                 <h4>Level 2 Upgrade Options</h4>
                 <p>Ringmaster</p>
                 <p>Gain access to Ring Consoles.</p>

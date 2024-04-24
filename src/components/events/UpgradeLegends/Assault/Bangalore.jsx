@@ -7,9 +7,12 @@ const Bangalore = () => {
     return (
         //Show legends upgrades
         <div className={styles.Container}>
-            <div className={styles.UpgradeContainer}>
+            <div className={styles.CharacterContainer}>
                 <h2>BANGALORE</h2>
-                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/bangalore.jpg" width={300} height={500}></img>
+                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/bangalore.jpg" alt="Ash image"
+                    width={300} height={500}></img>
+            </div>
+            <div className={styles.UpgradeContainer}>
                 <h4>Level 2 Upgrade Options</h4>
                 <p>Tactical Cooldown</p>
                 <p>Reduces Tactical cooldown by 5s.</p>

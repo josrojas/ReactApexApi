@@ -54,7 +54,7 @@ position: relative;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 650px;
+    margin-top: 400px;
     width: 100%;
     height: 30%;
     background-color: #242424;

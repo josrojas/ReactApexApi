@@ -10,7 +10,7 @@ import 'swiper/css/effect-flip';
 
 import styles from './slide.module.css';
 
-import Ashe from '../Assault/Ashe';
+import Ash from '../Assault/Ash';
 import Ballistic from '../Assault/Ballistic';
 import Bangalore from '../Assault/Bangalore';
 import Fuse from '../Assault/Fuse';
@@ -29,7 +29,7 @@ export default () => {
       grabCursor={true}
       className={styles.swiper}
     >
-      <SwiperSlide><Ashe /></SwiperSlide>
+      <SwiperSlide><Ash /></SwiperSlide>
       <SwiperSlide><Ballistic /></SwiperSlide>
       <SwiperSlide><Bangalore /></SwiperSlide>
       <SwiperSlide><Fuse /></SwiperSlide>

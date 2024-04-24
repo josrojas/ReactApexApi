@@ -7,9 +7,12 @@ const Seer = () => {
     return (
         //Show legends upgrades
         <div className={styles.Container}>
-            <div className={styles.UpgradeContainer}>
+            <div className={styles.CharacterContainer}>
                 <h2>SEER</h2>
-                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/recon/seer.jpg" width={300} height={500}></img>
+                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/recon/seer.jpg" alt="Seer image"
+                    width={300} height={500}></img>
+            </div>
+            <div className={styles.UpgradeContainer}>
                 <h4>Level 2 Upgrade Options</h4>
                 <p>Artist's Reach</p>
                 <p>Increase the throw range of Ultimate by 20 meters.</p>
