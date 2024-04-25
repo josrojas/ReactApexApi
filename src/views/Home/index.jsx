@@ -28,7 +28,7 @@ const Home = () => {
         return (
             <div>
                 <>
-                    <Link to="/upgrade-status" className={styles.homeLink}>Legends Upgrades</Link>
+                    <Link to="/legends-upgrade" className={styles.homeLink}>Legends Upgrades</Link>
                     <div className={styles.TabsContainer}></div>
 
                     <Outlet />

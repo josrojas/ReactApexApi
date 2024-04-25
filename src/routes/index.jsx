@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         errorElement: <Error404 />
     },
     {
-        path: '/upgrade-status',
+        path: '/legends-upgrade',
         element: <Upgrades />,
         errorElement: <Error404 />
     },
