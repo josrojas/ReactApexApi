@@ -13,16 +13,16 @@ const Conduit = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Battery Collection</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Battery Collection</h4>
                 <p>Shield Battery count shown above Death Boxes.</p>
-                <p>Radiant Transfer</p>
+                <h4>Radiant Transfer</h4>
                 <p>Increase Tactical range by 10 meters.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Bigger Jam</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Bigger Jam</h4>
                 <p>Each Ultimate jammer's damage radius increased by 10%.</p>
-                <p>Split Charge</p>
+                <h4>Split Charge</h4>
                 <p>Gain a Tactical charge but halve shield regen duration.</p>
             </div>
         </div>

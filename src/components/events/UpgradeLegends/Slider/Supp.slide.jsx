@@ -11,6 +11,11 @@ import 'swiper/css/effect-flip';
 import styles from './slide.module.css';
 
 import Conduit from '../Support/Conduit';
+import Gibraltar from '../Support/Gibraltar';
+import Lifeline from '../Support/Lifeline';
+import Loba from '../Support/Loba';
+import Mirage from '../Support/Mirage';
+import Newcastle from '../Support/Newcastle';
 
 export default () => {
   return (
@@ -26,11 +31,11 @@ export default () => {
       className={styles.swiper}
     >
       <SwiperSlide><Conduit /></SwiperSlide>
-      <SwiperSlide><Conduit /></SwiperSlide>
-      <SwiperSlide><Conduit /></SwiperSlide>
-      <SwiperSlide><Conduit /></SwiperSlide>
-      <SwiperSlide><Conduit /></SwiperSlide>
-      <SwiperSlide><Conduit /></SwiperSlide>
+      <SwiperSlide><Gibraltar /></SwiperSlide>
+      <SwiperSlide><Lifeline /></SwiperSlide>
+      <SwiperSlide><Loba /></SwiperSlide>
+      <SwiperSlide><Mirage /></SwiperSlide>
+      <SwiperSlide><Newcastle /></SwiperSlide>
     </Swiper>
   );
 };

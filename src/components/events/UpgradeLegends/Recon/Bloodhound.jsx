@@ -13,16 +13,16 @@ const Bloodhound = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Raven's Blessing</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Raven's Blessing</h4>
                 <p>White Ravens charge Ultimate by 25% when activated.</p>
-                <p>Odin's Glare</p>
+                <h4>Odin's Glare</h4>
                 <p>Double the duration of Tactical's full-body highlight.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Tactical Cooldown</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Tactical Cooldown</h4>
                 <p>Reduce Tactical cooldown by 5 seconds.</p>
-                <p>Taste of Blood</p>
+                <h4>Taste of Blood</h4>
                 <p>Gain 25 HP on knocks while Ultimate is active.</p>
             </div>
         </div>

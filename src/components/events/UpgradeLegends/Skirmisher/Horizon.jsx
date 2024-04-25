@@ -13,16 +13,16 @@ const Horizon = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Battery Collection</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Battery Collection</h4>
                 <p>Shield Battery count shown above Death Boxes.</p>
-                <p>Big Bang</p>
+                <h4>Big Bang</h4>
                 <p>See nearby ordnance through walls and on Death Boxes.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Tactical Cooldown</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Tactical Cooldown</h4>
                 <p>Reduce Tactical cooldown by 5 seconds.</p>
-                <p>Ultimate Cooldown</p>
+                <h4>Ultimate Cooldown</h4>
                 <p>Reduce Ultimate cooldown by 30 seconds.</p>
             </div>
         </div>

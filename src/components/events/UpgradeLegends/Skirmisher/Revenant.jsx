@@ -13,16 +13,16 @@ const Revenant = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Murder Machine</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Murder Machine</h4>
                 <p>Call out the number of squads within 150 meters after a squad wipe.</p>
-                <p>Ultimate Cooldown</p>
+                <h4>Ultimate Cooldown</h4>
                 <p>Reduces Ult Cooldown by 30s.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Tactical Cooldown</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Tactical Cooldown</h4>
                 <p>Reduce Tactical cooldown by 5 seconds.</p>
-                <p>Grim Leaper</p>
+                <h4>Grim Leaper</h4>
                 <p>Shadow Pounce cooldown reset on knock.</p>
             </div>
         </div>

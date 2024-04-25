@@ -13,16 +13,16 @@ const Maggie = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Fire Ball</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Fire Ball</h4>
                 <p>Wrecking Ball catches fire and explodes in thermite.</p>
-                <p>Shots Shots Shots</p>
+                <h4>Shots Shots Shots</h4>
                 <p>Auto-Reload shotguns on knock.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Big Drill</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Big Drill</h4>
                 <p>Increase depth and width of Tactical by 50%.</p>
-                <p>Drillslinger</p>
+                <h4>Drillslinger</h4>
                 <p>Gain a Riot Drill charge; reduce active duration by 25%.</p>
             </div>
         </div>

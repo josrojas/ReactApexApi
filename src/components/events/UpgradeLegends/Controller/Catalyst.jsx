@@ -13,16 +13,16 @@ const Catalyst = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Long Cast</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Long Cast</h4>
                 <p>Increase Spike throw range by 40%.</p>
-                <p>Sister Spikes</p>
+                <h4>Sister Spikes</h4>
                 <p>Increase max number of active Spikes by one.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Long Veil</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Long Veil</h4>
                 <p>Increase Ultimate length by 15 meters.</p>
-                <p>Resilient Veil</p>
+                <h4>Resilient Veil</h4>
                 <p>Increase Ultimate lifetime by 5 seconds.</p>
             </div>
         </div>

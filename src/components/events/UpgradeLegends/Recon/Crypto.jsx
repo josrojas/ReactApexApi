@@ -13,16 +13,16 @@ const Crypto = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Tactical Cooldown+</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Tactical Cooldown+</h4>
                 <p>Reduce Tactical cooldown by 10 seconds.</p>
-                <p>Ultimate Cooldown</p>
+                <h4>Ultimate Cooldown</h4>
                 <p>Reduce Ultimate cooldown by 30 seconds.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Network Expansion</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Network Expansion</h4>
                 <p>Increase Neurolink and EMP range by 25%.</p>
-                <p>Network Traffic</p>
+                <h4>Network Traffic</h4>
                 <p>Deploying the Drone calls out squads in the area.</p>
             </div>
         </div>

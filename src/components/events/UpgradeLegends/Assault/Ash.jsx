@@ -13,16 +13,16 @@ const Ash = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Murder Machine</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Murder Machine</h4>
                 <p>Call out the number of squads within 150 meters after a squad wipe.</p>
-                <p>One Minute to Live</p>
+                <h4>One Minute to Live</h4>
                 <p>	Using Passive tracks enemy position on map for 60 seconds.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Greedy Snare</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Greedy Snare</h4>
                 <p>Arc Snare remains in play for 24 seconds and can catch multiple enemies.</p>
-                <p>Twin Snares</p>
+                <h4>Twin Snares</h4>
                 <p>Gain an Arc Snare charge.</p>
             </div>
         </div>

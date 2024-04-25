@@ -13,16 +13,16 @@ const Bangalore = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Tactical Cooldown</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Tactical Cooldown</h4>
                 <p>Reduces Tactical cooldown by 5s.</p>
-                <p>Ultimate Cooldown+</p>
+                <h4>Ultimate Cooldown+</h4>
                 <p>Reduce Ultimate cooldown by 60 seconds.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Cover Me</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Cover Me</h4>
                 <p>Point you in the right direction enemies who trigger Double Time.</p>
-                <p>Refuge</p>
+                <h4>Refuge</h4>
                 <p>Regenerate 3.5 HP/s while inside Smoke.</p>
             </div>
         </div>

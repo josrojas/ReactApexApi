@@ -11,6 +11,9 @@ import 'swiper/css/effect-flip';
 import styles from './slide.module.css';
 
 import Catalyst from '../Controller/Catalyst';
+import Caustic from '../Controller/Caustic';
+import Rampart from '../Controller/Rampart';
+import Wattson from '../Controller/Wattson';
 
 export default () => {
   return (
@@ -26,9 +29,9 @@ export default () => {
       className={styles.swiper}
     >
       <SwiperSlide><Catalyst /></SwiperSlide>
-      <SwiperSlide><Catalyst /></SwiperSlide>
-      <SwiperSlide><Catalyst /></SwiperSlide>
-      <SwiperSlide><Catalyst /></SwiperSlide>
+      <SwiperSlide><Caustic /></SwiperSlide>
+      <SwiperSlide><Rampart /></SwiperSlide>
+      <SwiperSlide><Wattson /></SwiperSlide>
     </Swiper>
   );
 };

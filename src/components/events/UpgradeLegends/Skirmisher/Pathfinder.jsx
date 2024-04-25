@@ -13,16 +13,16 @@ const Pathfinder = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Field Research</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Field Research</h4>
                 <p>Gain access to Survey Beacons.</p>
-                <p>Ringmaster</p>
+                <h4>Ringmaster</h4>
                 <p>Gain access to Ring Consoles.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Down and Away</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Down and Away</h4>
                 <p>Grapple cooldown reset on knock.</p>
-                <p>Zipline Zen</p>
+                <h4>Zipline Zen</h4>
                 <p>Take 50% less damage while riding energized Ziplines.</p>
             </div>
         </div>

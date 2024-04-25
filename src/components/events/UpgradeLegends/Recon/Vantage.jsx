@@ -13,16 +13,16 @@ const Vantage = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Ringmaster</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Ringmaster</h4>
                 <p>Gain access to Ring Consoles.</p>
-                <p>Ultimate Reload</p>
+                <h4>Ultimate Reload</h4>
                 <p>Ultimate Accelerants grant +2 bullets.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Bat Bounce</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Bat Bounce</h4>
                 <p>Improved Tactical's double-jump.</p>
-                <p>Sharpshooter</p>
+                <h4>Sharpshooter</h4>
                 <p>Refresh Tactical on hits with Ultimate.</p>
             </div>
         </div>

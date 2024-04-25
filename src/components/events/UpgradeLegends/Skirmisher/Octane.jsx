@@ -13,16 +13,16 @@ const Octane = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Thick Skin</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Thick Skin</h4>
                 <p>Take 25% less Stim damage.</p>
-                <p>Wreckless</p>
+                <h4>Wreckless</h4>
                 <p>Take 50% less explosive damage.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Airborne Agility</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Airborne Agility</h4>
                 <p>Change directions with the Launch Pad double-jump.</p>
-                <p>Mad Hops</p>
+                <h4>Mad Hops</h4>
                 <p>Gain an extra Launch Pad charge.</p>
             </div>
         </div>

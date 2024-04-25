@@ -13,16 +13,16 @@ const Fuse = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h4>Level 2 Upgrade Options</h4>
-                <p>Big Bang</p>
+                <h3>Level 2 Upgrade Options</h3>
+                <h4>Big Bang</h4>
                 <p>See nearby ordnance through walls and on Death Boxes.</p>
-                <p>Scar Tissue</p>
+                <h4>Scar Tissue</h4>
                 <p>Take 50% less damage and no slow effects from The Motherlode.</p>
-
-                <h4>Level 3 Upgrade Options</h4>
-                <p>Knuckle Hustler</p>
+                --
+                <h3>Level 3 Upgrade Options</h3>
+                <h4>Knuckle Hustler</h4>
                 <p>Short speed boost on successful Knuckle Cluster hit.</p>
-                <p>Wreckless</p>
+                <h4>Wreckless</h4>
                 <p>Take 50% less explosive damage.</p>
             </div>
         </div>
