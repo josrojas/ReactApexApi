@@ -1,6 +1,6 @@
 # Apex Maps - Documentation 📋
 
-App to see the current maps rotation in Apex Legends using an API from `apexlegendsstatus.com`.
+App to see the current maps rotation and legends upgrades of Apex Legends using an API from `apexlegendsstatus.com`.
 
 This project was made using the next technologies:
 
@@ -32,6 +32,17 @@ This will initialize the server and you can access the app in your browser with 
 
 https://react-apex-api.vercel.app
 
+**MAP ROTATION**
+
 ![image](https://github.com/josrojas/ReactApexApi/assets/73319827/f4f06e54-2e2a-45be-891d-60768f4c6810)
 
 ![image](https://github.com/josrojas/ReactApexApi/assets/73319827/db038de1-b991-40e2-85ea-cf7edd5e1ba0)
+
+
+**LEGENDS UPGRADES**
+
+![image](https://github.com/josrojas/ReactApexApi/assets/73319827/41c5e647-a801-414b-8e3b-d8e0bac26d7f)
+
+![image](https://github.com/josrojas/ReactApexApi/assets/73319827/649c5c59-839a-42b0-817b-39fcc3192055)
+
+
