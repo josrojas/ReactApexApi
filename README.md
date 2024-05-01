@@ -39,7 +39,7 @@ https://react-apex-api.vercel.app
 ![image](https://github.com/josrojas/ReactApexApi/assets/73319827/db038de1-b991-40e2-85ea-cf7edd5e1ba0)
 
 
-**LEGENDS UPGRADES**
+**LEGENDS UPGRADES** (This is a draft will change later to be more interactive)
 
 ![image](https://github.com/josrojas/ReactApexApi/assets/73319827/47b9d98e-3e27-4c95-8c0a-0bde1a7294cc)
 
