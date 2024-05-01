@@ -1,4 +1,5 @@
 import React from 'react';
+import RampartUpgrade from '../../../../assets/Rampart.jpg'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -13,19 +14,20 @@ const Rampart = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h3>Level 2 Upgrade Options</h3>
-                <h4>Bandolier</h4>
-                <p>Carry extra ammo per stack.</p>
-                <h4>Ultimate Cooldown</h4>
-                <p>Reduce Ultimate cooldown by 30 seconds.</p>
-                --
-                <h3>Level 3 Upgrade Options</h3>
-                <h4>Amped Reloads</h4>
-                <p>Reload faster with Sheila or when behind Amped Cover.</p>
-                <h4>Ramped Up</h4>
-                <p>Improved Mobile Sheila handling and spin up time by 20%.</p>
+                <img src={RampartUpgrade} alt="Rampart upgrades" width={900} height={500}></img>
             </div>
         </div>
+        /*<h3>Level 2 Upgrade Options</h3>
+              <h4>Bandolier</h4>
+              <p>Carry extra ammo per stack.</p>
+              <h4>Ultimate Cooldown</h4>
+              <p>Reduce Ultimate cooldown by 30 seconds.</p>
+              --
+              <h3>Level 3 Upgrade Options</h3>
+              <h4>Amped Reloads</h4>
+              <p>Reload faster with Sheila or when behind Amped Cover.</p>
+              <h4>Ramped Up</h4>
+              <p>Improved Mobile Sheila handling and spin up time by 20%.</p>*/
     );
 };
 

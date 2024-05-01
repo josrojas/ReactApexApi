@@ -6,7 +6,7 @@ import {
 import { Suspense } from "react";
 
 import Home from "../views/Home";
-import Upgrades from "../views/UpgradeStatus";
+import Upgrades from "../views/Upgrades";
 import Error404 from "../views/Error404";
 import ErrorBoundary from "../components/ErrorBoundary";
 

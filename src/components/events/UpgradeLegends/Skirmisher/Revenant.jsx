@@ -1,4 +1,5 @@
 import React from 'react';
+import LegendUpgrade from '../../../../assets/Rev.jpg'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -13,7 +14,10 @@ const Revenant = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h3>Level 2 Upgrade Options</h3>
+                <img src={LegendUpgrade} alt="Rev upgrades" width={900} height={500}></img>
+            </div>
+        </div>
+        /*<h3>Level 2 Upgrade Options</h3>
                 <h4>Murder Machine</h4>
                 <p>Call out the number of squads within 150 meters after a squad wipe.</p>
                 <h4>Ultimate Cooldown</h4>
@@ -23,9 +27,7 @@ const Revenant = () => {
                 <h4>Tactical Cooldown</h4>
                 <p>Reduce Tactical cooldown by 5 seconds.</p>
                 <h4>Grim Leaper</h4>
-                <p>Shadow Pounce cooldown reset on knock.</p>
-            </div>
-        </div>
+                <p>Shadow Pounce cooldown reset on knock.</p>*/
     );
 };
 

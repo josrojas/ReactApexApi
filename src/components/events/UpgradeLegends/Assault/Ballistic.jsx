@@ -1,4 +1,5 @@
 import React from 'react';
+import LegendUpgrade from '../../../../assets/Ballistic.jpg'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -13,19 +14,20 @@ const Ballistic = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h3>Level 2 Upgrade Options</h3>
-                <h4>Lasting Bullet</h4>
-                <p>Smart Bullet duration is tripled.</p>
-                <h4>Care Package Insight</h4>
-                <p>Reveal the most valuable item in Care Packages.</p>
-                --
-                <h3>Level 3 Upgrade Options</h3>
-                <h4>Extra Bullet</h4>
-                <p>Gain a Smart Bullet charge.</p>
-                <h4>Speedy Whistler</h4>
-                <p>Successful hits with Tactical give a 2s burst of speed.</p>
+                <img src={LegendUpgrade} alt="Ballistic upgrades" width={900} height={500}></img>
             </div>
         </div>
+        /*<h3>Level 2 Upgrade Options</h3>
+              <h4>Lasting Bullet</h4>
+              <p>Smart Bullet duration is tripled.</p>
+              <h4>Care Package Insight</h4>
+              <p>Reveal the most valuable item in Care Packages.</p>
+              --
+              <h3>Level 3 Upgrade Options</h3>
+              <h4>Extra Bullet</h4>
+              <p>Gain a Smart Bullet charge.</p>
+              <h4>Speedy Whistler</h4>
+              <p>Successful hits with Tactical give a 2s burst of speed.</p>*/
     );
 };
 

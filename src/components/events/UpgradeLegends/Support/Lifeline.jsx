@@ -1,4 +1,5 @@
 import React from 'react';
+import LegendUpgrade from '../../../../assets/Lifeline.jpg'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -13,19 +14,20 @@ const Lifeline = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h3>Level 2 Upgrade Options</h3>
-                <h4>Rapid Response</h4>
-                <p>Increase Revive speed by 20%.</p>
-                <h4>Tactical Cooldown++</h4>
-                <p>Tactical Cooldown reduced by 25s. (You always have DOC)</p>
-                --
-                <h3>Level 3 Upgrade Options</h3>
-                <h4>Gold-Plated</h4>
-                <p>Next Package spawns with Golden Gear.</p>
-                <h4>Last Stand</h4>
-                <p>Gain a Self-Revive.</p>
+                <img src={LegendUpgrade} alt="Lifeline upgrades" width={900} height={500}></img>
             </div>
         </div>
+        /*<h3>Level 2 Upgrade Options</h3>
+          <h4>Rapid Response</h4>
+          <p>Increase Revive speed by 20%.</p>
+          <h4>Tactical Cooldown++</h4>
+          <p>Tactical Cooldown reduced by 25s. (You always have DOC)</p>
+          --
+          <h3>Level 3 Upgrade Options</h3>
+          <h4>Gold-Plated</h4>
+          <p>Next Package spawns with Golden Gear.</p>
+          <h4>Last Stand</h4>
+          <p>Gain a Self-Revive.</p>*/
     );
 };
 

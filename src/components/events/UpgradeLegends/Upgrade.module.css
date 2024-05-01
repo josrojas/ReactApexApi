@@ -3,9 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    max-width: 1080px;
-    padding-top: 50px;
-    margin-left: 100px;
+    width: 1300px;
+    height: 600px;
+    padding-top: 70px;
+    margin-top: -50px;
+    margin-left: 80px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -15,20 +17,20 @@
     flex-direction: column;
     align-items: left;
     width: 100%;
-    margin-top: 300px;
+    margin-top: 270px;
     color: white;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .UpgradeContainer {
-    display: flex;
+    display: list-item;
     flex-direction: column;
     align-items: center;
     width: 100%;
     color: white;
-    margin-left: 500px;
-    margin-top: -600px;
-    padding: 20px;    
+    margin-left: 300px;
+    margin-top: -567px;
+    padding: 40px;    
 }
 
 h2{

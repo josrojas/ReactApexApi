@@ -1,4 +1,5 @@
 import React from 'react';
+import LegendUpgrade from '../../../../assets/Ash.jpg'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -13,19 +14,20 @@ const Ash = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h3>Level 2 Upgrade Options</h3>
-                <h4>Murder Machine</h4>
-                <p>Call out the number of squads within 150 meters after a squad wipe.</p>
-                <h4>One Minute to Live</h4>
-                <p>	Using Passive tracks enemy position on map for 60 seconds.</p>
-                --
-                <h3>Level 3 Upgrade Options</h3>
-                <h4>Greedy Snare</h4>
-                <p>Arc Snare remains in play for 24 seconds and can catch multiple enemies.</p>
-                <h4>Twin Snares</h4>
-                <p>Gain an Arc Snare charge.</p>
+                <img src={LegendUpgrade} alt="Ash upgrades" width={900} height={500}></img>
             </div>
         </div>
+            /*<h3>Level 2 Upgrade Options</h3>
+            <h4>Murder Machine</h4>
+            <p>Call out the number of squads within 150 meters after a squad wipe.</p>
+            <h4>One Minute to Live</h4>
+            <p>	Using Passive tracks enemy position on map for 60 seconds.</p>
+            --
+            <h3>Level 3 Upgrade Options</h3>
+            <h4>Greedy Snare</h4>
+            <p>Arc Snare remains in play for 24 seconds and can catch multiple enemies.</p>
+            <h4>Twin Snares</h4>
+            <p>Gain an Arc Snare charge.</p>*/
     );
 };
 

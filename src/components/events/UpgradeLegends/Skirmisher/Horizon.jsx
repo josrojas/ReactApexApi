@@ -1,4 +1,5 @@
 import React from 'react';
+import LegendUpgrade from '../../../../assets/Horizon.jpg'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -13,7 +14,10 @@ const Horizon = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h3>Level 2 Upgrade Options</h3>
+                <img src={LegendUpgrade} alt="Horizon upgrades" width={900} height={500}></img>
+            </div>
+        </div>
+        /*<h3>Level 2 Upgrade Options</h3>
                 <h4>Battery Collection</h4>
                 <p>Shield Battery count shown above Death Boxes.</p>
                 <h4>Big Bang</h4>
@@ -23,9 +27,7 @@ const Horizon = () => {
                 <h4>Tactical Cooldown</h4>
                 <p>Reduce Tactical cooldown by 5 seconds.</p>
                 <h4>Ultimate Cooldown</h4>
-                <p>Reduce Ultimate cooldown by 30 seconds.</p>
-            </div>
-        </div>
+                <p>Reduce Ultimate cooldown by 30 seconds.</p>*/
     );
 };
 

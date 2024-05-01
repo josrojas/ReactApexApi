@@ -1,20 +1,20 @@
 import React from 'react';
-import LegendUpgrade from '../../../../assets/Wraith.jpg'
+import WraithUpgrade from '../../../../assets/Wraith.jpg'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
-const Wraith = () => {
+const Alter = () => {
 
     return (
         //Show legends upgrades
         <div className={styles.Container}>
             <div className={styles.CharacterContainer}>
-                <h2>WRAITH</h2>
-                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/wraith.jpg" alt="Wraith image"
+                <h2>ALTER</h2>
+                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/alter.jpg" alt="Alter incoming"
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <img src={LegendUpgrade} alt="Wraith upgrades" width={900} height={500}></img>
+                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/upheaval/apex-seasonspage-top-sectionbg-xl.jpg.adapt.1920w.jpg" alt="Alter upgrades" width={900} height={500}></img>
             </div>
         </div>
         /*<h3>Level 2 Upgrade Options</h3>
@@ -31,4 +31,4 @@ const Wraith = () => {
     );
 };
 
-export default Wraith;
+export default Alter;

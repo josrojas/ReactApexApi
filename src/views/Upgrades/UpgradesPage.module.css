@@ -1,0 +1,11 @@
+:root{
+    --swiper-navigation-size: 34px;
+}
+
+.homeLink{
+    font-size: 18px;
+}
+
+h1{
+    margin-top: 70px;
+}

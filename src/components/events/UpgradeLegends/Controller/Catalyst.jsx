@@ -1,4 +1,5 @@
 import React from 'react';
+import CatalystUpgrade from '../../../../assets/Catalyst.jpg'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -13,19 +14,20 @@ const Catalyst = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h3>Level 2 Upgrade Options</h3>
-                <h4>Long Cast</h4>
-                <p>Increase Spike throw range by 40%.</p>
-                <h4>Sister Spikes</h4>
-                <p>Increase max number of active Spikes by one.</p>
-                --
-                <h3>Level 3 Upgrade Options</h3>
-                <h4>Long Veil</h4>
-                <p>Increase Ultimate length by 15 meters.</p>
-                <h4>Resilient Veil</h4>
-                <p>Increase Ultimate lifetime by 5 seconds.</p>
+                <img src={CatalystUpgrade} alt="Catalyst upgrades" width={900} height={500}></img>
             </div>
         </div>
+        /*<h3>Level 2 Upgrade Options</h3>
+           <h4>Long Cast</h4>
+           <p>Increase Spike throw range by 40%.</p>
+           <h4>Sister Spikes</h4>
+           <p>Increase max number of active Spikes by one.</p>
+           --
+           <h3>Level 3 Upgrade Options</h3>
+           <h4>Long Veil</h4>
+           <p>Increase Ultimate length by 15 meters.</p>
+           <h4>Resilient Veil</h4>
+           <p>Increase Ultimate lifetime by 5 seconds.</p>*/
     );
 };
 

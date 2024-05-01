@@ -1,4 +1,4 @@
-import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
+import { Link, Outlet} from "react-router-dom";
 import { useState, useRef, useCallback, useMemo } from 'react';
 
 import Navbar from '../../components/Navbar';
@@ -6,9 +6,12 @@ import Events from '../../components/events';
 import useEventResults from '../../state/event-results';
 import { Tabs } from "../../components/events/Tabs/Tabs";
 
-import styles from "./UpgradeStatus.module.css";
+import styles from "./UpgradesPage.module.css";
 import styled from "styled-components";
 
+const Container = styled.main`
+    height: 100vh;
+`
 const Upgrades = () => {
 
     const { data, isLoading, error, fetchEvents } = useEventResults();
@@ -42,21 +45,19 @@ const Upgrades = () => {
                 <>
                     <Link to="/" className={styles.homeLink}>Home</Link>
                     <div className={styles.TabsContainer}></div>
-                    
+
                     <Outlet />
 
                     <Events searchTerm={searchTerm} events={events} />
                     <Container>
-                    <h1>Legends Upgrades</h1>
+                        <h1>Legends Upgrades</h1>
                         <Tabs />
-                    </Container>       
+                    </Container>
                 </>
             </div>
         );
     };
-    const Container = styled.main`
-    height: 100vh;
-`
+
     //Loading or show events or error
     return (
         <>

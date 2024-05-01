@@ -1,4 +1,5 @@
 import React from 'react';
+import LegendUpgrade from '../../../../assets/Mirage.jpg'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -13,7 +14,10 @@ const Mirage = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h3>Level 2 Upgrade Options</h3>
+                <img src={LegendUpgrade} alt="Mirage upgrades" width={900} height={500}></img>
+            </div>
+        </div>
+        /*<h3>Level 2 Upgrade Options</h3>
                 <h4>Miracle Worker</h4>
                 <p>Allies are revived with health regen up to 75 HP.</p>
                 <h4>More Me</h4>
@@ -23,9 +27,7 @@ const Mirage = () => {
                 <h4>Bamboozle Bonus</h4>
                 <p>Refresh Tactical on successful Bamboozles.</p>
                 <h4>Me Two</h4>
-                <p>Gain a Decoy charge (can have both active at once).</p>
-            </div>
-        </div>
+                <p>Gain a Decoy charge (can have both active at once).</p>*/
     );
 };
 

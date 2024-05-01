@@ -20,14 +20,14 @@ export default () => {
   return (
     <Swiper
     // install Swiper modules
+      className={styles.swiper}
       modules={[Navigation, Pagination, EffectFlip]}
       spaceBetween={1}
       slidesPerView={1}
       effect={'flip'}
       pagination={true}
       navigation={true}
-      grabCursor={true}
-      className={styles.swiper}
+      grabCursor={true}      
     >
       <SwiperSlide><Ash /></SwiperSlide>
       <SwiperSlide><Ballistic /></SwiperSlide>

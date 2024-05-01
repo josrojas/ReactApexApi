@@ -10,13 +10,13 @@ import 'swiper/css/effect-flip';
 
 import styles from './slide.module.css';
 
+import Alter from '../Skirmisher/Alter';
 import Horizon from '../Skirmisher/Horizon';
 import Octane from '../Skirmisher/Octane';
 import Pathfinder from '../Skirmisher/Pathfinder';
 import Revenant from '../Skirmisher/Revenant';
 import Valkyrie from '../Skirmisher/Valkyrie';
 import Wraith from '../Skirmisher/Wraith';
-
 
 export default () => {
   return (
@@ -31,6 +31,7 @@ export default () => {
       grabCursor={true}
       className={styles.swiper}
     >
+      <SwiperSlide><Alter /></SwiperSlide>
       <SwiperSlide><Horizon /></SwiperSlide>
       <SwiperSlide><Octane /></SwiperSlide>
       <SwiperSlide><Pathfinder /></SwiperSlide>

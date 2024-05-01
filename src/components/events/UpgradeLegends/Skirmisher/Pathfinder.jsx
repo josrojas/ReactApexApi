@@ -1,4 +1,5 @@
 import React from 'react';
+import LegendUpgrade from '../../../../assets/Path.jpg'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -13,7 +14,10 @@ const Pathfinder = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <h3>Level 2 Upgrade Options</h3>
+                <img src={LegendUpgrade} alt="Path upgrades" width={900} height={500}></img>
+            </div>
+        </div>
+        /*<h3>Level 2 Upgrade Options</h3>
                 <h4>Field Research</h4>
                 <p>Gain access to Survey Beacons.</p>
                 <h4>Ringmaster</h4>
@@ -23,9 +27,7 @@ const Pathfinder = () => {
                 <h4>Down and Away</h4>
                 <p>Grapple cooldown reset on knock.</p>
                 <h4>Zipline Zen</h4>
-                <p>Take 50% less damage while riding energized Ziplines.</p>
-            </div>
-        </div>
+                <p>Take 50% less damage while riding energized Ziplines.</p>*/
     );
 };
 
