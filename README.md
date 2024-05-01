@@ -41,8 +41,9 @@ https://react-apex-api.vercel.app
 
 **LEGENDS UPGRADES**
 
-![image](https://github.com/josrojas/ReactApexApi/assets/73319827/41c5e647-a801-414b-8e3b-d8e0bac26d7f)
+![image](https://github.com/josrojas/ReactApexApi/assets/73319827/47b9d98e-3e27-4c95-8c0a-0bde1a7294cc)
 
-![image](https://github.com/josrojas/ReactApexApi/assets/73319827/649c5c59-839a-42b0-817b-39fcc3192055)
+![image](https://github.com/josrojas/ReactApexApi/assets/73319827/f953dcd5-50f7-4e29-b511-61d91924dd34)
+
 
 
