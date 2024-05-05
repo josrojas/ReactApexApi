@@ -38,6 +38,8 @@ https://react-apex-api.vercel.app
 
 ![image](https://github.com/josrojas/ReactApexApi/assets/73319827/db038de1-b991-40e2-85ea-cf7edd5e1ba0)
 
+Data from `apexlegendsstatus.com`
+<br><br><br>
 
 **LEGENDS UPGRADES** (This is a draft will change later to be more interactive)
 
@@ -45,5 +47,5 @@ https://react-apex-api.vercel.app
 
 ![image](https://github.com/josrojas/ReactApexApi/assets/73319827/f953dcd5-50f7-4e29-b511-61d91924dd34)
 
-
+Data from `ea.com/games/apex-legends`
 
