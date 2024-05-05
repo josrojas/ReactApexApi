@@ -1,33 +1,28 @@
 import React from 'react';
-import WraithUpgrade from '../../../../assets/Wraith.jpg'
+import LegendUpgrade from '../../../../assets/Alter.png'
 
-import styles from '../../UpgradeLegends/Upgrade.module.css';
+import styles from '../../UpgradeLegends/Skirmisher/alter.module.css';
 
 const Alter = () => {
 
     return (
         //Show legends upgrades
         <div className={styles.Container}>
-            <div className={styles.CharacterContainer}>
-                <h2>ALTER</h2>
-                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/alter.jpg" alt="Alter incoming"
-                    width={300} height={500}></img>
-            </div>
             <div className={styles.UpgradeContainer}>
-                <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/upheaval/apex-seasonspage-top-sectionbg-xl.jpg.adapt.1920w.jpg" alt="Alter upgrades" width={900} height={500}></img>
+                <img src={LegendUpgrade} alt="Alter upgrades" width={1100} height={600}></img>
             </div>
         </div>
         /*<h3>Level 2 Upgrade Options</h3>
-                <h4>Sixth Sense</h4>
-                <p>Passive warns when nearby squad count increases.</p>
-                <h4>Ultimate Cooldown+</h4>
-                <p>Reduce Ultimate cooldown by 60 seconds.</p>
+                <h4>Frequent Nexus</h4>
+                <p>Ultimate cooldown reduce by 30s.</p>
+                <h4>Seeing with portals</h4>
+                <p>Highlight persist after tac phase. See enemy health bars after exiting portal.</p>
                 --
                 <h3>Level 3 Upgrade Options</h3>
-                <h4>Fast Phase</h4>
-                <p>Reduce Tactical wind-up by 20%.</p>
-                <h4>Tactical Cooldown</h4>
-                <p>Reduce Tactical cooldown by 5 seconds.</p>*/
+                <h4>Unending Nexus</h4>
+                <p>Void Nexus no longer times out.</p>
+                <h4>Tactical Cooldown+</h4>
+                <p>Reduce Tactical cooldown by 10 seconds.</p>*/
     );
 };
 
