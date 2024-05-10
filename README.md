@@ -32,7 +32,7 @@ This will initialize the server and you can access the app in your browser with 
 
 https://react-apex-api.vercel.app
 
-**MAP ROTATION**
+**CURRENT MAP ROTATION**
 
 ![image](https://github.com/josrojas/ReactApexApi/assets/73319827/f4f06e54-2e2a-45be-891d-60768f4c6810)
 
@@ -41,7 +41,9 @@ https://react-apex-api.vercel.app
 Data from `apexlegendsstatus.com`
 <br><br><br>
 
-**LEGENDS UPGRADES** (This is a draft will change later to be more interactive)
+**LEGENDS UPGRADES** 
+
+*Updated S21 Upheaval*  *(This is a draft will change later to be more interactive)
 
 ![image](https://github.com/josrojas/ReactApexApi/assets/73319827/47b9d98e-3e27-4c95-8c0a-0bde1a7294cc)
 
