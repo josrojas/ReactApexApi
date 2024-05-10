@@ -1,5 +1,5 @@
 import React from 'react';
-import LegendUpgrade from '../../../../assets/Ballistic.jpg'
+import LegendUpgrade from '../../../../assets/Ballistic.png'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -20,8 +20,8 @@ const Ballistic = () => {
         /*<h3>Level 2 Upgrade Options</h3>
               <h4>Lasting Bullet</h4>
               <p>Smart Bullet duration is tripled.</p>
-              <h4>Care Package Insight</h4>
-              <p>Reveal the most valuable item in Care Packages.</p>
+              <h4>Sling-Shot</h4>
+              <p>Sling weapon levels up with each upgrade selection.</p>
               --
               <h3>Level 3 Upgrade Options</h3>
               <h4>Extra Bullet</h4>

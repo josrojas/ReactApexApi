@@ -21,7 +21,7 @@ const MapRotation = () => {
     const [assetLtm, setAssetLtm] = useState('');
 
     useEffect(() => {
-       
+
         fetch(`https://api.mozambiquehe.re/maprotation?auth=${import.meta.env.VITE_APEX_API_KEY}&version=2`)
             .then(res => res.json())
             .then(data => {
@@ -78,27 +78,28 @@ const MapRotation = () => {
         //Consume data from the API
         <div className={styles.mapContainer}>
             <h1>Current Apex Legends map rotation</h1>
-
-            <div className={styles.imgPb}><img src={assetPb} alt="Maps" /></div>
-            <div className={styles.container}>
-                <h2>Battle Royale </h2>
-                <div className={styles.currentMap}>{`Current map: ${currentMap}`}</div>
-                <div className={styles.remainingTimer}>{`Remaining Time: ${remainingTimer}`}</div>
-                <div className={styles.nextMap}>{`Next map: ${nextMap}`}</div>
-            </div>
-            <div className={styles.imgRk}><img src={assetRk} alt="Maps" /></div>
-            <div className={styles.container}>
-                <h2>Ranked</h2>
-                <div className={styles.currentRankMap}>{`Current map: ${currentRankMap}`}</div>
-                <div className={styles.remainingTimerRk}>{`Remaining Time: ${remainingTimerRk}`}</div>
-                <div className={styles.nextRankMap}>{`Next map: ${nextRankMap}`}</div>
-            </div>
-            <div className={styles.imgLtm}><img src={assetLtm} alt="Maps" /></div>
-            <div className={styles.container}>
-                <h2>Mixtape</h2>
-                <div className={styles.currentLtm}>{`Current LTM: ${currentLtm}`}</div>
-                <div className={styles.remainingTimerLtm}>{`Remaining Time: ${remainingTimerLtm}`}</div>
-                <div className={styles.nextLtm}>{`Next LTM: ${nextLtm}`}</div>
+            <div className={styles.imgContainer}>
+                <div className={styles.imgAsset}><img src={assetPb} alt="Maps" /></div>
+                <div className={styles.container}>
+                    <h2>Battle Royale </h2>
+                    <div className={styles.currentMap}>{`Current map: ${currentMap}`}</div>
+                    <div className={styles.remainingTimer}>{`Remaining Time: ${remainingTimer}`}</div>
+                    <div className={styles.nextMap}>{`Next map: ${nextMap}`}</div>
+                </div>
+                <div className={styles.imgAsset}><img src={assetRk} alt="Maps" /></div>
+                <div className={styles.container}>
+                    <h2>Ranked</h2>
+                    <div className={styles.currentRankMap}>{`Current map: ${currentRankMap}`}</div>
+                    <div className={styles.remainingTimerRk}>{`Remaining Time: ${remainingTimerRk}`}</div>
+                    <div className={styles.nextRankMap}>{`Next map: ${nextRankMap}`}</div>
+                </div>
+                <div className={styles.imgAsset}><img src={assetLtm} alt="Maps" /></div>
+                <div className={styles.container}>
+                    <h2>Mixtape</h2>
+                    <div className={styles.currentLtm}>{`Current LTM: ${currentLtm}`}</div>
+                    <div className={styles.remainingTimerLtm}>{`Remaining Time: ${remainingTimerLtm}`}</div>
+                    <div className={styles.nextLtm}>{`Next LTM: ${nextLtm}`}</div>
+                </div>
             </div>
             <h5>{`Data from apexlegendsstatus.com`}</h5>
         </div>

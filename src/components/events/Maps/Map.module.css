@@ -28,39 +28,27 @@ h2 {
     margin-top: -300px;
 }
 
+.imgContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    
+    margin-top: -140px;    
 }
 
-.imgPb{
+.imgAsset{
     display: flex;
     flex-direction: column;
     height: 540px;
     width: 1280px;
-    margin-top: 50px;
-}
-
-.imgRk{
-    display: flex;
-    flex-direction: column;
-    height: 540px;
-    width: 1280px;
-    margin-top: 0px;
    
 }
-
-.imgLtm{
-    display: flex;
-    flex-direction: column;
-    height: 540px;
-    width: 1280px;
-    margin-top: 0px;
-}
-
 
 .currentMap,
 .nextMap,

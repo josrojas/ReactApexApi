@@ -1,5 +1,5 @@
 import React from 'react';
-import LegendUpgrade from '../../../../assets/Fuse.jpg'
+import LegendUpgrade from '../../../../assets/Fuse.png'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -18,10 +18,10 @@ const Fuse = () => {
             </div>
         </div>
         /*<h3>Level 2 Upgrade Options</h3>
-                <h4>Big Bang</h4>
-                <p>See nearby ordnance through walls and on Death Boxes.</p>
+                <h4>Ring Master</h4>
+                <p>Gain access to Ring Consoles.</p>
                 <h4>Scar Tissue</h4>
-                <p>Take 50% less damage and no slow effects from The Motherlode.</p>
+                <p>Take 20 damage and ignore slow effects from The Motherlode.</p>
                 --
                 <h3>Level 3 Upgrade Options</h3>
                 <h4>Knuckle Hustler</h4>

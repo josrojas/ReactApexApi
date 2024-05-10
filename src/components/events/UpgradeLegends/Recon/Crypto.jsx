@@ -1,5 +1,5 @@
 import React from 'react';
-import LegendUpgrade from '../../../../assets/Crypto.jpg'
+import LegendUpgrade from '../../../../assets/Crypto.png'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -18,16 +18,16 @@ const Crypto = () => {
             </div>
         </div>
         /*<h3>Level 2 Upgrade Options</h3>
-                <h4>Tactical Cooldown+</h4>
-                <p>Reduce Tactical cooldown by 10 seconds.</p>
-                <h4>Ultimate Cooldown</h4>
-                <p>Reduce Ultimate cooldown by 30 seconds.</p>
+                <h4>Network Expansion</h4>
+                <p>Passive & Ult range increased by 25%.</p>
+                <h4>Quick Transmission</h4>
+                <p>Improved drone handling.</p>
                 --
                 <h3>Level 3 Upgrade Options</h3>
-                <h4>Network Expansion</h4>
-                <p>Increase Neurolink and EMP range by 25%.</p>
-                <h4>Network Traffic</h4>
-                <p>Deploying the Drone calls out squads in the area.</p>*/
+                <h4>Hackathon</h4>
+                <p>Double drone recharge rate; gain speed boost when it explodes.</p>
+                <h4>Satellite Imagery</h4>
+                <p>Drone scan persists for 1.5 seconds.</p>*/
     );
 };
 

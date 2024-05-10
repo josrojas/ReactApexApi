@@ -1,5 +1,5 @@
 import React from 'react';
-import LegendUpgrade from '../../../../assets/Octane.jpg'
+import LegendUpgrade from '../../../../assets/Octane.png'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -18,16 +18,16 @@ const Octane = () => {
             </div>
         </div>
         /*<h3>Level 2 Upgrade Options</h3>
+        <h4>Mad Hops</h4>
+        <p>Gain an extra Launch Pad charge.</p>
         <h4>Thick Skin</h4>
-        <p>Take 25% less Stim damage.</p>
-        <h4>Wreckless</h4>
-        <p>Take 50% less explosive damage.</p>
+        <p>Take 5 less Stim damage.</p>
         --
         <h3>Level 3 Upgrade Options</h3>
         <h4>Airborne Agility</h4>
-        <p>Change directions with the Launch Pad double-jump.</p>
-        <h4>Mad Hops</h4>
-        <p>Gain an extra Launch Pad charge.</p>*/
+        <p>Change directions with Launch Pad double-jump.</p>
+        <h4>Thick Skin</h4>
+        <p>Take 5 less Stim damage.</p>*/
     );
 };
 
