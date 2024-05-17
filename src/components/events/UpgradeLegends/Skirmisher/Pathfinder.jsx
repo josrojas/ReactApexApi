@@ -1,7 +1,59 @@
-import React from 'react';
-import LegendUpgrade from '../../../../assets/Path.jpg'
+import React, { useState } from 'react';
+import LegendUpgrade from '../../../../assets/Path.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
+
+//Apply sensitive zones 
+function SensitiveZone({ children, text, top, left }) {
+    const [isShown, setIsShown] = useState(false);
+
+    return (
+        <div
+            //Move mouse to sensitive zone and show description
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            className={styles.circle}
+        >
+            {children}
+            {isShown && (
+                //Tooltip to move the text box to certain directions 
+                <div className={styles.tooltip}
+                    style={{ top: `${top}px`, left: `${left}px` }}
+                    //Add h4 and p text to edit in css
+                    dangerouslySetInnerHTML={{ __html: text }}>
+                </div>
+            )}
+        </div>
+    );
+}
+
+//Function to add sensitive zones to the image and show upgrades description 
+function Upgrade() {
+    return (
+        <div className={styles.SensitiveZone}>
+            <div className={styles.Zone1}>
+                <SensitiveZone text="<h4>Field Research</h4>
+                <p>Gain access to Survey Beacons.</p>" top={-10} left={-470}>
+                </SensitiveZone>
+            </div>
+            <div className={styles.Zone2}>
+                <SensitiveZone text="<h4>Ringmaster</h4>
+                <p>Gain access to Ring Consoles.</p>" top={0} left={90}>
+                </SensitiveZone>
+            </div>
+            <div className={styles.Zone3}>
+                <SensitiveZone text="<h5>Down and Away</h5>
+                <p>Grapple cooldown reset on knock.</p>" top={100} left={-470}>
+                </SensitiveZone>
+            </div>
+            <div className={styles.Zone4}>
+                <SensitiveZone text="<h5>Zipline Zen</h5>
+                <p>Take 50% less damage while riding energized Ziplines.</p>" top={100} left={90}>
+                </SensitiveZone>
+            </div>
+        </div >
+    );
+}
 
 const Pathfinder = () => {
 
@@ -15,19 +67,9 @@ const Pathfinder = () => {
             </div>
             <div className={styles.UpgradeContainer}>
                 <img src={LegendUpgrade} alt="Path upgrades" width={900} height={500}></img>
+                <Upgrade />
             </div>
         </div>
-        /*<h3>Level 2 Upgrade Options</h3>
-                <h4>Field Research</h4>
-                <p>Gain access to Survey Beacons.</p>
-                <h4>Ringmaster</h4>
-                <p>Gain access to Ring Consoles.</p>
-                --
-                <h3>Level 3 Upgrade Options</h3>
-                <h4>Down and Away</h4>
-                <p>Grapple cooldown reset on knock.</p>
-                <h4>Zipline Zen</h4>
-                <p>Take 50% less damage while riding energized Ziplines.</p>*/
     );
 };
 

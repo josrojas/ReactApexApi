@@ -1,7 +1,55 @@
-import React from 'react';
-import LegendUpgrade from '../../../../assets/Ballistic.png'
+import React, { useState } from 'react';
+import LegendUpgrade from '../../../../assets/Ballistic.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
+
+function SensitiveZone({ children, text, top, left }) {
+    const [isShown, setIsShown] = useState(false);
+
+    return (
+        <div
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            onClick={() => alert(text)}
+            className={styles.circle}
+        >
+            {children}
+            {isShown && (
+                <div className={styles.tooltip}
+                    style={{ top: `${top}px`, left: `${left}px` }}
+                    dangerouslySetInnerHTML={{ __html: text }}>
+                </div>
+            )}
+        </div>
+    );
+}
+
+function Upgrade() {
+    return (
+        <div className={styles.SensitiveZone}>
+            <div className={styles.Zone1}>
+                <SensitiveZone text="<h4>Lasting Bullet</h4>
+              <p>Smart Bullet duration is tripled.</p>" top={-10} left={-470}>
+                </SensitiveZone>
+            </div>
+            <div className={styles.Zone2}>
+                <SensitiveZone text="<h4>Sling-Shot</h4>
+              <p>Sling weapon levels up with each upgrade selection.</p>" top={0} left={90}>
+                </SensitiveZone>
+            </div>
+            <div className={styles.Zone3}>
+                <SensitiveZone text="<h5>Extra Bullet</h5>
+              <p>Gain a Smart Bullet charge.</p>" top={100} left={-470}>
+                </SensitiveZone>
+            </div>
+            <div className={styles.Zone4}>
+                <SensitiveZone text="<h5>Speedy Whistler</h5>
+              <p>Successful hits with Tactical give a 2s burst of speed.</p>" top={100} left={90}>
+                </SensitiveZone>
+            </div>
+        </div >
+    );
+}
 
 const Ballistic = () => {
 
@@ -15,19 +63,9 @@ const Ballistic = () => {
             </div>
             <div className={styles.UpgradeContainer}>
                 <img src={LegendUpgrade} alt="Ballistic upgrades" width={900} height={500}></img>
+                <Upgrade />
             </div>
         </div>
-        /*<h3>Level 2 Upgrade Options</h3>
-              <h4>Lasting Bullet</h4>
-              <p>Smart Bullet duration is tripled.</p>
-              <h4>Sling-Shot</h4>
-              <p>Sling weapon levels up with each upgrade selection.</p>
-              --
-              <h3>Level 3 Upgrade Options</h3>
-              <h4>Extra Bullet</h4>
-              <p>Gain a Smart Bullet charge.</p>
-              <h4>Speedy Whistler</h4>
-              <p>Successful hits with Tactical give a 2s burst of speed.</p>*/
     );
 };
 
