@@ -3,49 +3,71 @@ import LegendUpgrade from '../../../../assets/Bangalore.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
-function SensitiveZone({ children, text, top, left }) {
+// Show description in tooltip
+function TooltipContent({ title, title2, description }) {
+    return (
+        <div>
+            <h4>{title}</h4>
+            <h5>{title2}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+// Component SensitiveZone
+function SensitiveZone({ title, title2, description, top, left }) {
     const [isShown, setIsShown] = useState(false);
 
     return (
         <div
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}
-            onClick={() => alert(text)}
-            className={styles.circle}
+            className={styles.square}
         >
-            {children}
             {isShown && (
-                <div className={styles.tooltip}
-                    style={{ top: `${top}px`, left: `${left}px` }}
-                    dangerouslySetInnerHTML={{ __html: text }}>
+                <div className={styles.tooltip} style={{ top: `${top}px`, left: `${left}px` }}>
+                    <TooltipContent title={title} title2={title2} description={description} />
                 </div>
             )}
         </div>
     );
 }
 
+//Function to add sensitive zones to the image and show upgrades description 
 function Upgrade() {
     return (
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
-                <SensitiveZone text="<h4>Tactical Cooldown</h4>
-               <p>Reduces Tactical cooldown by 5s.</p>" top={-10} left={-470}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title="Tactical Cooldown"
+                    description="Reduces Tactical cooldown by 5s."
+                    top={-10}
+                    left={-460}
+                />
             </div>
             <div className={styles.Zone2}>
-                <SensitiveZone text="<h4>Ultimate Cooldown+</h4>
-               <p>Reduce Ultimate cooldown by 60 seconds.</p>" top={0} left={90}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title="Ultimate Cooldown+"
+                    description="Reduce Ultimate cooldown by 60 seconds."
+                    top={-10}
+                    left={100}
+                />
             </div>
             <div className={styles.Zone3}>
-                <SensitiveZone text="<h5>Cover Me</h5>
-               <p>Point you in the right direction enemies who trigger Double Time.</p>" top={100} left={-470}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title2="Cover Me"
+                    description="Point you in the right direction enemies who trigger Double Time."
+                    top={100}
+                    left={-460}
+                />
             </div>
             <div className={styles.Zone4}>
-                <SensitiveZone text="<h5>Refuge</h5>
-               <p>Regenerate 3.5 HP/s while inside Smoke.</p>" top={100} left={90}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title2="Refuge"
+                    description="Regenerate 3.5 HP/s while inside Smoke."
+                    top={100}
+                    left={100}
+                />
             </div>
         </div >
     );

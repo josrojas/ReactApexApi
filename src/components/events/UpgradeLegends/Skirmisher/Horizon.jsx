@@ -3,24 +3,30 @@ import LegendUpgrade from '../../../../assets/Horizon.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
-//Apply sensitive zones 
-function SensitiveZone({ children, text, top, left }) {
+// Show description in tooltip
+function TooltipContent({ title, title2, description }) {
+    return (
+        <div>
+            <h4>{title}</h4>
+            <h5>{title2}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+// Component SensitiveZone
+function SensitiveZone({ title, title2, description, top, left }) {
     const [isShown, setIsShown] = useState(false);
 
     return (
         <div
-            //Move mouse to sensitive zone and show description
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}
-            className={styles.circle}
+            className={styles.square}
         >
-            {children}
             {isShown && (
-                //Tooltip to move the text box to certain directions 
-                <div className={styles.tooltip}
-                    style={{ top: `${top}px`, left: `${left}px` }}
-                    //Add h4 and p text to edit in css
-                    dangerouslySetInnerHTML={{ __html: text }}>
+                <div className={styles.tooltip} style={{ top: `${top}px`, left: `${left}px` }}>
+                    <TooltipContent title={title} title2={title2} description={description} />
                 </div>
             )}
         </div>
@@ -32,24 +38,36 @@ function Upgrade() {
     return (
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
-                <SensitiveZone text="<h4>Battery Collection</h4>
-                <p>Shield Battery count shown above Death Boxes.</p>" top={-10} left={-470}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title="Battery Collection"
+                    description="Shield Battery count shown above Death Boxes."
+                    top={-10}
+                    left={-460}
+                />
             </div>
             <div className={styles.Zone2}>
-                <SensitiveZone text="<h4>Big Bang</h4>
-                <p>See nearby ordnance through walls and on Death Boxes.</p>" top={0} left={90}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title="Big Bang"
+                    description="See nearby ordnance through walls and on Death Boxes."
+                    top={-10}
+                    left={100}
+                />
             </div>
             <div className={styles.Zone3}>
-                <SensitiveZone text="<h5>Tactical Cooldown</h5>
-                <p>Reduce Tactical cooldown by 5 seconds.</p>" top={100} left={-470}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title2="Tactical Cooldown"
+                    description="Reduce Tactical cooldown by 5 seconds."
+                    top={100}
+                    left={-460}
+                />
             </div>
             <div className={styles.Zone4}>
-                <SensitiveZone text="<h5>Ultimate Cooldown</h5>
-                <p>Reduce Ultimate cooldown by 30 seconds.</p>" top={100} left={90}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title2="Ultimate Cooldown"
+                    description="Reduce Ultimate cooldown by 30 seconds."
+                    top={100}
+                    left={100}
+                />
             </div>
         </div >
     );

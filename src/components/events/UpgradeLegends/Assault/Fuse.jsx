@@ -3,24 +3,30 @@ import LegendUpgrade from '../../../../assets/Fuse.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
-//Apply sensitive zones 
-function SensitiveZone({ children, text, top, left }) {
+// Show description in tooltip
+function TooltipContent({ title, title2, description }) {
+    return (
+        <div>
+            <h4>{title}</h4>
+            <h5>{title2}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+// Component SensitiveZone
+function SensitiveZone({ title, title2, description, top, left }) {
     const [isShown, setIsShown] = useState(false);
 
     return (
         <div
-            //Move mouse to sensitive zone and show description
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}
-            className={styles.circle}
+            className={styles.square}
         >
-            {children}
             {isShown && (
-                //Tooltip to move the text box to certain directions 
-                <div className={styles.tooltip}
-                    style={{ top: `${top}px`, left: `${left}px` }}
-                    //Add h4 and p text to edit in css
-                    dangerouslySetInnerHTML={{ __html: text }}>
+                <div className={styles.tooltip} style={{ top: `${top}px`, left: `${left}px` }}>
+                    <TooltipContent title={title} title2={title2} description={description} />
                 </div>
             )}
         </div>
@@ -32,24 +38,36 @@ function Upgrade() {
     return (
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
-                <SensitiveZone text="<h4>Ring Master</h4>
-                <p>Gain access to Ring Consoles.</p>" top={-10} left={-470}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title="Ring Master"
+                    description="Gain access to Ring Consoles."
+                    top={-10}
+                    left={-460}
+                />
             </div>
             <div className={styles.Zone2}>
-                <SensitiveZone text="<h4>Scar Tissue</h4>
-                <p>Take 20 damage and ignore slow effects from The Motherlode.</p>" top={0} left={90}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title="Scar Tissue"
+                    description="Take 20 damage and ignore slow effects from The Motherlode."
+                    top={-10}
+                    left={100}
+                />
             </div>
             <div className={styles.Zone3}>
-                <SensitiveZone text="<h5>Knuckle Hustler</h5>
-                <p>Short speed boost on successful Knuckle Cluster hit.</p>" top={100} left={-470}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title2="Knuckle Hustler"
+                    description="Short speed boost on successful Knuckle Cluster hit."
+                    top={100}
+                    left={-460}
+                />
             </div>
             <div className={styles.Zone4}>
-                <SensitiveZone text="<h5>Wreckless</h5>
-                <p>Take 50% less explosive damage.</p>" top={100} left={90}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title2="Wreckless"
+                    description="Take 50% less explosive damage."
+                    top={100}
+                    left={100}
+                />
             </div>
         </div >
     );

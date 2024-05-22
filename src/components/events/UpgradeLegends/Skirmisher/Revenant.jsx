@@ -4,7 +4,7 @@ import LegendUpgrade from '../../../../assets/Rev.png';
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
 //Apply sensitive zones 
-function SensitiveZone({ children, text, top, left }) {
+function SensitiveZone({ text, top, left }) {
     const [isShown, setIsShown] = useState(false);
 
     return (
@@ -14,7 +14,6 @@ function SensitiveZone({ children, text, top, left }) {
             onMouseLeave={() => setIsShown(false)}
             className={styles.circle}
         >
-            {children}
             {isShown && (
                 //Tooltip to move the text box to certain directions 
                 <div className={styles.tooltip}
