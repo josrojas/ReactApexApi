@@ -1,5 +1,6 @@
 :root{
-    --swiper-navigation-size: 34px;
+    --swiper-navigation-size: 40px;
+    --swiper-navigation-top-offset: 40%;    
 }
 
 .homeLink{

@@ -3,23 +3,30 @@ import LegendUpgrade from '../../../../assets/Path.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
-//Apply sensitive zones 
-function SensitiveZone({ text, top, left }) {
+// Show description in tooltip
+function TooltipContent({ title, title2, description }) {
+    return (
+        <div>
+            <h4>{title}</h4>
+            <h5>{title2}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+// Component SensitiveZone
+function SensitiveZone({ title, title2, description, top, left }) {
     const [isShown, setIsShown] = useState(false);
 
     return (
         <div
-            //Move mouse to sensitive zone and show description
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}
-            className={styles.circle}
+            className={styles.square}
         >
             {isShown && (
-                //Tooltip to move the text box to certain directions 
-                <div className={styles.tooltip}
-                    style={{ top: `${top}px`, left: `${left}px` }}
-                    //Add h4 and p text to edit in css
-                    dangerouslySetInnerHTML={{ __html: text }}>
+                <div className={styles.tooltip} style={{ top: `${top}px`, left: `${left}px` }}>
+                    <TooltipContent title={title} title2={title2} description={description} />
                 </div>
             )}
         </div>
@@ -31,24 +38,36 @@ function Upgrade() {
     return (
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
-                <SensitiveZone text="<h4>Field Research</h4>
-                <p>Gain access to Survey Beacons.</p>" top={-10} left={-470}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title="Field Research"
+                    description="Gain access to Survey Beacons."
+                    top={-10}
+                    left={-460}
+                />
             </div>
             <div className={styles.Zone2}>
-                <SensitiveZone text="<h4>Ringmaster</h4>
-                <p>Gain access to Ring Consoles.</p>" top={0} left={90}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title="Ringmaster"
+                    description="Gain access to Ring Consoles."
+                    top={-10}
+                    left={100}
+                />
             </div>
             <div className={styles.Zone3}>
-                <SensitiveZone text="<h5>Down and Away</h5>
-                <p>Grapple cooldown reset on knock.</p>" top={100} left={-470}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title2="Down and Away"
+                    description="Grapple cooldown reset on knock."
+                    top={100}
+                    left={-460}
+                />
             </div>
             <div className={styles.Zone4}>
-                <SensitiveZone text="<h5>Zipline Zen</h5>
-                <p>Take 50% less damage while riding energized Ziplines.</p>" top={100} left={90}>
-                </SensitiveZone>
+                <SensitiveZone
+                    title2="Zipline Zen"
+                    description="Take 50% less damage while riding energized Ziplines."
+                    top={100}
+                    left={100}
+                />
             </div>
         </div >
     );
