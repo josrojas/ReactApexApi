@@ -43,12 +43,11 @@ Data from `apexlegendsstatus.com`
 
 **LEGENDS UPGRADES** 
 
-*Updated S21 Upheaval*  *(This is a draft will change later to be more interactive)
+*Updated S21 Upheaval*
 
-![image](https://github.com/josrojas/ReactApexApi/assets/73319827/715b28b0-e454-43e2-958f-8a6dccf1b7f4)
+![image](https://github.com/josrojas/ReactApexApi/assets/73319827/b5847781-8800-4b48-999b-411a963ca2b7)
 
-![image](https://github.com/josrojas/ReactApexApi/assets/73319827/bd117d31-a697-4fff-bb8e-f48a96a314b4)
-
+![image](https://github.com/josrojas/ReactApexApi/assets/73319827/d711be4f-15de-4576-8af1-2249278d3f23)
 
 Data from `ea.com/games/apex-legends`
 
