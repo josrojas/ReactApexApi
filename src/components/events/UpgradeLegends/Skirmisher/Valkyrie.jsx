@@ -39,7 +39,7 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="Afterburners"
+                    title="AFTERBURNERS"
                     description="Launch 15% higher with Skyward Dive."
                     top={-10}
                     left={-460}
@@ -47,7 +47,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="Aerial Expert"
+                    title="AERIAL EXPERT"
                     description="Increased horizontal Jetpack speed and acceleration."
                     top={-10}
                     left={100}
@@ -55,7 +55,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="Full Coverage"
+                    title2="FULL COVERAGE"
                     description="Widen Missile Swarm pattern from 4x3 to 3x5."
                     top={100}
                     left={-460}
@@ -63,7 +63,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="Full Tank"
+                    title2="FULL TANK"
                     description="Increase Jetpack fuel by 25%."
                     top={100}
                     left={100}

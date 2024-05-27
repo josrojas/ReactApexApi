@@ -39,7 +39,7 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="Murder Machine"
+                    title="MURDER MACHINE"
                     description="Call out the number of squads within 150 meters after a squad wipe."
                     top={-10}
                     left={-460}
@@ -47,7 +47,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="One Minute to Live"
+                    title="ONE MINUTE TO LIVE"
                     description="Using Passive tracks enemy position on map for 60 seconds."
                     top={-10}
                     left={100}
@@ -55,7 +55,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="Greedy Snare"
+                    title2="GREEDY SNARE"
                     description="Arc Snare remains in play for 24 seconds and can catch multiple enemies."
                     top={100}
                     left={-460}
@@ -63,7 +63,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="Twin Snares"
+                    title2="TWIN SNARES"
                     description="Gain an Arc Snare charge."
                     top={100}
                     left={100}

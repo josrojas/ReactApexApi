@@ -1,7 +1,77 @@
-import React from 'react';
-import LegendUpgrade from '../../../../assets/Crypto.png'
+import React, { useState } from 'react';
+import LegendUpgrade from '../../../../assets/Crypto.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
+
+// Show description in tooltip
+function TooltipContent({ title, title2, description }) {
+    return (
+        <div>
+            <h4>{title}</h4>
+            <h5>{title2}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+// Component SensitiveZone
+function SensitiveZone({ title, title2, description, top, left }) {
+    const [isShown, setIsShown] = useState(false);
+
+    return (
+        <div
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            className={styles.square}
+        >
+            {isShown && (
+                <div className={styles.tooltip} style={{ top: `${top}px`, left: `${left}px` }}>
+                    <TooltipContent title={title} title2={title2} description={description} />
+                </div>
+            )}
+        </div>
+    );
+}
+
+//Function to add sensitive zones to the image and show upgrades description 
+function Upgrade() {
+    return (
+        <div className={styles.SensitiveZone}>
+            <div className={styles.Zone1}>
+                <SensitiveZone
+                    title="NETWORK EXPANSION"
+                    description="Passive & Ult range increased by 25%."
+                    top={-10}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone2}>
+                <SensitiveZone
+                    title="QUICK PING"
+                    description="Improved drone handling."
+                    top={-10}
+                    left={100}
+                />
+            </div>
+            <div className={styles.Zone3}>
+                <SensitiveZone
+                    title2="SATELLITE IMAGERY"
+                    description="Drone scan persists for 1.5 seconds."
+                    top={100}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone4}>
+                <SensitiveZone
+                    title2="HACKATHON"
+                    description="Double drone recharge rate; gain speed boost when it explodes."
+                    top={100}
+                    left={100}
+                />
+            </div>
+        </div >
+    );
+}
 
 const Crypto = () => {
 
@@ -15,19 +85,9 @@ const Crypto = () => {
             </div>
             <div className={styles.UpgradeContainer}>
                 <img src={LegendUpgrade} alt="Crypto upgrades" width={900} height={500}></img>
+                <Upgrade />
             </div>
         </div>
-        /*<h3>Level 2 Upgrade Options</h3>
-                <h4>Network Expansion</h4>
-                <p>Passive & Ult range increased by 25%.</p>
-                <h4>Quick Transmission</h4>
-                <p>Improved drone handling.</p>
-                --
-                <h3>Level 3 Upgrade Options</h3>
-                <h4>Hackathon</h4>
-                <p>Double drone recharge rate; gain speed boost when it explodes.</p>
-                <h4>Satellite Imagery</h4>
-                <p>Drone scan persists for 1.5 seconds.</p>*/
     );
 };
 

@@ -1,7 +1,77 @@
-import React from 'react';
-import LegendUpgrade from '../../../../assets/Seer.jpg'
+import React, { useState } from 'react';
+import LegendUpgrade from '../../../../assets/Seer.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
+
+// Show description in tooltip
+function TooltipContent({ title, title2, description }) {
+    return (
+        <div>
+            <h4>{title}</h4>
+            <h5>{title2}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+// Component SensitiveZone
+function SensitiveZone({ title, title2, description, top, left }) {
+    const [isShown, setIsShown] = useState(false);
+
+    return (
+        <div
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            className={styles.square}
+        >
+            {isShown && (
+                <div className={styles.tooltip} style={{ top: `${top}px`, left: `${left}px` }}>
+                    <TooltipContent title={title} title2={title2} description={description} />
+                </div>
+            )}
+        </div>
+    );
+}
+
+//Function to add sensitive zones to the image and show upgrades description 
+function Upgrade() {
+    return (
+        <div className={styles.SensitiveZone}>
+            <div className={styles.Zone1}>
+                <SensitiveZone
+                    title="ARTIST'S REACH"
+                    description="Increase the throw range of Ultimate by 20 meters."
+                    top={-10}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone2}>
+                <SensitiveZone
+                    title="ULTIMATE COOLDOWN"
+                    description="Reduce Ultimate cooldown by 20%."
+                    top={-10}
+                    left={100}
+                />
+            </div>
+            <div className={styles.Zone3}>
+                <SensitiveZone
+                    title2="LONG VIEW"
+                    description="Increase Passive and Tactical range to 75m."
+                    top={100}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone4}>
+                <SensitiveZone
+                    title2="FOCUS SCAN"
+                    description="Increase Tactical scan duration by 1.5 seconds."
+                    top={100}
+                    left={100}
+                />
+            </div>
+        </div >
+    );
+}
 
 const Seer = () => {
 
@@ -15,19 +85,9 @@ const Seer = () => {
             </div>
             <div className={styles.UpgradeContainer}>
                 <img src={LegendUpgrade} alt="Seer upgrades" width={900} height={500}></img>
+                <Upgrade />
             </div>
         </div>
-        /*<h3>Level 2 Upgrade Options</h3>
-           <h4>Artist's Reach</h4>
-           <p>Increase the throw range of Ultimate by 20 meters.</p>
-           <h4>Ultimate Cooldown</h4>
-           <p>Reduce Ultimate cooldown by 30 seconds.</p>
-           --
-           <h3>Level 3 Upgrade Options</h3>
-           <h4>Long View</h4>
-           <p>Increase Passive and Tactical range to 75m.</p>
-           <h4>Focus Scan</h4>
-           <p>Increase Tactical scan duration by 1.5 seconds.</p>*/
     );
 };
 

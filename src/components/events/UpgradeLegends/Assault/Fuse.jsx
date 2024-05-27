@@ -39,7 +39,7 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="Ring Master"
+                    title="RING MASTER"
                     description="Gain access to Ring Consoles."
                     top={-10}
                     left={-460}
@@ -47,7 +47,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="Scar Tissue"
+                    title="SCAR TISSUE"
                     description="Take 20 damage and ignore slow effects from The Motherlode."
                     top={-10}
                     left={100}
@@ -55,7 +55,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="Knuckle Hustler"
+                    title2="KNUCLE HUSTLER"
                     description="Short speed boost on successful Knuckle Cluster hit."
                     top={100}
                     left={-460}
@@ -63,7 +63,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="Wreckless"
+                    title2="WRECKLESS"
                     description="Take 50% less explosive damage."
                     top={100}
                     left={100}

@@ -39,7 +39,7 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="Thick Skin"
+                    title="THICK SKIN"
                     description="Take 5 less Stim damage."
                     top={-10}
                     left={-460}
@@ -47,7 +47,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="Mad Hops"
+                    title="MAD HOPS"
                     description="Gain an extra Launch Pad charge."
                     top={-10}
                     left={100}
@@ -55,7 +55,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="Thick Skin"
+                    title2="THICK SKIN"
                     description="Take 5 less Stim damage."
                     top={100}
                     left={-460}
@@ -63,7 +63,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="Airborne Agility"
+                    title2="AIRBONE AGILITY"
                     description="Change directions with Launch Pad double-jump."
                     top={100}
                     left={100}

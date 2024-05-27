@@ -39,7 +39,7 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="Ultimate Cooldown"
+                    title="ULTIMATE COOLDOWN"
                     description="Reduces Ult Cooldown by 30s."
                     top={-10}
                     left={-460}
@@ -47,7 +47,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="Murder Machine"
+                    title="MURDER MACHINE"
                     description="Call out the number of squads within 150 meters after a squad wipe."
                     top={-10}
                     left={100}
@@ -55,7 +55,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="Tactical Cooldown"
+                    title2="TACTICAL COOLDOWN"
                     description="Reduce Tactical cooldown by 5 seconds."
                     top={100}
                     left={-460}
@@ -63,7 +63,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="Grim Leaper"
+                    title2="GRIM LEAPER"
                     description="Shadow Pounce cooldown reset on knock."
                     top={100}
                     left={100}

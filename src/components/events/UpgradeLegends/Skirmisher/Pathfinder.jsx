@@ -39,7 +39,7 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="Field Research"
+                    title="FIELD RESEARCH"
                     description="Gain access to Survey Beacons."
                     top={-10}
                     left={-460}
@@ -47,7 +47,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="Ringmaster"
+                    title="RINGMASTER"
                     description="Gain access to Ring Consoles."
                     top={-10}
                     left={100}
@@ -55,7 +55,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="Down and Away"
+                    title2="DOWN AND AWAY"
                     description="Grapple cooldown reset on knock."
                     top={100}
                     left={-460}
@@ -63,7 +63,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="Zipline Zen"
+                    title2="ZIPLINE ZEN"
                     description="Take 50% less damage while riding energized Ziplines."
                     top={100}
                     left={100}

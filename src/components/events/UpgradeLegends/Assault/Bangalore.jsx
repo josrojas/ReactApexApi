@@ -39,7 +39,7 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="Tactical Cooldown"
+                    title="TACTICAL COOLDOWN"
                     description="Reduces Tactical cooldown by 5s."
                     top={-10}
                     left={-460}
@@ -47,7 +47,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="Ultimate Cooldown+"
+                    title="ULTIMATE COOLDOWN+"
                     description="Reduce Ultimate cooldown by 60 seconds."
                     top={-10}
                     left={100}
@@ -55,7 +55,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="Cover Me"
+                    title2="COVER ME"
                     description="Point you in the right direction enemies who trigger Double Time."
                     top={100}
                     left={-460}
@@ -63,7 +63,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="Refuge"
+                    title2="REFUGE"
                     description="Regenerate 3.5 HP/s while inside Smoke."
                     top={100}
                     left={100}

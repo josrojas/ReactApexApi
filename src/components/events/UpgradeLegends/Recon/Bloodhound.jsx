@@ -1,7 +1,77 @@
-import React from 'react';
-import LegendUpgrade from '../../../../assets/Bloodhound.png'
+import React, { useState } from 'react';
+import LegendUpgrade from '../../../../assets/Bloodhound.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
+
+// Show description in tooltip
+function TooltipContent({ title, title2, description }) {
+    return (
+        <div>
+            <h4>{title}</h4>
+            <h5>{title2}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+// Component SensitiveZone
+function SensitiveZone({ title, title2, description, top, left }) {
+    const [isShown, setIsShown] = useState(false);
+
+    return (
+        <div
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            className={styles.square}
+        >
+            {isShown && (
+                <div className={styles.tooltip} style={{ top: `${top}px`, left: `${left}px` }}>
+                    <TooltipContent title={title} title2={title2} description={description} />
+                </div>
+            )}
+        </div>
+    );
+}
+
+//Function to add sensitive zones to the image and show upgrades description 
+function Upgrade() {
+    return (
+        <div className={styles.SensitiveZone}>
+            <div className={styles.Zone1}>
+                <SensitiveZone
+                    title="ODIN'S GLARE"
+                    description="Double the duration of Tactical's full-body highlight. "
+                    top={-10}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone2}>
+                <SensitiveZone
+                    title="RAVEN'S BLESSING"
+                    description="White Ravens charge Ultimate by 25% when activated."
+                    top={-10}
+                    left={100}
+                />
+            </div>
+            <div className={styles.Zone3}>
+                <SensitiveZone
+                    title2="TASTE OF BLOOD"
+                    description="Gain 50 hp on knocks while Ultimate is active."
+                    top={100}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone4}>
+                <SensitiveZone
+                    title2="LONG HUNT"
+                    description="Knocks extend Ult duration."
+                    top={100}
+                    left={100}
+                />
+            </div>
+        </div >
+    );
+}
 
 const Bloodhound = () => {
 
@@ -15,19 +85,9 @@ const Bloodhound = () => {
             </div>
             <div className={styles.UpgradeContainer}>
                 <img src={LegendUpgrade} alt="Bloodhound upgrades" width={900} height={500}></img>
+                <Upgrade />
             </div>
         </div>
-        /*<h3>Level 2 Upgrade Options</h3>
-             <h4>Raven's Blessing</h4>
-             <p>White Ravens charge Ultimate by 25% when activated.</p>
-             <h4>Odin's Glare</h4>
-             <p>Double the duration of Tactical's full-body highlight.</p>
-             --
-             <h3>Level 3 Upgrade Options</h3>
-             <h4>Long Hunt</h4>
-             <p>Knocks extend Beast of the Hunt duration.</p>
-             <h4>Taste of Blood</h4>
-             <p>Gain 50 hp on knocks while Ultimate is active.</p>*/
     );
 };
 

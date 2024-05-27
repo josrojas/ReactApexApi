@@ -39,7 +39,7 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="Battery Collection"
+                    title="BATTERY COLLECTION"
                     description="Shield Battery count shown above Death Boxes."
                     top={-10}
                     left={-460}
@@ -47,7 +47,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="Big Bang"
+                    title="BIG BANG"
                     description="See nearby ordnance through walls and on Death Boxes."
                     top={-10}
                     left={100}
@@ -55,7 +55,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="Tactical Cooldown"
+                    title2="TACTICAL COOLDOWN"
                     description="Reduce Tactical cooldown by 5 seconds."
                     top={100}
                     left={-460}
@@ -63,7 +63,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="Ultimate Cooldown"
+                    title2="ULTIMATE COOLDOWN"
                     description="Reduce Ultimate cooldown by 30 seconds."
                     top={100}
                     left={100}

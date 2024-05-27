@@ -39,7 +39,7 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="Shots Shots Shots"
+                    title="SHOTS SHOTS SHOTS"
                     description="Auto-Reload shotguns on knock."
                     top={-10}
                     left={-460}
@@ -47,7 +47,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="Fire Ball"
+                    title="FIRE BALL"
                     description="Wrecking Ball catches fire and explodes in thermite."
                     top={-10}
                     left={100}
@@ -55,7 +55,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="Drillslinger"
+                    title2="DRILLSLINGER"
                     description="Gain a Riot Drill charge; reduce active duration by 25%."
                     top={100}
                     left={-460}
@@ -63,7 +63,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="Big Drill"
+                    title2="BIG DRILL"
                     description="Increase depth and width of Tactical by 50%."
                     top={100}
                     left={100}

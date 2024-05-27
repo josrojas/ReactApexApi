@@ -39,7 +39,7 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="Sixth Sense"
+                    title="SIXTH SENSE"
                     description="Passive warns when nearby squad count increases."
                     top={-10}
                     left={-460}
@@ -47,7 +47,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="Ultimate Cooldown+"
+                    title="ULTIMATE COOLDOWN+"
                     description="Reduce Ultimate cooldown by 60 seconds."
                     top={-10}
                     left={100}
@@ -55,7 +55,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="Fast Phase"
+                    title2="FAST PHASE"
                     description="Reduce Tactical wind-up by 20%."
                     top={100}
                     left={-460}
@@ -63,7 +63,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="Tactical Cooldown"
+                    title2="TACTICAL COOLDOWN"
                     description="Reduce Tactical cooldown by 5 seconds."
                     top={100}
                     left={100}
