@@ -1,7 +1,77 @@
-import React from 'react';
-import RampartUpgrade from '../../../../assets/Rampart.jpg'
+import React, { useState } from 'react';
+import LegendUpgrade from '../../../../assets/Rampart.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
+
+// Show description in tooltip
+function TooltipContent({ title, title2, description }) {
+    return (
+        <div>
+            <h4>{title}</h4>
+            <h5>{title2}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+// Component SensitiveZone
+function SensitiveZone({ title, title2, description, top, left }) {
+    const [isShown, setIsShown] = useState(false);
+
+    return (
+        <div
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            className={styles.square}
+        >
+            {isShown && (
+                <div className={styles.tooltip} style={{ top: `${top}px`, left: `${left}px` }}>
+                    <TooltipContent title={title} title2={title2} description={description} />
+                </div>
+            )}
+        </div>
+    );
+}
+
+//Function to add sensitive zones to the image and show upgrades description 
+function Upgrade() {
+    return (
+        <div className={styles.SensitiveZone}>
+            <div className={styles.Zone1}>
+                <SensitiveZone
+                    title="ULTIMATE COOLDOWN"
+                    description="Reduce Ultimate cooldown by 30 seconds."
+                    top={-10}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone2}>
+                <SensitiveZone
+                    title="BANDOLIER"
+                    description="Carry extra ammo per stack."
+                    top={-10}
+                    left={100}
+                />
+            </div>
+            <div className={styles.Zone3}>
+                <SensitiveZone
+                    title2="RAMPED UP"
+                    description="Improved Mobile Sheila handling and spin up time by 20%."
+                    top={100}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone4}>
+                <SensitiveZone
+                    title2="AMPED RELOADS"
+                    description="Reload faster with Sheila & when behind Amped Cover."
+                    top={100}
+                    left={100}
+                />
+            </div>
+        </div >
+    );
+}
 
 const Rampart = () => {
 
@@ -14,20 +84,10 @@ const Rampart = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <img src={RampartUpgrade} alt="Rampart upgrades" width={900} height={500}></img>
+                <img src={LegendUpgrade} alt="Rampart upgrades" width={900} height={500}></img>
+                <Upgrade />
             </div>
         </div>
-        /*<h3>Level 2 Upgrade Options</h3>
-              <h4>Bandolier</h4>
-              <p>Carry extra ammo per stack.</p>
-              <h4>Ultimate Cooldown</h4>
-              <p>Reduce Ultimate cooldown by 30 seconds.</p>
-              --
-              <h3>Level 3 Upgrade Options</h3>
-              <h4>Amped Reloads</h4>
-              <p>Reload faster with Sheila or when behind Amped Cover.</p>
-              <h4>Ramped Up</h4>
-              <p>Improved Mobile Sheila handling and spin up time by 20%.</p>*/
     );
 };
 

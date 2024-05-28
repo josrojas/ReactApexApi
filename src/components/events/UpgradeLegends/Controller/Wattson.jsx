@@ -1,7 +1,77 @@
-import React from 'react';
-import WattsonUpgrade from '../../../../assets/Wattson.jpg'
+import React, { useState } from 'react';
+import LegendUpgrade from '../../../../assets/Wattson.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
+
+// Show description in tooltip
+function TooltipContent({ title, title2, description }) {
+    return (
+        <div>
+            <h4>{title}</h4>
+            <h5>{title2}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+// Component SensitiveZone
+function SensitiveZone({ title, title2, description, top, left }) {
+    const [isShown, setIsShown] = useState(false);
+
+    return (
+        <div
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            className={styles.square}
+        >
+            {isShown && (
+                <div className={styles.tooltip} style={{ top: `${top}px`, left: `${left}px` }}>
+                    <TooltipContent title={title} title2={title2} description={description} />
+                </div>
+            )}
+        </div>
+    );
+}
+
+//Function to add sensitive zones to the image and show upgrades description 
+function Upgrade() {
+    return (
+        <div className={styles.SensitiveZone}>
+            <div className={styles.Zone1}>
+                <SensitiveZone
+                    title="Fresh Start"
+                    description="Allies are revived with 50 HP."
+                    top={-10}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone2}>
+                <SensitiveZone
+                    title="Falling Stars"
+                    description="Pylon interceptions spawn Arc Stars."
+                    top={-10}
+                    left={100}
+                />
+            </div>
+            <div className={styles.Zone3}>
+                <SensitiveZone
+                    title2="Power Pylon"
+                    description="Double Ult HP and Shield Regen capacity."
+                    top={100}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone4}>
+                <SensitiveZone
+                    title2="Split Circuit"
+                    description="Double Ult Accel speed and Ult placements with half the shield regen capacity."
+                    top={100}
+                    left={100}
+                />
+            </div>
+        </div >
+    );
+}
 
 const Wattson = () => {
 
@@ -14,20 +84,10 @@ const Wattson = () => {
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <img src={WattsonUpgrade} alt="Wattson upgrades" width={900} height={500}></img>
+                <img src={LegendUpgrade} alt="Wattson upgrades" width={900} height={500}></img>
+                <Upgrade />
             </div>
         </div>
-        /*<h3>Level 2 Upgrade Options</h3>
-             <h4>Falling Stars</h4>
-             <p>Pylon interceptions spawn Arc Stars at its base.</p>
-             <h4>Fresh Start</h4>
-             <p>Allies are revived with 50 HP.</p>
-             --
-             <h3>Level 3 Upgrade Options</h3>
-             <h4>Power Pylon</h4>
-             <p>Double Ultimate's HP and Shield Regen capacity.</p>
-             <h4>Split Circuit</h4>
-             <p>Place up to 2 Pylons with half the shield regen capacity <br></br> and use Ultimate Accelerants twice as fast.</p>*/
     );
 };
 
