@@ -39,7 +39,7 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="Fresh Start"
+                    title="FRESH START"
                     description="Allies are revived with 50 HP."
                     top={-10}
                     left={-460}
@@ -47,7 +47,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="Falling Stars"
+                    title="FALLING STARS"
                     description="Pylon interceptions spawn Arc Stars."
                     top={-10}
                     left={100}
@@ -55,7 +55,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="Power Pylon"
+                    title2="POWER PYLON"
                     description="Double Ult HP and Shield Regen capacity."
                     top={100}
                     left={-460}
@@ -63,7 +63,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="Split Circuit"
+                    title2="SPLIT CIRCUIT"
                     description="Double Ult Accel speed and Ult placements with half the shield regen capacity."
                     top={100}
                     left={100}

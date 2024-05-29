@@ -1,7 +1,77 @@
-import React from 'react';
-import LegendUpgrade from '../../../../assets/Newcastle.jpg'
+import React, { useState } from 'react';
+import LegendUpgrade from '../../../../assets/Newcastle.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
+
+// Show description in tooltip
+function TooltipContent({ title, title2, description }) {
+    return (
+        <div>
+            <h4>{title}</h4>
+            <h5>{title2}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+// Component SensitiveZone
+function SensitiveZone({ title, title2, description, top, left }) {
+    const [isShown, setIsShown] = useState(false);
+
+    return (
+        <div
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            className={styles.square}
+        >
+            {isShown && (
+                <div className={styles.tooltip} style={{ top: `${top}px`, left: `${left}px` }}>
+                    <TooltipContent title={title} title2={title2} description={description} />
+                </div>
+            )}
+        </div>
+    );
+}
+
+//Function to add sensitive zones to the image and show upgrades description 
+function Upgrade() {
+    return (
+        <div className={styles.SensitiveZone}>
+            <div className={styles.Zone1}>
+                <SensitiveZone
+                    title="THICK SHIELD"
+                    description="Mobile Shield +250 HP."
+                    top={-10}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone2}>
+                <SensitiveZone
+                    title="SWIFT SHIELD"
+                    description="Increase Mobile Shield speed."
+                    top={-10}
+                    left={100}
+                />
+            </div>
+            <div className={styles.Zone3}>
+                <SensitiveZone
+                    title2="MIRACLE WORKER"
+                    description="Revives allies with HP regen up to 75 HP."
+                    top={100}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone4}>
+                <SensitiveZone
+                    title2="STRONGHOLD"
+                    description="Increase Castle Wall HP and extend energized duration to 2 minutes."
+                    top={100}
+                    left={100}
+                />
+            </div>
+        </div >
+    );
+}
 
 const Newcastle = () => {
 
@@ -15,19 +85,9 @@ const Newcastle = () => {
             </div>
             <div className={styles.UpgradeContainer}>
                 <img src={LegendUpgrade} alt="Newcastle upgrades" width={900} height={500}></img>
+                <Upgrade />
             </div>
         </div>
-        /*<h3>Level 2 Upgrade Options</h3>
-              <h4>Swift Shield</h4>
-              <p>Increase Mobile Shield speed to weapon sprint speed.</p>
-              <h4>Thick Shield</h4>
-              <p>Mobile Shield segments gain 250 HP.</p>
-              --
-              <h3>Level 3 Upgrade Options</h3>
-              <h4>Miracle Worker</h4>
-              <p>Allies are revived with health regen up to 75 HP.</p>
-              <h4>Stronghold</h4>
-              <p>+250 Castle Wall HP; extend energized barrier duration to 2 minutes.</p>*/
     );
 };
 

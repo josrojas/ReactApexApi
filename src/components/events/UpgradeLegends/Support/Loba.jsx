@@ -1,7 +1,77 @@
-import React from 'react';
-import LegendUpgrade from '../../../../assets/Loba.jpg'
+import React, { useState } from 'react';
+import LegendUpgrade from '../../../../assets/Loba.png';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
+
+// Show description in tooltip
+function TooltipContent({ title, title2, description }) {
+    return (
+        <div>
+            <h4>{title}</h4>
+            <h5>{title2}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+// Component SensitiveZone
+function SensitiveZone({ title, title2, description, top, left }) {
+    const [isShown, setIsShown] = useState(false);
+
+    return (
+        <div
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            className={styles.square}
+        >
+            {isShown && (
+                <div className={styles.tooltip} style={{ top: `${top}px`, left: `${left}px` }}>
+                    <TooltipContent title={title} title2={title2} description={description} />
+                </div>
+            )}
+        </div>
+    );
+}
+
+//Function to add sensitive zones to the image and show upgrades description 
+function Upgrade() {
+    return (
+        <div className={styles.SensitiveZone}>
+            <div className={styles.Zone1}>
+                <SensitiveZone
+                    title="HIGH VALUE"
+                    description="Increase Tactical height and range."
+                    top={-10}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone2}>
+                <SensitiveZone
+                    title="MARKET EXPANSION"
+                    description="Increase Ultimate range by 25%."
+                    top={-10}
+                    left={100}
+                />
+            </div>
+            <div className={styles.Zone3}>
+                <SensitiveZone
+                    title2="TACTICAL COOLDOWN"
+                    description="Reduce Tac cooldown by 5 seconds."
+                    top={100}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone4}>
+                <SensitiveZone
+                    title2="SHOPPING SPREE"
+                    description="Loba can take an extra item from Black Markets."
+                    top={100}
+                    left={100}
+                />
+            </div>
+        </div >
+    );
+}
 
 const Loba = () => {
 
@@ -15,19 +85,9 @@ const Loba = () => {
             </div>
             <div className={styles.UpgradeContainer}>
                 <img src={LegendUpgrade} alt="Loba upgrades" width={900} height={500}></img>
+                <Upgrade />
             </div>
         </div>
-        /*<h3>Level 2 Upgrade Options</h3>
-              <h4>High Value</h4>
-              <p>Increase Tactical height and range.</p>
-              <h4>Market Expansion</h4>
-              <p>Increase Ultimate range by 25%.</p>
-              --
-              <h3>Level 3 Upgrade Options</h3>
-              <h4>Shopping Spree</h4>
-              <p>Loba can take an extra item from Black Markets.</p>
-              <h4>Tactical Cooldown</h4>
-              <p>Reduce Tactical cooldown by 5 seconds.</p>*/
     );
 };
 
