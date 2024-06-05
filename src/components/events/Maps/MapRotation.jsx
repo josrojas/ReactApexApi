@@ -22,7 +22,7 @@ const MapRotation = () => {
 
     useEffect(() => {
 
-        fetch(`https://api.mozambiquehe.re/maprotation?auth=${import.meta.env.VITE_APEX_API_KEY}&version=2`)
+        fetch(`https://api.mozambiquehe.re/maprotation?auth=${import.meta.env.VITE_APEX_API}&version=2`)
             .then(res => res.json())
             .then(data => {
                 setAssetPb(data.battle_royale?.current?.asset);
