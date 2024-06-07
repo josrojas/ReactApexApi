@@ -1,8 +1,8 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useRef, useEffect } from 'react';
 
 import useEventResults from '../../state/event-results';
-import MapRotation from '../../components/events/Maps/MapRotation';
+import TabComponent from "../../components/events/Tabs/TabsMaps";
 import styles from './Home.module.css';
 
 const Home = () => {
@@ -18,11 +18,11 @@ const Home = () => {
 
     const renderEvents = () => {
         if (isLoading) {
-            return <div>Cargando...</div>;
+            return <div>Loading...</div>;
         }
 
         if (error) {
-            return <div>Ha ocurrido un error</div>;
+            return <div>An error has occur</div>;
         }
 
         return (
@@ -30,10 +30,8 @@ const Home = () => {
                 <>
                     <Link to="/legends-upgrade" className={styles.homeLink}>Legends Upgrades</Link>
                     <div className={styles.TabsContainer}></div>
-
-                    <Outlet />
-
-                    <MapRotation />
+                    <h1>Current Apex Legends map rotation</h1>
+                    <TabComponent />
                 </>
             </div>
         );

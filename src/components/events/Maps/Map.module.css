@@ -12,11 +12,11 @@ body {
     align-items: center;
     justify-content: flex-start;
     margin-top: 50px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    height: 1400px;
+    /*border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);*/
+    height: 450px;
+    width: 1280px;
 }
-
 
 h1 {
     margin-top: 100px;
@@ -28,24 +28,28 @@ h2 {
     margin-top: -300px;
 }
 
-.imgContainer{
+.imgContainer {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%; 
 }
 
-.imgAsset{
+.imgAsset {
     display: flex;
     flex-direction: column;
     height: 540px;
     width: 1280px;
+}
+
+.imgAsset img {
+    border-radius: 20px;
 }
 
 .currentMap,
@@ -54,9 +58,9 @@ h2 {
 .nextRankMap,
 .currentLtm,
 .nextLtm {
-    font: bold;
     font-size: 18px;
     color: #fff;
+    margin-top: 15px;
     margin-bottom: 25px;
 }
 
@@ -67,9 +71,5 @@ h2 {
     font-size: 17px;
     color: #fff;
     font-style: italic;
-    margin-bottom: 25px;
-}
-
-h5{
-    padding-bottom: 30px;
+    margin-bottom: 12px;
 }

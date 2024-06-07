@@ -33,11 +33,11 @@ const Upgrades = () => {
 
     const renderEvents = () => {
         if (isLoading) {
-            return <div>Cargando...</div>;
+            return <div>Loading...</div>;
         }
 
         if (error) {
-            return <div>Ha ocurrido un error</div>;
+            return <div>An error has occur</div>;
         }
 
         return (

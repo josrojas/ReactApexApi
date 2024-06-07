@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
-// Hook personalizado para manejar la lógica de la API
+// Hook to manage API
 export function useMapRotation(apiKey) {
     const [currentMap, setCurrentMap] = useState('');
     const [remainingTimer, setRemainingTimer] = useState('');
@@ -18,30 +18,47 @@ export function useMapRotation(apiKey) {
     const [assetRk, setAssetRk] = useState('');
     const [assetLtm, setAssetLtm] = useState('');
 
-    // Referencias para los intervalos
-    const intervalIdRef = useRef(null);
-    const intervalIdRkRef = useRef(null);
-    const intervalIdLtmRef = useRef(null);
+    useEffect(() => {
 
-    // Función para actualizar el contador de tiempo restante
-    const updateTimer = (initialTime, setRemainingTime) => {
-        let time = new Date(`1970-01-01T${initialTime}Z`);
-        return setInterval(() => {
-            if (time.getUTCSeconds() > -1) {
-                time.setUTCSeconds(time.getUTCSeconds() - 1);
-                const newTime = time.toISOString().slice(11, 19);
-                setRemainingTime(newTime);
-            }
-        }, 1000);
-    };
+      let intervalId;
+        // Function for update all timers
+        const updateAllTimers = () => {
+          // Update battle royale timer
+          if (remainingTimer) {
+            const newTimeBr = new Date(`1970-01-01T${remainingTimer}Z`);
+            newTimeBr.setUTCSeconds(newTimeBr.getUTCSeconds() - 1);
+            setRemainingTimer(newTimeBr.toISOString().slice(11, 19));
+          }
+          // Update ranked timer
+          if (remainingTimerRk) {
+            const newTimeRk = new Date(`1970-01-01T${remainingTimerRk}Z`);
+            newTimeRk.setUTCSeconds(newTimeRk.getUTCSeconds() - 1);
+            setRemainingTimerRk(newTimeRk.toISOString().slice(11, 19));
+          }
+          // Update LTM timer
+          if (remainingTimerLtm) {
+            const newTimeLtm = new Date(`1970-01-01T${remainingTimerLtm}Z`);
+            newTimeLtm.setUTCSeconds(newTimeLtm.getUTCSeconds() - 1);
+            setRemainingTimerLtm(newTimeLtm.toISOString().slice(11, 19));
+          }
+        };
+      
+        // Unique interval for all timers
+        intervalId = setInterval(updateAllTimers, 1000);
+      
+        return () => {
+          clearInterval(intervalId);
+        };
+      }, [remainingTimer, remainingTimerRk, remainingTimerLtm]);
 
     useEffect(() => {
-        // Función para obtener y actualizar los datos de la API
+        // Function to consume API
+        
         const fetchData = async () => {
             try {
                 const response = await fetch(`https://api.mozambiquehe.re/maprotation?auth=${apiKey}&version=2`);
                 const data = await response.json();
-                // Actualiza el estado con los nuevos datos
+
                 setAssetPb(data.battle_royale?.current?.asset);
                 setCurrentMap(data.battle_royale?.current?.map);
                 setRemainingTimer(data.battle_royale?.current?.remainingTimer);
@@ -62,19 +79,6 @@ export function useMapRotation(apiKey) {
 
         fetchData();
     }, []);
-
-    useEffect(() => {
-        // Creación de nuevos intervalos con los tiempos iniciales de la API
-        intervalIdRef.current = updateTimer(remainingTimer, setRemainingTimer);
-        intervalIdRkRef.current = updateTimer(remainingTimerRk, setRemainingTimerRk);
-        intervalIdLtmRef.current = updateTimer(remainingTimerLtm, setRemainingTimerLtm);
-
-        return () => {
-            clearInterval(intervalIdRef.current);
-            clearInterval(intervalIdRkRef.current);
-            clearInterval(intervalIdLtmRef.current);
-        };
-    }, [remainingTimer, remainingTimerRk, remainingTimerLtm]);
 
     return {
         currentMap,
