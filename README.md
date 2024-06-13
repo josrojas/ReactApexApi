@@ -34,9 +34,9 @@ https://react-apex-api.vercel.app
 
 **CURRENT MAP ROTATION**
 
-![image](https://github.com/josrojas/ReactApexApi/assets/73319827/f4f06e54-2e2a-45be-891d-60768f4c6810)
+![image](https://github.com/josrojas/ReactApexApi/assets/73319827/dc9f619e-fa0c-4192-864b-4130d6704c1d)
 
-![image](https://github.com/josrojas/ReactApexApi/assets/73319827/db038de1-b991-40e2-85ea-cf7edd5e1ba0)
+![image](https://github.com/josrojas/ReactApexApi/assets/73319827/b72ea795-0eda-4133-82aa-ec380258d639)
 
 Data from `apexlegendsstatus.com`
 <br><br><br>
