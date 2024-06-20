@@ -56,7 +56,7 @@ function Upgrade() {
             <div className={styles.Zone3}>
                 <SensitiveZone
                     title2="DOWN AND AWAY"
-                    description="Grapple cooldown reset on knock."
+                    description="Tac will now refresh on BOTH knocks and assisted knocks within a 3s window."
                     top={100}
                     left={-460}
                 />

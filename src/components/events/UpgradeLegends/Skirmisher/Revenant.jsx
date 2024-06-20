@@ -64,7 +64,7 @@ function Upgrade() {
             <div className={styles.Zone4}>
                 <SensitiveZone
                     title2="GRIM LEAPER"
-                    description="Shadow Pounce cooldown reset on knock."
+                    description="Tac will now refresh on BOTH knocks and assisted knocks within a 3s window"
                     top={100}
                     left={100}
                 />

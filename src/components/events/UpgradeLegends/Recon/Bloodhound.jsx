@@ -48,23 +48,23 @@ function Upgrade() {
             <div className={styles.Zone2}>
                 <SensitiveZone
                     title="RAVEN'S BLESSING"
-                    description="White Ravens charge Ultimate by 25% when activated."
+                    description="White Ravens charge Ultimate by 20% when activated."
                     top={-10}
                     left={100}
                 />
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="TASTE OF BLOOD"
-                    description="Gain 50 hp on knocks while Ultimate is active."
+                    title2="FLOCK"
+                    description="Remove enemy range requirement for White Raven spawns."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="LONG HUNT"
-                    description="Knocks extend Ult duration."
+                    title2="SIGHTHOUND"
+                    description="Reduce Tactical cooldown by 50% while Ultimate is active."
                     top={100}
                     left={100}
                 />
