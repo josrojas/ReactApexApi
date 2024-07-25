@@ -30,7 +30,7 @@ This will initialize the server and you can access the app in your browser with 
 
 # Preview 🗺
 
-https://react-apex-api.vercel.app
+apex-status.vercel.app
 
 **CURRENT MAP ROTATION**
 
