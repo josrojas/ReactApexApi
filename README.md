@@ -30,7 +30,7 @@ This will initialize the server and you can access the app in your browser with 
 
 # Preview 🗺
 
-apex-status.vercel.app
+[apex-status.vercel.app](https://apex-status.vercel.app)
 
 **CURRENT MAP ROTATION**
 
