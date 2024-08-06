@@ -47,8 +47,8 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="QUICK PING"
-                    description="Improved drone handling."
+                    title="OFF THE GRID"
+                    description="Crypto cloaks when in drone."
                     top={-10}
                     left={100}
                 />
@@ -56,7 +56,7 @@ function Upgrade() {
             <div className={styles.Zone3}>
                 <SensitiveZone
                     title2="SATELLITE IMAGERY"
-                    description="Drone scan persists for 1.5 seconds."
+                    description="+1.5s scan duration. Scans on Ult hit."
                     top={100}
                     left={-460}
                 />

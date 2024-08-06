@@ -63,8 +63,8 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="FOCUS SCAN"
-                    description="Increase Tactical scan duration by 1.5 seconds."
+                    title2="SPLIT FOCUS"
+                    description="+1 Tac charge and -50% Silence duration."
                     top={100}
                     left={100}
                 />

@@ -48,7 +48,7 @@ function Upgrade() {
             <div className={styles.Zone2}>
                 <SensitiveZone
                     title="ULTIMATE RELOAD"
-                    description="Ultimate Accelerants grant +2 bullets."
+                    description="Doubles Ult Accel use speed and grant +2 bullets."
                     top={-10}
                     left={100}
                 />

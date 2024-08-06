@@ -1,28 +1,95 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LegendUpgrade from '../../../../assets/Alter.png'
+import LegendProfile from '../../../../assets/AlterP.jpg'
 
-import styles from '../../UpgradeLegends/Skirmisher/alter.module.css';
+import styles from '../../UpgradeLegends/Upgrade.module.css';
+
+
+// Show description in tooltip
+function TooltipContent({ title, title2, description }) {
+    return (
+        <div>
+            <h4>{title}</h4>
+            <h5>{title2}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+// Component SensitiveZone
+function SensitiveZone({ title, title2, description, top, left }) {
+    const [isShown, setIsShown] = useState(false);
+
+    return (
+        <div
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}
+            className={styles.square}
+        >
+            {isShown && (
+                <div className={styles.tooltip} style={{ top: `${top}px`, left: `${left}px` }}>
+                    <TooltipContent title={title} title2={title2} description={description} />
+                </div>
+            )}
+        </div>
+    );
+}
+
+//Function to add sensitive zones to the image and show upgrades description 
+function Upgrade() {
+    return (
+        <div className={styles.SensitiveZone}>
+            <div className={styles.Zone1}>
+                <SensitiveZone
+                    title="Ringmaster"
+                    description="Gain access to Ring Consoles."
+                    top={-10}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone2}>
+                <SensitiveZone
+                    title="VOID VISION"
+                    description="Enemy recon after exiting Tac."
+                    top={-10}
+                    left={100}
+                />
+            </div>
+            <div className={styles.Zone3}>
+                <SensitiveZone
+                    title2="ETERNAL NEXUS"
+                    description="Infinite Ult duration."
+                    top={100}
+                    left={-460}
+                />
+            </div>
+            <div className={styles.Zone4}>
+                <SensitiveZone
+                    title2="TACTICAL COOLDOWN+"
+                    description="-10s Tac cooldown."
+                    top={100}
+                    left={100}
+                />
+            </div>
+        </div >
+    );
+}
 
 const Alter = () => {
 
     return (
         //Show legends upgrades
         <div className={styles.Container}>
+            <div className={styles.CharacterContainer}>
+                <h2>ALTER</h2>
+                <img src={LegendProfile} alt="Alter image"
+                    width={300} height={500}></img>
+            </div>
             <div className={styles.UpgradeContainer}>
-                <img src={LegendUpgrade} alt="Alter upgrades" width={1100} height={600}></img>
+                <img src={LegendUpgrade} alt="Alter upgrades" width={900} height={500}></img>
+                <Upgrade />
             </div>
         </div>
-        /*<h3>Level 2 Upgrade Options</h3>
-                <h4>Frequent Nexus</h4>
-                <p>Ultimate cooldown reduce by 30s.</p>
-                <h4>Seeing with portals</h4>
-                <p>Highlight persist after tac phase. See enemy health bars after exiting portal.</p>
-                --
-                <h3>Level 3 Upgrade Options</h3>
-                <h4>Unending Nexus</h4>
-                <p>Void Nexus no longer times out.</p>
-                <h4>Tactical Cooldown+</h4>
-                <p>Reduce Tactical cooldown by 10 seconds.</p>*/
     );
 };
 

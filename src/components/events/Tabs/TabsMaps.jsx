@@ -30,7 +30,7 @@ export function TabComponent() {
                 {activetab === 1 && <div className={styles.class}><Ranked /></div>}
                 {activetab === 2 && <div className={styles.class}><Mixtape /></div>}
             </div>
-            <h5>{`Data from ea.com/games/apex-legends`}</h5>
+           
         </Container>
     );
 }
@@ -45,7 +45,7 @@ position: relative;
     width: 100%;
     height: 30%;
     background-color: #242424;
-    padding: 20px;
+    padding: 0px;
     color: #0f0f0f;
     
     .tabs{

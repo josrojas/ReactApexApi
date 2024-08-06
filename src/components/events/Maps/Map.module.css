@@ -25,7 +25,7 @@ h1 {
 
 h2 {
     color: #999;
-    margin-top: -300px;
+    margin-top: -380px;
 }
 
 .imgContainer {
@@ -44,8 +44,7 @@ h2 {
 .imgAsset {
     display: flex;
     flex-direction: column;
-    height: 540px;
-    width: 1280px;
+    width: 100%; 
 }
 
 .imgAsset img {
@@ -72,4 +71,8 @@ h2 {
     color: #fff;
     font-style: italic;
     margin-bottom: 12px;
+}
+
+.footer{
+    margin-top: 0px;
 }

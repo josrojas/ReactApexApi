@@ -64,7 +64,7 @@ function Upgrade() {
             <div className={styles.Zone4}>
                 <SensitiveZone
                     title2="GOLD-PLATED"
-                    description="Next Ult contains gold loot and an EVO Cache."
+                    description="Next Ult contains gold loot and a battery."
                     top={100}
                     left={100}
                 />

@@ -58,7 +58,7 @@ position: relative;
     width: 100%;
     height: 30%;
     background-color: #242424;
-    padding: 20px;
+    padding: 0px;
     color: #0f0f0f;
     
     .tabs{

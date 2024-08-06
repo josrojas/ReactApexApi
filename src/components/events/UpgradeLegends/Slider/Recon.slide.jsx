@@ -1,12 +1,13 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFlip, Pagination, Navigation  } from 'swiper/modules';
+import { EffectFlip, Pagination, Navigation, Keyboard  } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-flip';
+import 'swiper/css/keyboard';
 
 import styles from './slide.module.css';
 
@@ -19,14 +20,15 @@ export default () => {
   return (
     <Swiper
     // install Swiper modules
-      modules={[Navigation, Pagination, EffectFlip]}
+      className={styles.swiper}
+      modules={[Navigation, Pagination, EffectFlip, Keyboard]}
       spaceBetween={1}
       slidesPerView={1}
       effect={'flip'}
       pagination={true}
       navigation={true}
       grabCursor={true}
-      className={styles.swiper}
+      keyboard={true}
     >
       <SwiperSlide><Bloodhound /></SwiperSlide>
       <SwiperSlide><Crypto /></SwiperSlide>

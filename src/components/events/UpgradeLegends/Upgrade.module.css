@@ -36,7 +36,7 @@ h2 {
 }
 
 .square {
-    width: 70px;
+    width: 120px;
     height: 70px;
     display: flex;
     background-color: transparent;
@@ -59,13 +59,13 @@ h2 {
     display: flex;
     flex-direction: column;
     color: #2e6bee;
+    padding-bottom: 40px;
 }
 
 .tooltip h5 {
     color: #c82eee;
     font-size: 16px;
-    margin-top: -20px;
-    margin-bottom: -20px;
+    margin-top: -60px;
 }
 
 .SensitiveZone {
@@ -75,20 +75,20 @@ h2 {
 }
 
 .Zone1 {
-    margin-left: -230px;
+    margin-left: -245px;
 }
 
 .Zone2 {
     margin-top: -75px;
-    margin-left: 15px;
+    margin-left: -10px;
 }
 
 .Zone3 {
     margin-top: 40px;
-    margin-left: -230px;
+    margin-left: -245px;
 }
 
 .Zone4 {
     margin-top: -75px;
-    margin-left: 15px;
+    margin-left: -10px;
 }

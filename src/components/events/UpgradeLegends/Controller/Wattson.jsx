@@ -56,7 +56,7 @@ function Upgrade() {
             <div className={styles.Zone3}>
                 <SensitiveZone
                     title2="POWER PYLON"
-                    description="Double Ult HP and Shield Regen capacity."
+                    description="Double Ult HP and Ult shield generator recharges."
                     top={100}
                     left={-460}
                 />
@@ -64,7 +64,7 @@ function Upgrade() {
             <div className={styles.Zone4}>
                 <SensitiveZone
                     title2="SPLIT CIRCUIT"
-                    description="Double Ult Accel speed and Ult placements with half the shield regen capacity."
+                    description="Doubles Ult shield generator Rate & Capacity."
                     top={100}
                     left={100}
                 />
