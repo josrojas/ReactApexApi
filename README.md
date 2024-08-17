@@ -34,7 +34,7 @@ This will initialize the server and you can access the app in your browser with 
 
 **CURRENT MAP ROTATION**
 
-![image](https://github.com/josrojas/ReactApexApi/assets/73319827/dc9f619e-fa0c-4192-864b-4130d6704c1d)
+![image](https://github.com/user-attachments/assets/6943f99a-366c-4857-a27b-496c32feb71c)
 
 ![image](https://github.com/josrojas/ReactApexApi/assets/73319827/b72ea795-0eda-4133-82aa-ec380258d639)
 
@@ -43,7 +43,7 @@ Data from `apexlegendsstatus.com`
 
 **LEGENDS UPGRADES** 
 
-*Updated S21 Upheaval*
+*Updated S22 Shockwave*
 
 ![image](https://github.com/josrojas/ReactApexApi/assets/73319827/b5847781-8800-4b48-999b-411a963ca2b7)
 
