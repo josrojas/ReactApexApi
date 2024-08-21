@@ -24,7 +24,7 @@ const BattleRoyale = () => {
             </div>
 
             <div className={styles.footer}>
-                <h5>{`Data from ea.com/games/apex-legends`}</h5>
+                <h5>{`Data from https://apexlegendsstatus.com`}</h5>
             </div>
         </div>
     );
