@@ -16,7 +16,6 @@ import Horizon from '../Skirmisher/Horizon';
 import Octane from '../Skirmisher/Octane';
 import Pathfinder from '../Skirmisher/Pathfinder';
 import Revenant from '../Skirmisher/Revenant';
-import Valkyrie from '../Skirmisher/Valkyrie';
 import Wraith from '../Skirmisher/Wraith';
 
 export default () => {
@@ -38,7 +37,6 @@ export default () => {
       <SwiperSlide><Octane /></SwiperSlide>
       <SwiperSlide><Pathfinder /></SwiperSlide>
       <SwiperSlide><Revenant /></SwiperSlide>
-      <SwiperSlide><Valkyrie /></SwiperSlide>
       <SwiperSlide><Wraith /></SwiperSlide>
     </Swiper>
   );
