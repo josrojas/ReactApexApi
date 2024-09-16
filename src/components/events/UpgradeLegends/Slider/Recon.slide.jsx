@@ -15,6 +15,7 @@ import Bloodhound from '../Recon/Bloodhound';
 import Crypto from '../Recon/Crypto';
 import Seer from '../Recon/Seer';
 import Vantage from '../Recon/Vantage';
+import Valkyrie from '../Recon/Valkyrie';
 
 export default () => {
   return (
@@ -34,6 +35,7 @@ export default () => {
       <SwiperSlide><Crypto /></SwiperSlide>
       <SwiperSlide><Seer /></SwiperSlide>
       <SwiperSlide><Vantage /></SwiperSlide>
+      <SwiperSlide><Valkyrie /></SwiperSlide>
     </Swiper>
   );
 };

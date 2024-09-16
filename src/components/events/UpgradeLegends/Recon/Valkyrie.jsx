@@ -47,16 +47,16 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="AERIAL EXPERT"
-                    description="Increased horizontal Jetpack speed and acceleration."
+                    title="FULL COVERAGE"
+                    description="Widen Missile Swarm pattern from 4x3 to 3x5."
                     top={-10}
                     left={100}
                 />
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="FULL COVERAGE"
-                    description="Widen Missile Swarm pattern from 4x3 to 3x5."
+                    title2="Eyes in the Sky"
+                    description="Enemies are revealed from further away and through walls while skydiving."
                     top={100}
                     left={-460}
                 />
