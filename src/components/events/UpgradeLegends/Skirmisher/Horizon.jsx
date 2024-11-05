@@ -39,8 +39,8 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="BATTERY COLLECTION"
-                    description="Shield Battery count shown above Death Boxes."
+                    title="BATTPACK"
+                    description="+1 Battery per stack. See Battery Count in Death Boxes."
                     top={-10}
                     left={-460}
                 />

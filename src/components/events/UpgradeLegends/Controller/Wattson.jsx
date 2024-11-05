@@ -39,8 +39,8 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="FRESH START"
-                    description="Allies are revived with 50 HP."
+                    title="REVIVE EXPERT"
+                    description="Revive allies faster and with HP regen."
                     top={-10}
                     left={-460}
                 />
