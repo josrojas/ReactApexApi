@@ -39,32 +39,32 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="RAPID RESPONSE"
-                    description="Increase Revive speed by 20%."
+                    title="BATTPACK"
+                    description="+1 Battery per stack. See Battery Count in Death Boxes."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="TACTICAL COOLDOWN++"
-                    description="Tac Cooldown reduced by 25s. (You always have DOC)"
+                    title="EXTENDED FLIGHT"
+                    description="Increase time before D.O.C. runs out of fuel by 1.5s."
                     top={-10}
                     left={100}
                 />
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="LAST STAND"
-                    description="Gain a Self-Revive."
+                    title2="ENHANCED RADIO"
+                    description="Increased D.O.C. assignment range by 50%."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="GOLD-PLATED"
-                    description="Next Ult contains gold loot and a battery."
+                    title2="TACTICAL COOLDOWN+"
+                    description="Reduce Tac cooldown by 10s."
                     top={100}
                     left={100}
                 />

@@ -39,16 +39,16 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="FRESH START"
-                    description="Revive allies with 50 HP."
+                    title="BIG BRUDDAH"
+                    description="Increase Ult Radius by 20%."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="SHOTS SHOTS SHOTS"
-                    description="Auto-Reload shotguns on knocks."
+                    title="FAST SHOTTIES"
+                    description="Move faster with Shotguns and Auto-Reload on knocks."
                     top={-10}
                     left={100}
                 />

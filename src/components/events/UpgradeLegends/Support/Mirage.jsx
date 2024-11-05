@@ -39,8 +39,8 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="MIRACLE WORKER"
-                    description="Revives allies with HP regen up to 75 HP."
+                    title="BATTPACK"
+                    description="+1 Battery per stack. See Battery Count in Death Boxes."
                     top={-10}
                     left={-460}
                 />

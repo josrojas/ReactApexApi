@@ -39,8 +39,8 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="THICK SHIELD"
-                    description="Mobile Shield +250 HP."
+                    title="HERO'S HUSTLE"
+                    description="Increased move speed while reviving."
                     top={-10}
                     left={-460}
                 />
@@ -55,8 +55,8 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="MIRACLE WORKER"
-                    description="Revives allies with HP regen up to 75 HP."
+                    title2="ULTIMATE SAVIOR"
+                    description="Allies in impact range gain shield regen for 15s."
                     top={100}
                     left={-460}
                 />
@@ -64,7 +64,7 @@ function Upgrade() {
             <div className={styles.Zone4}>
                 <SensitiveZone
                     title2="STRONGHOLD"
-                    description="Increase Castle Wall HP and extend energized duration to 2 minutes."
+                    description="Castle Wall HP increased by 500. Extends energized duration to 3min."
                     top={100}
                     left={100}
                 />
