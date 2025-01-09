@@ -64,7 +64,7 @@ function Upgrade() {
             <div className={styles.Zone4}>
                 <SensitiveZone
                     title2="ZIPLINE ZEN"
-                    description="Take 50% less damage while riding energized Ziplines."
+                    description="Take 25% less damage while riding energized Ziplines."
                     top={100}
                     left={100}
                 />

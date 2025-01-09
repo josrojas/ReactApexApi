@@ -39,16 +39,16 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="BATTPACK"
-                    description="+1 Battery per stack. See Battery Count in Death Boxes."
+                    title="RENAISSANCE MAN"
+                    description="Gain access to all class consoles, bins, beacons and package scans."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="MORE ME"
-                    description="+1 Ult Decoy and -30 seconds."
+                    title="BOOZLE-EYE"
+                    description="Bamboozles now also scan enemies."
                     top={-10}
                     left={100}
                 />

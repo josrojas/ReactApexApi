@@ -39,32 +39,32 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="HIGH VALUE"
-                    description="Increase Tactical height and range."
+                    title="WOLF'S CLAWS"
+                    description="Gain speed boost and faster weapon draw after teleport."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="MARKET EXPANSION"
-                    description="Increase Ultimate range by 25%."
+                    title="SHOPPING SPREE"
+                    description="Squad can take 3 items from a friendly black market."
                     top={-10}
                     left={100}
                 />
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="TACTICAL COOLDOWN"
-                    description="Reduce Tac cooldown by 5 seconds."
+                    title2="ESCAPE ARTIST"
+                    description="After teleporting, regen 50 shields. Damage interrupts."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="SHOPPING SPREE"
-                    description="Loba can take an extra item from Black Markets."
+                    title2="BRAND NEW BAG"
+                    description="Squad gains gold backpacks."
                     top={100}
                     left={100}
                 />

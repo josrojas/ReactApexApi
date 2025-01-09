@@ -39,16 +39,16 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="BATTPACK"
-                    description="+1 Battery per stack. See Battery Count in Death Boxes."
+                    title="EXTENDED FLIGHT"
+                    description="Increase time before D.O.C. runs out of fuel by 1.5s."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="EXTENDED FLIGHT"
-                    description="Increase time before D.O.C. runs out of fuel by 1.5s."
+                    title="BATTPACK"
+                    description="+1 Battery per stack. See Battery Count in Death Boxes."
                     top={-10}
                     left={100}
                 />

@@ -1,6 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFlip, Pagination, Navigation, Keyboard  } from 'swiper/modules';
+import { EffectFlip, Pagination, Navigation, Keyboard } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -16,6 +16,8 @@ import Ballistic from '../Assault/Ballistic';
 import Bangalore from '../Assault/Bangalore';
 import Fuse from '../Assault/Fuse';
 import Maggie from '../Assault/Maggie';
+
+export const assaultSearch = ['Ash', 'Ballistic', 'Bangalore', 'Fuse', 'Maggie'];
 
 export default () => {
   return (
