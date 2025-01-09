@@ -12,7 +12,7 @@ const Navbar = forwardRef(({ onSearch }, ref) => {
     }));
 
     const handleInputChange = (evt) => {
-        setSearch(evt.target.value)
+        setSearch(evt.target.value);
     };
 
     const handleInputKeyDown = (evt) => {
@@ -20,28 +20,22 @@ const Navbar = forwardRef(({ onSearch }, ref) => {
             onSearch(search);
         }
     };
-    
-    
+
     return (
         <div ref={ref} style={{
             marginBottom: '14px',
-            width: '1380px',
+            width: '100%',
             display: 'flex',
         }}>
-            <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
-                <p style={{
-                    fontSize: '24px',
-                    fontWeight: 'bold',
-                }}></p>
+            <div style={{ flex: 1, display: 'flex' }}>
             </div>
             <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
                 <input
-                    placeholder="Search"
+                    placeholder="Buscar..."
                     onChange={handleInputChange}
                     onKeyDown={handleInputKeyDown}
                     value={search}
                     style={{
-                        marginLeft: '14px',
                         fontSize: '16px',
                         padding: '6px 12px',
                         borderRadius: '4px',

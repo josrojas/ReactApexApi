@@ -41,32 +41,32 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="Ringmaster"
-                    description="Gain access to Ring Consoles."
+                    title="TACTICAL COOLDOWN+"
+                    description="-10s Tac cooldown."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="VOID VISION"
-                    description="Enemy recon after exiting Tac."
+                    title="RINGMASTER"
+                    description="Gain access to Ring Consoles."
                     top={-10}
                     left={100}
                 />
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="ETERNAL NEXUS"
-                    description="Infinite Ult duration."
+                    title2="VOID VISION"
+                    description="Enemy recon after exiting Tac."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="TACTICAL COOLDOWN+"
-                    description="-10s Tac cooldown."
+                    title2="MULTIDIMENSIONAL"
+                    description="Grants a second Void Nexus. Both can exist at the same time."
                     top={100}
                     left={100}
                 />
