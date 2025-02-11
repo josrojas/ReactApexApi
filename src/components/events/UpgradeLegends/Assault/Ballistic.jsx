@@ -47,8 +47,8 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="SLING-SHOT"
-                    description="Sling weapon levels up with each upgrade selection."
+                    title="KILLING TIME"
+                    description="Increases duration of Ult by 15s."
                     top={-10}
                     left={100}
                 />
@@ -56,15 +56,15 @@ function Upgrade() {
             <div className={styles.Zone3}>
                 <SensitiveZone
                     title2="EXTRA BULLET"
-                    description="Gain a Smart Bullet charge."
+                    description="Doubles the number of Tac charges."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="SPEEDY WHISTLER"
-                    description="Successful hits with Tactical give a 2s burst of speed."
+                    title2="QUIET TIME"
+                    description="Overheat now also silences enemy for 6s."
                     top={100}
                     left={100}
                 />
