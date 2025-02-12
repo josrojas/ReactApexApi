@@ -58,6 +58,7 @@ position: relative;
         justify-content: space-between;
         top: 0;
         left: 0;
+        padding-left: 0px;
         color: white;
     
         .tab-content{
