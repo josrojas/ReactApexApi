@@ -20,12 +20,13 @@ body {
 
 h1 {
     margin-top: 100px;
-    color: #999;
+    color: #ffffff;
 }
 
 h2 {
-    color: #999;
-    margin-top: -380px;
+    visibility: hidden;
+    color: #ffffff;
+    margin-top: -400px;
 }
 
 .imgContainer {
@@ -57,7 +58,7 @@ h2 {
 .nextRankMap,
 .currentLtm,
 .nextLtm {
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -67,7 +68,7 @@ h2 {
 .remainingTimerRk,
 .remainingTimerLtm,
 .p {
-    font-size: 17px;
+    font-size: 18px;
     color: #fff;
     font-style: italic;
     margin-bottom: 12px;

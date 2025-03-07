@@ -17,12 +17,12 @@ import Error404 from "../views/Error404";
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/maps',
         element: <Home />,
         errorElement: <Error404 />
     },
     {
-        path: '/legends-upgrade',
+        path: '/',
         element: <Upgrades />,
         errorElement: <Error404 />
     },

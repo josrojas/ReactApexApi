@@ -28,7 +28,10 @@ const Home = () => {
         return (
             <div>
                 <>
-                    <Link to="/legends-upgrade" className={styles.homeLink}>Legends Upgrades</Link>
+                    <Link to="/" className={`${styles.homeLink} ${styles.button}`}>
+                        Legends Upgrades
+                    </Link>
+                    
                     <div className={styles.TabsContainer}></div>
                     <h1>Current Apex Legends map rotation</h1>
                     <TabComponent />

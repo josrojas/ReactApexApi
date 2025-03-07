@@ -39,8 +39,8 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="DUAL BREACH"
-                    description="Adds additional ult charge."
+                    title="TWIN SNARES"
+                    description="Gain an Arc Snare charge."
                     top={-10}
                     left={-460}
                 />
@@ -63,8 +63,8 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="TWIN SNARES"
-                    description="Gain an Arc Snare charge."
+                    title2="DUAL BREACH"
+                    description="Adds additional ult charge."
                     top={100}
                     left={100}
                 />
@@ -78,12 +78,12 @@ const Ash = () => {
         //Show legends image and upgrades
         <div className={styles.Container}>
             <div className={styles.CharacterContainer}>
-                <h2>ASH</h2>
+                <h3>ASH</h3>
                 <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/ash.jpg" alt="Ash image"
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <img src={LegendUpgrade} alt="Ash upgrades" width={900} height={500}></img>
+                <img src={LegendUpgrade} alt="Ash upgrades" width={600} height={500}></img>
                 <Upgrade />
             </div>
         </div>

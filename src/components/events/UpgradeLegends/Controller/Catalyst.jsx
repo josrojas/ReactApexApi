@@ -79,12 +79,12 @@ const Catalyst = () => {
         //Show legends upgrades
         <div className={styles.Container}>
             <div className={styles.CharacterContainer}>
-                <h2>CATALYST</h2>
+                <h3>CATALYST</h3>
                 <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/controller/catalyst.jpg" alt="Catalyst image"
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <img src={LegendUpgrade} alt="Catalyst upgrades" width={900} height={500}></img>
+                <img src={LegendUpgrade} alt="Catalyst upgrades" width={600} height={500}></img>
                 <Upgrade />
             </div>
         </div>
