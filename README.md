@@ -2,6 +2,8 @@
 
 App to see the current maps rotation and legends upgrades of Apex Legends using an API from `apexlegendsstatus.com`.
 
+This project updates every 2-3 months when new season comes out or when there are changes on the legends perks according to Apex Legends patch notes.
+
 This project was made using the next technologies:
 
 **HTML - CSS - JSX**
@@ -43,7 +45,7 @@ Data from `apexlegendsstatus.com`
 
 **LEGENDS UPGRADES** 
 
-*Updated S22 Shockwave*
+*Updated S24 Takeover*
 
 ![image](https://github.com/josrojas/ReactApexApi/assets/73319827/b5847781-8800-4b48-999b-411a963ca2b7)
 

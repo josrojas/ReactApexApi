@@ -103,11 +103,11 @@ position: relative;
             display: flex;
             height: 54px;
             width: 150px;
-            background-color: #7425CF;
+            background-color: #FE0000;
             z-index: 1;
             border-radius: 99px;
             transition: 0.25s ease-out;
-            box-shadow: 0px 10px 20px -3px #7425CF;
+            box-shadow: 0px 10px 20px -3px #FE0000;
             transform: translateX(${(props) => props.activetab});
         }
     }

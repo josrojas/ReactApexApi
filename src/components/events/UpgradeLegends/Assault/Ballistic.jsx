@@ -79,12 +79,12 @@ const Ballistic = () => {
         //Show legends upgrades
         <div className={styles.Container}>
             <div className={styles.CharacterContainer}>
-                <h2>BALLISTIC</h2>
+                <h3>BALLISTIC</h3>
                 <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/ballistic.jpg" alt="Ballistic image"
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <img src={LegendUpgrade} alt="Ballistic upgrades" width={900} height={500}></img>
+                <img src={LegendUpgrade} alt="Ballistic upgrades" width={600} height={500}></img>
                 <Upgrade />
             </div>
         </div>

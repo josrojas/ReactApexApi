@@ -79,12 +79,12 @@ const Pathfinder = () => {
         //Show legends upgrades
         <div className={styles.Container}>
             <div className={styles.CharacterContainer}>
-                <h2>PATHFINDER</h2>
+                <h3>PATHFINDER</h3>
                 <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/pathfinder.jpg" alt="Pathfinder image"
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <img src={LegendUpgrade} alt="Path upgrades" width={900} height={500}></img>
+                <img src={LegendUpgrade} alt="Path upgrades" width={600} height={500}></img>
                 <Upgrade />
             </div>
         </div>

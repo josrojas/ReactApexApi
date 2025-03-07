@@ -39,3 +39,16 @@
 .homeLink{
     font-size: 20px;
 }
+
+.button {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.button:hover {
+   color: #0056b3;
+}

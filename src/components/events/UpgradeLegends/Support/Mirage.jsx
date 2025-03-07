@@ -79,12 +79,12 @@ const Mirage = () => {
         //Show legends upgrades
         <div className={styles.Container}>
             <div className={styles.CharacterContainer}>
-                <h2>Mirage</h2>
+                <h3>MIRAGE</h3>
                 <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/support/mirage.jpg" alt="Mirage image"
                     width={300} height={500}></img>
             </div>
             <div className={styles.UpgradeContainer}>
-                <img src={LegendUpgrade} alt="Mirage upgrades" width={900} height={500}></img>
+                <img src={LegendUpgrade} alt="Mirage upgrades" width={600} height={500}></img>
                 <Upgrade />
             </div>
         </div>

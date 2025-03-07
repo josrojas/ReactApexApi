@@ -1,4 +1,4 @@
-import { Link, Outlet} from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useState, useRef, useCallback, useMemo } from 'react';
 
 import Navbar from '../../components/Navbar';
@@ -43,7 +43,9 @@ const Upgrades = () => {
         return (
             <div>
                 <>
-                    <Link to="/" className={styles.homeLink}>Home</Link>
+                    <Link to="/maps" className={`${styles.homeLink} ${styles.button}`}>
+                        Maps rotation
+                    </Link>
                     <div className={styles.TabsContainer}></div>
 
                     <Outlet />
