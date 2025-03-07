@@ -34,22 +34,21 @@ This will initialize the server and you can access the app in your browser with 
 
 [apex-status.vercel.app](https://apex-status.vercel.app)
 
-**CURRENT MAP ROTATION**
-
-![image](https://github.com/user-attachments/assets/6943f99a-366c-4857-a27b-496c32feb71c)
-
-![image](https://github.com/josrojas/ReactApexApi/assets/73319827/b72ea795-0eda-4133-82aa-ec380258d639)
-
-Data from `apexlegendsstatus.com`
-<br><br><br>
-
 **LEGENDS UPGRADES** 
 
 *Updated S24 Takeover*
 
-![image](https://github.com/josrojas/ReactApexApi/assets/73319827/b5847781-8800-4b48-999b-411a963ca2b7)
+![image](https://github.com/user-attachments/assets/bf26ac5a-c6fc-4b2d-8887-5326f0bb9523)
 
-![image](https://github.com/josrojas/ReactApexApi/assets/73319827/d711be4f-15de-4576-8af1-2249278d3f23)
+![image](https://github.com/user-attachments/assets/59f0d07e-99c9-40fb-85c7-58caf958deb7)
 
 Data from `ea.com/games/apex-legends`
+<br><br><br>
 
+**CURRENT MAP ROTATION**
+
+![image](https://github.com/user-attachments/assets/944f9346-f118-42f8-b135-d7bc16ebf716)
+
+![image](https://github.com/user-attachments/assets/b9cd23ff-ec9d-4c28-80f6-0e087e915e08)
+
+Data from `apexlegendsstatus.com`
