@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LegendUpgrade from '../../../../assets/Rev.png';
+import LegendUpgrade from '../../../../assets/Rev.webp';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -47,8 +47,8 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="MURDER MACHINE"
-                    description="Call out the number of squads within 150 meters after a squad wipe."
+                    title="TRY TO HIDE"
+                    description="Doubles the duration of the passive mark when getting enemies to low health."
                     top={-10}
                     left={100}
                 />
@@ -63,8 +63,8 @@ function Upgrade() {
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="GRIM LEAPER"
-                    description="Tac will now refresh on BOTH knocks and assisted knocks within a 3s window"
+                    title2="AGILE ASSASSIN"
+                    description="Reduces Shadow Pounce activation time and charge time by half."
                     top={100}
                     left={100}
                 />

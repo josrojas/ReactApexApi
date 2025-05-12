@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LegendUpgrade from '../../../../assets/Horizon.png';
+import LegendUpgrade from '../../../../assets/Horizon.webp';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -39,32 +39,32 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="BATTPACK"
-                    description="+1 Battery per stack. See Battery Count in Death Boxes."
+                    title="TACTICAL COOLDOWN"
+                    description="Reduce Tactical cooldown by 5 seconds."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="BIG BANG"
-                    description="See nearby ordnance through walls and on Death Boxes."
+                    title="ULTIMATE COOLDOWN"
+                    description="Reduce Ultimate cooldown by 30 seconds."
                     top={-10}
                     left={100}
                 />
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="TACTICAL COOLDOWN"
-                    description="Reduce Tactical cooldown by 5 seconds."
+                    title2="CONSERVATION OF ENERGY"
+                    description="Spacewalk grants 25HP shield regen on soft landings."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="ULTIMATE COOLDOWN"
-                    description="Reduce Ultimate cooldown by 30 seconds."
+                    title2="COMBAT RESERVE"
+                    description="Access Assault Bins, carry extra ammo per stack, and extra grenade slots."
                     top={100}
                     left={100}
                 />

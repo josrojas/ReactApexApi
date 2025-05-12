@@ -36,7 +36,7 @@ This will initialize the server and you can access the app in your browser with 
 
 **LEGENDS UPGRADES** 
 
-*Updated S24 Takeover*
+*Updated S25 Prodigy*
 
 ![image](https://github.com/user-attachments/assets/bf26ac5a-c6fc-4b2d-8887-5326f0bb9523)
 

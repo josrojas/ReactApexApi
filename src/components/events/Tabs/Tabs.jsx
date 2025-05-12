@@ -54,10 +54,10 @@ position: relative;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 400px;
+    margin-top: 650px;
     width: 100%;
     height: 30%;
-    background-color: #242424;
+    background-color: #2D2D2D;
     padding: 0px;
     color: #0f0f0f;
     

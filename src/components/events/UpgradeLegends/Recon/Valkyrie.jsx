@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LegendUpgrade from '../../../../assets/Valk.png';
+import LegendUpgrade from '../../../../assets/Valk.webp';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -55,7 +55,7 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="Eyes in the Sky"
+                    title2="EYES IN THE SKY"
                     description="Enemies are revealed from further away and through walls while skydiving."
                     top={100}
                     left={-460}

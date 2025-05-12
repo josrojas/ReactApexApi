@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LegendUpgrade from '../../../../assets/Path.png';
+import LegendUpgrade from '../../../../assets/Path.webp';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -55,16 +55,16 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="DOWN AND AWAY"
-                    description="Tac will now refresh on BOTH knocks and assisted knocks within a 3s window."
+                    title2="GRAPPLE GOD"
+                    description="Gain a second Grappling Hook charge."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="ZIPLINE ZEN"
-                    description="Take 25% less damage while riding energized Ziplines."
+                    title2="FEELING ZIPPY"
+                    description="Gain a second Zipline Gun charge."
                     top={100}
                     left={100}
                 />

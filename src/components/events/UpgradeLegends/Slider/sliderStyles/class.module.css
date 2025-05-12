@@ -1,0 +1,11 @@
+.classContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.classImage {
+    width: 490px;
+    height: 372px;
+}

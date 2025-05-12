@@ -9,31 +9,38 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-flip';
 import 'swiper/css/keyboard';
 
-import styles from './slide.module.css';
+import styles from './sliderStyles/slide.module.css';
 
 import Catalyst from '../Controller/Catalyst';
 import Caustic from '../Controller/Caustic';
 import Rampart from '../Controller/Rampart';
 import Wattson from '../Controller/Wattson';
+import ControlClass from '../Slider/Classes/classControl';
 
 export default () => {
   return (
-    <Swiper
-      // install Swiper modules
-      className={styles.swiper}
-      modules={[Navigation, Pagination, EffectFlip, Keyboard]}
-      spaceBetween={1}
-      slidesPerView={1}
-      effect={'flip'}
-      pagination={true}
-      navigation={true}
-      grabCursor={true}
-      keyboard={true}
-    >
-      <SwiperSlide><Catalyst /></SwiperSlide>
-      <SwiperSlide><Caustic /></SwiperSlide>
-      <SwiperSlide><Rampart /></SwiperSlide>
-      <SwiperSlide><Wattson /></SwiperSlide>
-    </Swiper>
+    <div className={styles.container}>
+      <Swiper
+        // install Swiper modules
+        className={styles.swiper}
+        modules={[Navigation, Pagination, EffectFlip, Keyboard]}
+        spaceBetween={1}
+        slidesPerView={1}
+        effect={'flip'}
+        pagination={true}
+        navigation={true}
+        grabCursor={true}
+        keyboard={true}
+      >
+        <SwiperSlide><Catalyst /></SwiperSlide>
+        <SwiperSlide><Caustic /></SwiperSlide>
+        <SwiperSlide><Rampart /></SwiperSlide>
+        <SwiperSlide><Wattson /></SwiperSlide>
+      </Swiper>
+
+      <div className={styles.classContainer}>
+        <ControlClass />
+      </div>
+    </div>
   );
 };

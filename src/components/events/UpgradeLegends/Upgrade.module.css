@@ -2,12 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    width: 1000px;
-    height: 550px;
-    padding-top: 70px;
-    margin-top: -100px;
-    margin-left: 100px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    padding-top: 50px;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -15,27 +14,25 @@
 .CharacterContainer {
     display: flex;
     flex-direction: column;
-    align-items: left;
     width: 100%;
-    margin-top: 350px;
+    margin-top: -30px;
+    margin-left: 100px;
     color: white;
-    margin-left: 110px;
+    padding: 0 10px;
 }
 
 .UpgradeContainer {
     width: 100%;
     color: white;
-    margin-left: 310px;
-    margin-top: -540px;
-    padding: 40px;
+    padding: 20px;
+    margin-top: -520px;
+    margin-left: 300px;
 }
 
 h3 {
-    display: flex;
-    align-items: center;
-    margin-top: -380px;
+    margin-left: -110px;
     color: white;
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 .square {
@@ -96,3 +93,31 @@ h3 {
     margin-top: -85px;
     margin-left: -10px;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .Container {
+        max-width: 600px;
+    }
+
+    .SensitiveZone {
+        margin-left: 300px;
+    }
+
+    .CharacterContainer {
+        margin-left: 300px;
+        max-width: 600px;
+    }
+
+    .UpgradeContainer {
+        margin-top: 0px;
+        margin-left: 0;
+        max-width: 600px;
+    }
+
+    h3 {
+        margin-left: -300px;
+        font-size: 1.5em;
+    }
+}
+
