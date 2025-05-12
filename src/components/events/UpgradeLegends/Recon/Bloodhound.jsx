@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LegendUpgrade from '../../../../assets/Bloodhound.png';
+import LegendUpgrade from '../../../../assets/Bloodhound.webp';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 

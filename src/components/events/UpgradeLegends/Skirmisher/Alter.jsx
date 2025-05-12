@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import LegendUpgrade from '../../../../assets/Alter.png'
-import LegendProfile from '../../../../assets/AlterP.jpg'
+import LegendUpgrade from '../../../../assets/Alter.webp'
+import LegendProfile from '../../../../assets/AlterP.webp'
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -41,32 +41,32 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="TACTICAL COOLDOWN+"
-                    description="-10s Tac cooldown."
+                    title="EYE TO ANOTHER WORLD"
+                    description="Gain all Recon Perks."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="RINGMASTER"
-                    description="Gain access to Ring Consoles."
+                    title="FRIENDS"
+                    description="Gain all support perks."
                     top={-10}
                     left={100}
                 />
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="VOID VISION"
-                    description="Enemy recon after exiting Tac."
+                    title2="STARING INTO THE VOID"
+                    description="Void Passage scan duration +15s for Alter."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="MULTIDIMENSIONAL"
-                    description="Grants a second Void Nexus. Both can exist at the same time."
+                    title2="VOID BREACHER"
+                    description="Using a friendly Void Passage grants move speed and improved reloads."
                     top={100}
                     left={100}
                 />

@@ -44,7 +44,7 @@ position: relative;
     margin-top: 100px;
     width: 100%;
     height: 30%;
-    background-color: #242424;
+    background-color: #2D2D2D;
     padding: 0px;
     color: #0f0f0f;
     

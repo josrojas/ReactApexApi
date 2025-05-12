@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LegendUpgrade from '../../../../assets/Wraith.png';
+import LegendUpgrade from '../../../../assets/Wraith.webp';
 
 import styles from '../../UpgradeLegends/Upgrade.module.css';
 
@@ -48,7 +48,7 @@ function Upgrade() {
             <div className={styles.Zone2}>
                 <SensitiveZone
                     title="ULTIMATE COOLDOWN+"
-                    description="Reduce Ultimate cooldown by 60 seconds."
+                    description="Ultimate cooldown by 90 seconds."
                     top={-10}
                     left={100}
                 />
@@ -56,7 +56,7 @@ function Upgrade() {
             <div className={styles.Zone3}>
                 <SensitiveZone
                     title2="FAST PHASE"
-                    description="Reduce Tactical wind-up by 20%."
+                    description="Reduce Tactical wind-up by 30%."
                     top={100}
                     left={-460}
                 />
@@ -64,7 +64,7 @@ function Upgrade() {
             <div className={styles.Zone4}>
                 <SensitiveZone
                     title2="TACTICAL COOLDOWN"
-                    description="Reduce Tactical cooldown by 5 seconds."
+                    description="Tactical cooldown by 15s."
                     top={100}
                     left={100}
                 />
