@@ -1,33 +1,44 @@
-import React from 'react';
-import { useMapRotation } from '../../../hooks/useMapRotation.js';
+import { useMapData } from './../../../hooks/MapContext';
 import styles from './Map.module.css';
 
-// Component that use hook useMapRotation
 const Mixtape = () => {
-    const apiKey = import.meta.env.VITE_APEX_API;
-    const {
-        currentLtm,
-        remainingTimerLtm,
-        nextLtm,
-        assetLtm
-    } = useMapRotation(apiKey);
+  const data = useMapData();
 
-    return (
-        <div className={styles.mapContainer}>
-            <div className={styles.imgContainer}></div>
-            <div className={styles.imgAsset}><img src={assetLtm} alt="Maps" height={540}/></div>
-            <div className={styles.container}>
-                <h2>Mixtape</h2>
-                <div className={styles.currentLtm}>{`Current LTM: ${currentLtm}`}</div>
-                <div className={styles.remainingTimerLtm}>{`Remaining Time: ${remainingTimerLtm}`}</div>
-                <div className={styles.nextLtm}>{`Next LTM: ${nextLtm}`}</div>
-            </div>
+  if (!data?.ltm) return <p className={styles.loading}>Loading...</p>;
 
-            <div className={styles.footer}>
-                <h5>{`Data from https://apexlegendsstatus.com`}</h5>
-            </div>
+  const current = data.ltm.current || {};
+  const next = data.ltm.next || {};
+
+  return (
+    <section className={styles.mapContainer}>
+      <div className={styles.imgContainer}>
+        {current.asset && (
+          <img
+            src={current.asset}
+            alt={`LTM Map: ${current.map}`}
+            className={styles.imgAsset}
+          />
+        )}
+      </div>
+
+      <div className={styles.container}>
+        <h2>Mixtape / LTM</h2>
+        <div className={styles.currentMap}>
+          Current Mode: <strong>{current.eventName}</strong> — {current.map}
         </div>
-    );
+        <div className={styles.remainingTimer}>
+          Remaining Time: {data.timerLtm}
+        </div>
+        <div className={styles.nextMap}>
+          Next Mode: <strong>{next.eventName}</strong> — {next.map}
+        </div>
+      </div>
+
+      <div className={styles.footer}>
+        <h5>Data from https://apexlegendsstatus.com</h5>
+      </div>
+    </section>
+  );
 };
 
 export default Mixtape;
