@@ -14,7 +14,6 @@ import Home from "../views/Home";
 import Upgrades from "../views/Upgrades";
 import Error404 from "../views/Error404";
 
-
 const router = createBrowserRouter([
     {
         path: '/maps',

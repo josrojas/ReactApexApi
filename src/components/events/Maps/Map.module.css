@@ -12,9 +12,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     margin-top: 50px;
-    /*border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);*/
-    height: 450px;
     width: 1280px;
 }
 
@@ -46,31 +43,31 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-
-.imgAsset img {
+    height: 520px;
+    object-fit: cover;
     border-radius: 20px;
 }
 
-.currentMap,
-.nextMap,
-.currentRankMap,
-.nextRankMap,
-.currentLtm,
-.nextLtm {
-    font-size: 20px;
+.currentMap {
+    font-size: 22px;
     color: #fff;
-    margin-top: 15px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.nextMap{
+    font-size: 22px;
+    color: #fff;
+    margin-top: 35px;
     margin-bottom: 25px;
 }
 
 .remainingTimer,
-.remainingTimerRk,
-.remainingTimerLtm,
 .p {
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     font-style: italic;
+    margin-top: 25px;
     margin-bottom: 12px;
 }
 
