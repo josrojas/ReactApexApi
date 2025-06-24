@@ -39,32 +39,32 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="TWIN SNARES"
-                    description="Gain an Arc Snare charge."
+                    title="DUAL BREACH"
+                    description="Adds additional ult charge."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="GREEDY SNARE"
-                    description="Arc Snare remains in play for 24s and can catch multiple enemies."
+                    title="CHARGED KNOCK"
+                    description="Gain HP regen on a knock."
                     top={-10}
                     left={100}
                 />
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="GHOST IN THE MACHINE"
-                    description="Adds additional Dash charge."
+                    title2="TWIN SNARES"
+                    description="Gain an Arc Snare charge."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="DUAL BREACH"
-                    description="Adds additional ult charge."
+                    title2="GREEDY SNARE"
+                    description="Arc Snare remains in play for 24s and can catch multiple enemies."
                     top={100}
                     left={100}
                 />

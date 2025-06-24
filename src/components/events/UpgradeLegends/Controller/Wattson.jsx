@@ -39,32 +39,32 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="REVIVE EXPERT"
-                    description="Revive allies faster and with HP regen."
+                    title="HELP IS HERE"
+                    description="Gain all support perks."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="FALLING STARS"
-                    description="Pylon interceptions spawn Arc Stars."
+                    title="ULTIMATE CONDUCTOR"
+                    description="Damage enemies to reduce Ult cooldown and knocks give 30% ult charge bust."
                     top={-10}
                     left={100}
                 />
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="POWER PYLON"
-                    description="Double Ult HP and Ult shield generator recharges."
+                    title2="ENERGIZED HEALER"
+                    description="Gain double small med healing."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="SPLIT CIRCUIT"
-                    description="Doubles Ult shield generator Rate & Capacity."
+                    title2="POWER PYLON"
+                    description="Double Ult HP, shield recharge rate, and max capacity."
                     top={100}
                     left={100}
                 />
