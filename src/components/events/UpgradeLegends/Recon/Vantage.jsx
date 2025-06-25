@@ -39,32 +39,32 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="RINGMASTER"
-                    description="Gain access to Ring Consoles."
+                    title="CONTROLLING MY PREY"
+                    description="Gain access to Ring Consoles and zone overcharge."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="ULTIMATE RELOAD"
-                    description="Doubles Ult Accel use speed and grant +2 bullets."
+                    title="IMPROVED MARK"
+                    description="Marked enemy icon is visible through walls, briefly highlights enemies, and reveals their health bar to your squad upon mark."
                     top={-10}
                     left={100}
                 />
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="BAT BOUNCE"
-                    description="Improved Tactical's double-jump."
+                    title2="TACTICAL COOLDOWN"
+                    description="Reduce Tac cooldown by 5s."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="SHARPSHOOTER"
-                    description="Refresh Tactical on hits with Ultimate."
+                    title2="SNIPER COVER"
+                    description="Attach a Gunshield to Sniper`s Mark."
                     top={100}
                     left={100}
                 />

@@ -39,8 +39,8 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="LASTING BULLET"
-                    description="Smart Bullet duration is tripled."
+                    title="EXTRA BULLETS"
+                    description="Doubles the number of Tac charges."
                     top={-10}
                     left={-460}
                 />
@@ -55,8 +55,8 @@ function Upgrade() {
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="EXTRA BULLET"
-                    description="Doubles the number of Tac charges."
+                    title2="LASTING BULLET"
+                    description="Smart Bullet duration is tripled."
                     top={100}
                     left={-460}
                 />
