@@ -47,8 +47,8 @@ function Upgrade() {
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="CHARGED KNOCK"
-                    description="Gain HP regen on a knock."
+                    title="MARKED FOR DEATH"
+                    description="Reveals enemy deathboxes on your map."
                     top={-10}
                     left={100}
                 />
