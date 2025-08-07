@@ -15,7 +15,7 @@ import Alter from '../Skirmisher/Alter';
 import Horizon from '../Skirmisher/Horizon';
 import Octane from '../Skirmisher/Octane';
 import Pathfinder from '../Skirmisher/Pathfinder';
-import Revenant from '../Skirmisher/Revenant';
+import Ash from '../Skirmisher/Ash';
 import Wraith from '../Skirmisher/Wraith';
 import SkirmClass from '../Slider/Classes/classSkirm';
 
@@ -23,7 +23,6 @@ export default () => {
   return (
     <div className={styles.container}>
       <Swiper
-        // install Swiper modules
         className={styles.swiper}
         modules={[Navigation, Pagination, EffectFlip, Keyboard]}
         spaceBetween={1}
@@ -38,7 +37,7 @@ export default () => {
         <SwiperSlide><Horizon /></SwiperSlide>
         <SwiperSlide><Octane /></SwiperSlide>
         <SwiperSlide><Pathfinder /></SwiperSlide>
-        <SwiperSlide><Revenant /></SwiperSlide>
+        <SwiperSlide><Ash /></SwiperSlide>
         <SwiperSlide><Wraith /></SwiperSlide>
       </Swiper>
 

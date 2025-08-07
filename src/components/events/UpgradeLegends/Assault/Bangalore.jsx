@@ -39,32 +39,32 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="TACTICAL COOLDOWN"
-                    description="Reduces Tactical cooldown by 5s."
+                    title="ELECTRIC SMOKE"
+                    description="Electrifies Tac dealing 100 damage to enemy Ults and destroys Tacs."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="ULTIMATE COOLDOWN+"
-                    description="Reduce Ultimate cooldown by 60 seconds."
+                    title="COVER ME"
+                    description="Allies regenerate HP while inside Smoke. Auto-Ping enemies who trigger Passive."
                     top={-10}
                     left={100}
                 />
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="COVER ME"
-                    description="Point you in the right direction enemies who trigger Double Time."
+                    title2="ECM PAYLOAD"
+                    description="Electrifies Ult dealing 10 more damage, destroys enemy deployables."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="REFUGE"
-                    description="Regenerate 3.5 HP/s while inside Smoke."
+                    title2="MEDAL OF HONOR"
+                    description="Faster revives and passive triggers running towards knocked allies."
                     top={100}
                     left={100}
                 />

@@ -48,7 +48,7 @@ function Upgrade() {
             <div className={styles.Zone2}>
                 <SensitiveZone
                     title="ULTIMATE CONDUCTOR"
-                    description="Damage enemies to reduce Ult cooldown and knocks give 30% ult charge bust."
+                    description="Damage enemies to reduce Ult cooldown and knocks give 50% ult charge bust."
                     top={-10}
                     left={100}
                 />

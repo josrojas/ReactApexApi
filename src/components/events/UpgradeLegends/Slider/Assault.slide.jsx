@@ -11,7 +11,7 @@ import 'swiper/css/keyboard';
 
 import styles from '../Slider/sliderStyles/slide.module.css';
 
-import Ash from '../Assault/Ash';
+import Revenant from '../Assault/Revenant';
 import Ballistic from '../Assault/Ballistic';
 import Bangalore from '../Assault/Bangalore';
 import Fuse from '../Assault/Fuse';
@@ -35,9 +35,9 @@ export default () => {
         grabCursor={true}
         keyboard={true}
       >
-        <SwiperSlide><Ash /></SwiperSlide>
         <SwiperSlide><Ballistic /></SwiperSlide>
         <SwiperSlide><Bangalore /></SwiperSlide>
+        <SwiperSlide><Revenant /></SwiperSlide>
         <SwiperSlide><Fuse /></SwiperSlide>
         <SwiperSlide><Maggie /></SwiperSlide>
       </Swiper>

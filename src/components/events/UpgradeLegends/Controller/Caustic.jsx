@@ -39,16 +39,16 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="PARABOLIC FORCE"
-                    description="Increase Tactical throw range by 75%."
+                    title="EXTRA TRAPS"
+                    description="Gain an additional Tac and +2 traps in world."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="RESIDUAL TOXINS"
-                    description="Nox Vision persists for longer."
+                    title="BREATHE IT IN"
+                    description="Regen HP inside Nox Gas."
                     top={-10}
                     left={100}
                 />
@@ -56,15 +56,15 @@ function Upgrade() {
             <div className={styles.Zone3}>
                 <SensitiveZone
                     title2="PARTICLE DIFFUSER"
-                    description="+50% Ult gas area of effect."
+                    description="Increases Ult radius by 50%."
                     top={100}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone4}>
                 <SensitiveZone
-                    title2="BREATHE IT IN"
-                    description="Regen HP inside Nox Gas."
+                    title2="GAS FIGHTER"
+                    description="Tac recharges 300% faster while in gas."
                     top={100}
                     left={100}
                 />
