@@ -39,24 +39,24 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="ARTIST'S REACH"
-                    description="Increase the throw range of Ultimate by 20 meters."
+                    title="LASTING BEATS"
+                    description="Enemies who leave the dome have their locations shown for 5s."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="ULTIMATE COOLDOWN"
-                    description="Reduce Ultimate cooldown by 20%."
+                    title="HOME BASE"
+                    description="Tac recharges 4x as fast in your Exhibit sphere."
                     top={-10}
                     left={100}
                 />
             </div>
             <div className={styles.Zone3}>
                 <SensitiveZone
-                    title2="LONG VIEW"
-                    description="Increase Passive and Tactical range to 75m."
+                    title2="ENERGIZING FOCUS"
+                    description="Regen 25 shields when hitting an enemy with Tac."
                     top={100}
                     left={-460}
                 />
@@ -64,7 +64,7 @@ function Upgrade() {
             <div className={styles.Zone4}>
                 <SensitiveZone
                     title2="SPLIT FOCUS"
-                    description="+1 Tac charge and -50% Silence duration."
+                    description="+1 Tac charge."
                     top={100}
                     left={100}
                 />

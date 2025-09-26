@@ -39,16 +39,16 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="DUAL BREACH"
-                    description="Adds additional ult charge."
+                    title="ULTIMATE COOLDOWN"
+                    description="Reduces Phase Breach cooldown by 30s."
                     top={-10}
                     left={-460}
                 />
             </div>
             <div className={styles.Zone2}>
                 <SensitiveZone
-                    title="MARKED FOR DEATH"
-                    description="Reveals enemy deathboxes on your map."
+                    title="LONGER REACH"
+                    description="Increases Phase Breach range by 25m."
                     top={-10}
                     left={100}
                 />

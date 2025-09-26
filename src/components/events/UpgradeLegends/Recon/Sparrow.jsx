@@ -40,7 +40,7 @@ function Upgrade() {
             <div className={styles.Zone1}>
                 <SensitiveZone
                     title="EXTRA TRAPS"
-                    description="Gain an additional Tactical charge and +2 traps in world."
+                    description="Gain an additional Tactical charge and +1 traps in world."
                     top={-10}
                     left={-460}
                 />

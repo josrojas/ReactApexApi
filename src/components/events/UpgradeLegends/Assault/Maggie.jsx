@@ -39,8 +39,8 @@ function Upgrade() {
         <div className={styles.SensitiveZone}>
             <div className={styles.Zone1}>
                 <SensitiveZone
-                    title="SHOTS SHOTS SHOTS"
-                    description="Auto-Reload shotguns on knock."
+                    title="GUNRUNNING"
+                    description="Passive movement speed increase also works with SMGs and Pistols."
                     top={-10}
                     left={-460}
                 />
