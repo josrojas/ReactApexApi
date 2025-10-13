@@ -1,34 +1,55 @@
 import { useMapData } from './../../../hooks/MapContext';
 import styles from './Map.module.css';
 
+const API_SOURCE = 'https://apexlegendsstatus.com';
+
 const BattleRoyale = () => {
-    const data = useMapData();
+    const { battle_royale, timerBR, error, isLoading, refetch } = useMapData();
 
-    if (!data?.battle_royale) return <p className={styles.loading}>Loading...</p>;
+    if (isLoading) {
+        return <p className={styles.loading}>Loading...</p>;
+    }
 
-    const { map: currentMap, asset } = data.battle_royale.current || {};
-    const { map: nextMap } = data.battle_royale.next || {};
+    if (error) {
+        return (
+            <div className={styles.error}>
+                <p>⚠️ Error: {error}</p>
+                <button onClick={refetch}>Retry</button>
+            </div>
+        );
+    }
+
+    if (!battle_royale) {
+        return <p className={styles.loading}>No data available</p>;
+    }
+
+    const { map: currentMap, asset } = battle_royale.current || {};
+    const { map: nextMap } = battle_royale.next || {};
 
     return (
         <section className={styles.mapContainer}>
-            <div className={styles.imgContainer}></div>
             {asset && (
                 <img
                     src={asset}
-                    alt={`Maps br: ${currentMap}`}
+                    alt={`Battle Royale map: ${currentMap}`}
                     className={styles.imgAsset}
                 />
             )}
             <div className={styles.container}>
                 <h2>Battle Royale</h2>
-                <div className={styles.currentMap}>Current map: {currentMap}</div>
-                <div className={styles.remainingTimer}>Remaining Time: {data.timerBR}</div>
-                <div className={styles.nextMap}>Next map: {nextMap}</div>
+                <div className={styles.currentMap}>
+                    Current map: {currentMap || 'Unknown'}
+                </div>
+                <div className={styles.remainingTimer}>
+                    Remaining Time: {timerBR}
+                </div>
+                <div className={styles.nextMap}>
+                    Next map: {nextMap || 'Unknown'}
+                </div>
             </div>
-
-            <div className={styles.footer}>
-                <h5>{`Data from https://apexlegendsstatus.com`}</h5>
-            </div>
+            <footer className={styles.footer}>
+                <h5>Data from https://apexlegendsstatus.com</h5>
+            </footer>
         </section>
     );
 };
