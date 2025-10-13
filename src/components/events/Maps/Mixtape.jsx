@@ -1,44 +1,68 @@
 import { useMapData } from './../../../hooks/MapContext';
 import styles from './Map.module.css';
 
+const API_SOURCE = 'https://apexlegendsstatus.com';
+
 const Mixtape = () => {
-  const data = useMapData();
+    const { ltm, timerLtm, error, isLoading, refetch } = useMapData();
 
-  if (!data?.ltm) return <p className={styles.loading}>Loading...</p>;
+    if (isLoading) {
+        return <p className={styles.loading}>Loading...</p>;
+    }
 
-  const current = data.ltm.current || {};
-  const next = data.ltm.next || {};
+    if (error && !ltm) {
+        return (
+            <div className={styles.error}>
+                <p>⚠️ Error: {error}</p>
+                <button onClick={refetch}>Retry</button>
+            </div>
+        );
+    }
 
-  return (
-    <section className={styles.mapContainer}>
-      <div className={styles.imgContainer}>
-        {current.asset && (
-          <img
-            src={current.asset}
-            alt={`LTM Map: ${current.map}`}
-            className={styles.imgAsset}
-          />
-        )}
-      </div>
+    if (!ltm) {
+        return <p className={styles.loading}>No data available</p>;
+    }
 
-      <div className={styles.container}>
-        <h2>Mixtape / LTM</h2>
-        <div className={styles.currentMap}>
-          Current Mode: <strong>{current.eventName}</strong> — {current.map}
-        </div>
-        <div className={styles.remainingTimer}>
-          Remaining Time: {data.timerLtm}
-        </div>
-        <div className={styles.nextMap}>
-          Next Mode: <strong>{next.eventName}</strong> — {next.map}
-        </div>
-      </div>
+    const current = ltm.current || {};
+    const next = ltm.next || {};
 
-      <div className={styles.footer}>
-        <h5>Data from https://apexlegendsstatus.com</h5>
-      </div>
-    </section>
-  );
+    return (
+        <section className={styles.mapContainer}>
+            {error && (
+                <div className={styles.warningBanner}>
+                    ⚠️ Using cached data. {error}
+                    <button onClick={refetch} className={styles.retrySmall}>
+                        Retry
+                    </button>
+                </div>
+            )}
+
+            {current.asset && (
+                <img
+                    src={current.asset}
+                    alt={`LTM Map: ${current.map || 'Unknown'}`}
+                    className={styles.imgAsset}
+                />
+            )}
+
+            <div className={styles.container}>
+                <h2>Mixtape / LTM</h2>
+                <div className={styles.currentMap}>
+                    Current Mode: <strong>{current.eventName || 'Unknown'}</strong> — {current.map || 'Unknown'}
+                </div>
+                <div className={styles.remainingTimer}>
+                    Remaining Time: {timerLtm || 'N/A'}
+                </div>
+                <div className={styles.nextMap}>
+                    Next Mode: <strong>{next.eventName || 'Unknown'}</strong> — {next.map || 'Unknown'}
+                </div>
+            </div>
+
+            <footer className={styles.footer}>
+                <h5>Data from {API_SOURCE}</h5>
+            </footer>
+        </section>
+    );
 };
 
 export default Mixtape;
