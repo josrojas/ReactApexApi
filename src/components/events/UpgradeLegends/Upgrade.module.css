@@ -94,6 +94,32 @@ h3 {
     margin-left: -10px;
 }
 
+/* Añade estos estilos si no los tienes */
+.characterImage {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.upgradeImage {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .characterImage {
+        width: 200px;
+        height: 350px;
+    }
+    
+    .upgradeImage {
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .Container {
