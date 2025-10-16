@@ -2,17 +2,17 @@ import { useState } from 'react';
 import styles from './Upgrade.module.css';
 
 // Tooltip component
-function TooltipContent({ title, description }) {
+function TooltipContent({ title, description, titleColor }) {
     return (
         <div>
-            <h4>{title}</h4>
+            <h4 style={{ color: titleColor }}>{title}</h4>
             <p>{description}</p>
         </div>
     );
 }
 
 // Sensitive zone component
-function SensitiveZone({ title, description, top, left }) {
+function SensitiveZone({ title, description, top, left, titleColor }) {
     const [isShown, setIsShown] = useState(false);
 
     return (
@@ -26,7 +26,11 @@ function SensitiveZone({ title, description, top, left }) {
                     className={styles.tooltip} 
                     style={{ top: `${top}px`, left: `${left}px` }}
                 >
-                    <TooltipContent title={title} description={description} />
+                    <TooltipContent 
+                        title={title} 
+                        description={description}
+                        titleColor={titleColor}
+                    />
                 </div>
             )}
         </div>
@@ -35,6 +39,14 @@ function SensitiveZone({ title, description, top, left }) {
 
 // Upgrades container
 function UpgradeZones({ upgrades }) {
+    // Color by ID
+    const getTitleColor = (upgradeId) => {
+        if (upgradeId === 1 || upgradeId === 2) {
+            return '#2e6bee';
+        }
+        return '#c82eee';
+    };
+
     return (
         <div className={styles.SensitiveZone}>
             {upgrades.map((upgrade) => (
@@ -44,6 +56,7 @@ function UpgradeZones({ upgrades }) {
                         description={upgrade.description}
                         top={upgrade.tooltipPosition.top}
                         left={upgrade.tooltipPosition.left}
+                        titleColor={getTitleColor(upgrade.id)}
                     />
                 </div>
             ))}
