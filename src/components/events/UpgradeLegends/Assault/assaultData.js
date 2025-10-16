@@ -3,7 +3,7 @@
 export const BALLISTIC_DATA = {
     name: 'BALLISTIC',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/ballistic.jpg',
-    upgradeImage: './src/assets/Ballistic.webp',
+    upgradeImage: '/assets/Ballistic.webp',
     upgrades: [
         {
             id: 1,
@@ -39,7 +39,7 @@ export const BALLISTIC_DATA = {
 export const BANGALORE_DATA = {
     name: 'BANGALORE',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/bangalore.jpg',
-    upgradeImage: './src/assets/Bangalore.webp',
+    upgradeImage: '/assets/Bangalore.webp',
     upgrades: [
         {
             id: 1,
@@ -75,7 +75,7 @@ export const BANGALORE_DATA = {
 export const MAGGIE_DATA = {
     name: 'MAD MAGGIE',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/mad-maggie.jpg',
-    upgradeImage: './src/assets/Maggie.webp',
+    upgradeImage: '/assets/Maggie.webp',
     upgrades: [
         {
             id: 1,
@@ -111,7 +111,7 @@ export const MAGGIE_DATA = {
 export const REVENANT_DATA = {
     name: 'REVENANT',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/revenant.jpg',
-    upgradeImage: './src/assets/Rev.webp',
+    upgradeImage: '/assets/Rev.webp',
     upgrades: [
         {
             id: 1,
@@ -147,7 +147,7 @@ export const REVENANT_DATA = {
 export const FUSE_DATA = {
     name: 'FUSE',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/fuse.jpg',
-    upgradeImage: './src/assets/Fuse.webp',
+    upgradeImage: '/assets/Fuse.webp',
     upgrades: [
         {
             id: 1,

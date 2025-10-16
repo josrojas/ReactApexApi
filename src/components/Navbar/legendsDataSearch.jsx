@@ -1,6 +1,6 @@
 import { ASSAULT_LEGENDS } from '../events/UpgradeLegends/Assault/assaultData';
 import { CONTROLLER_LEGENDS } from '../events/UpgradeLegends/Controller/controllerData';
-//import { RECON_LEGENDS } from '../events/UpgradeLegends/Recon/reconData';
+import { RECON_LEGENDS } from '../events/UpgradeLegends/Recon/reconData';
 import { SKIRM_LEGENDS } from '../events/UpgradeLegends/Skirmisher/skirmData';
 //import { SUPPORT_LEGENDS } from '../events/UpgradeLegends/Support/supportData';
 
@@ -8,7 +8,7 @@ import { SKIRM_LEGENDS } from '../events/UpgradeLegends/Skirmisher/skirmData';
 export const ALL_LEGENDS = [
     ...ASSAULT_LEGENDS.map(legend => ({ ...legend, class: 'Assault' })),
     ...CONTROLLER_LEGENDS.map(legend => ({ ...legend, class: 'Controller' })),
-    //...RECON_LEGENDS.map(legend => ({ ...legend, class: 'Recon' })),
+    ...RECON_LEGENDS.map(legend => ({ ...legend, class: 'Recon' })),
     ...SKIRM_LEGENDS.map(legend => ({ ...legend, class: 'Skirmisher' })),
     //...SUPPORT_LEGENDS.map(legend => ({ ...legend, class: 'Support' }))
 ];
