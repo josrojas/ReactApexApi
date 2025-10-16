@@ -1,7 +1,7 @@
 export const CATALYST_DATA = {
     name: 'CATALYST',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/controller/catalyst.jpg',
-    upgradeImage: './src/assets/Catalyst.webp',
+    upgradeImage: '/assets/Catalyst.webp',
     upgrades: [
         {
             id: 1,
@@ -37,7 +37,7 @@ export const CATALYST_DATA = {
 export const CAUSTIC_DATA = {
     name: ' CAUSTIC',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/controller/caustic.jpg',
-    upgradeImage: './src/assets/Caustic.webp',
+    upgradeImage: '/assets/Caustic.webp',
     upgrades: [
         {
             id: 1,
@@ -73,7 +73,7 @@ export const CAUSTIC_DATA = {
 export const RAMPART_DATA = {
     name: 'RAMPART',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/controller/rampart.jpg',
-    upgradeImage: './src/assets/Rampart.webp',
+    upgradeImage: '/assets/Rampart.webp',
     upgrades: [
         {
             id: 1,
@@ -109,7 +109,7 @@ export const RAMPART_DATA = {
 export const WATTSON_DATA = {
     name: 'WATTSON',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/controller/wattson.jpg',
-    upgradeImage: './src/assets/Wattson.webp',
+    upgradeImage: '/assets/Wattson.webp',
     upgrades: [
         {
             id: 1,

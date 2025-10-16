@@ -1,7 +1,7 @@
 export const ALTER_DATA = {
     name: 'ALTER',
-    characterImage: 'src/assets/AlterP.webp',
-    upgradeImage: 'src/assets/Alter.webp',
+    characterImage: '/assets/AlterP.webp',
+    upgradeImage: '/assets/Alter.webp',
     upgrades: [
         {
             id: 1,
@@ -37,7 +37,7 @@ export const ALTER_DATA = {
 export const ASH_DATA = {
     name: 'ASH',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/ash.jpg',
-    upgradeImage: 'src/assets/Ash.webp',
+    upgradeImage: '/assets/Ash.webp',
     upgrades: [
         {
             id: 1,
@@ -73,7 +73,7 @@ export const ASH_DATA = {
 export const HORIZON_DATA = {
     name: 'HORIZON',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/horizon.jpg',
-    upgradeImage: 'src/assets/Horizon.webp',
+    upgradeImage: '/assets/Horizon.webp',
     upgrades: [
         {
             id: 1,
@@ -109,7 +109,7 @@ export const HORIZON_DATA = {
 export const OCTANE_DATA = {
     name: 'OCTANE',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/octane.jpg',
-    upgradeImage: 'src/assets/Octane.webp',
+    upgradeImage: '/assets/Octane.webp',
     upgrades: [
         {
             id: 1,
@@ -145,7 +145,7 @@ export const OCTANE_DATA = {
 export const PATHFINDER_DATA = {
     name: 'PATHFINDER',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/pathfinder.jpg',
-    upgradeImage: 'src/assets/Path.webp',
+    upgradeImage: '/assets/Path.webp',
     upgrades: [
         {
             id: 1,
@@ -181,7 +181,7 @@ export const PATHFINDER_DATA = {
 export const WRAITH_DATA = {
     name: 'WRAITH',
     characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/wraith.jpg',
-    upgradeImage: 'src/assets/Wraith.webp',
+    upgradeImage: '/assets/Wraith.webp',
     upgrades: [
         {
             id: 1,
