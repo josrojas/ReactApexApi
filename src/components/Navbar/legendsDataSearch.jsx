@@ -2,18 +2,18 @@ import { ASSAULT_LEGENDS } from '../events/UpgradeLegends/Assault/assaultData';
 import { CONTROLLER_LEGENDS } from '../events/UpgradeLegends/Controller/controllerData';
 import { RECON_LEGENDS } from '../events/UpgradeLegends/Recon/reconData';
 import { SKIRM_LEGENDS } from '../events/UpgradeLegends/Skirmisher/skirmData';
-//import { SUPPORT_LEGENDS } from '../events/UpgradeLegends/Support/supportData';
+import { SUPPORT_LEGENDS } from '../events/UpgradeLegends/Support/suppData';
 
-// Combina todas las leyendas con su clase
+// Combine legends with class
 export const ALL_LEGENDS = [
     ...ASSAULT_LEGENDS.map(legend => ({ ...legend, class: 'Assault' })),
     ...CONTROLLER_LEGENDS.map(legend => ({ ...legend, class: 'Controller' })),
     ...RECON_LEGENDS.map(legend => ({ ...legend, class: 'Recon' })),
     ...SKIRM_LEGENDS.map(legend => ({ ...legend, class: 'Skirmisher' })),
-    //...SUPPORT_LEGENDS.map(legend => ({ ...legend, class: 'Support' }))
+    ...SUPPORT_LEGENDS.map(legend => ({ ...legend, class: 'Support' }))
 ];
 
-// Función helper para buscar
+// Search function
 export const searchLegends = (query) => {
     if (!query || query.trim() === '') return ALL_LEGENDS;
     
