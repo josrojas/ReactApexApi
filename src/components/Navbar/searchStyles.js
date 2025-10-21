@@ -22,7 +22,7 @@ export const Container = styled.div`
 
 // Search header and controls
 export const SearchHeader = styled.div`
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto 2rem;
 `;
 
@@ -31,6 +31,18 @@ export const Title = styled.h1`
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2.5rem;
+    
+    /* Tablet */
+    @media (max-width: 900px) {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Mobile */
+    @media (max-width: 600px) {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
 `;
 
 export const SearchControls = styled.div`
@@ -72,6 +84,15 @@ export const SearchInput = styled.input`
     &::placeholder {
         color: #888;
     }
+    
+    /* Mobile - placeholder más corto */
+    @media (max-width: 600px) {
+        font-size: 0.95rem;
+        
+        &::placeholder {
+            content: "Search legends...";
+        }
+    }
 `;
 
 export const ClearButton = styled.button`
@@ -97,6 +118,11 @@ export const FilterButtons = styled.div`
     gap: 0.5rem;
     flex-wrap: wrap;
     justify-content: center;
+    
+    /* Mobile - botones más grandes */
+    @media (max-width: 600px) {
+        gap: 0.75rem;
+    }
 `;
 
 export const FilterButton = styled.button`
@@ -114,6 +140,14 @@ export const FilterButton = styled.button`
         background: ${props => props.$active ? '#9d5eff' : '#333'};
         border-color: ${props => props.$active ? '#9d5eff' : '#666'};
     }
+    
+    /* Mobile - botones más grandes y touch-friendly */
+    @media (max-width: 600px) {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.85rem;
+        flex: 1 1 auto;
+        min-width: 100px;
+    }
 `;
 
 // Results
@@ -126,6 +160,11 @@ export const ResultsInfo = styled.div`
 export const ResultCount = styled.p`
     margin: 0;
     color: #aaa;
+    
+    /* Mobile - texto más pequeño */
+    @media (max-width: 600px) {
+        font-size: 0.9rem;
+    }
 `;
 
 export const NoResults = styled.div`
@@ -156,17 +195,32 @@ export const ClearAllButton = styled.button`
 export const ResultsGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-    max-width: 1400px;
+    gap: 2rem;
+    max-width: 1280px;
     margin: 0 auto;
+    padding: 0 1rem;
 
-    @media (max-width: 768px) {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-        gap: 1rem;
+    /* Tablet grande - 3 columnas */
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Tablet - 2 columnas */
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Mobile - 1 columna */
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 0.5rem;
     }
 `;
 
-// Card preview
+// Card de preview - VERSIÓN MEJORADA
 export const LegendPreviewCard = styled.div`
     position: relative;
     background: #1a1a1a;
@@ -180,6 +234,18 @@ export const LegendPreviewCard = styled.div`
         transform: translateY(-8px);
         box-shadow: 0 12px 32px rgba(116, 37, 207, 0.4);
         border-color: #7425cf;
+    }
+
+    /* Mobile - efecto hover menos pronunciado */
+    @media (max-width: 600px) {
+        &:hover {
+            transform: translateY(-4px);
+        }
+        
+        /* En móvil, también activar con tap */
+        &:active {
+            transform: scale(0.98);
+        }
     }
 `;
 
@@ -195,6 +261,14 @@ export const ClassBadge = styled.span`
     font-size: 0.7rem;
     z-index: 2;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    
+    /* Mobile - badge más grande */
+    @media (max-width: 600px) {
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
 `;
 
 export const LegendImage = styled.img`
@@ -204,8 +278,19 @@ export const LegendImage = styled.img`
     object-position: top center;
     display: block;
 
-    @media (max-width: 768px) {
-        height: 250px;
+    /* Tablet */
+    @media (max-width: 900px) {
+        height: 280px;
+    }
+
+    /* Mobile - imagen más grande y mejor visible */
+    @media (max-width: 600px) {
+        height: 350px;
+    }
+    
+    /* Mobile pequeño */
+    @media (max-width: 400px) {
+        height: 300px;
     }
 `;
 
@@ -218,6 +303,12 @@ export const LegendName = styled.h3`
     font-weight: bold;
     text-transform: uppercase;
     background: linear-gradient(to bottom, #1a1a1a, #0f0f0f);
+    
+    /* Mobile - texto más grande */
+    @media (max-width: 600px) {
+        font-size: 1.4rem;
+        padding: 1.25rem;
+    }
 `;
 
 export const ViewDetailsButton = styled.div`
@@ -231,6 +322,12 @@ export const ViewDetailsButton = styled.div`
 
     ${LegendPreviewCard}:hover & {
         background: #9d5eff;
+    }
+    
+    /* Mobile - botón más grande */
+    @media (max-width: 600px) {
+        padding: 1rem;
+        font-size: 1rem;
     }
 `;
 
@@ -314,7 +411,6 @@ export const CloseButton = styled.button`
     right: 1rem;
     background: #fe0000;
     color: white;
-    border: none;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -324,11 +420,8 @@ export const CloseButton = styled.button`
     align-items: center;
     justify-content: center;
     z-index: 10;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(254, 0, 0, 0.4);
 
     &:hover {
-        background: #e63946;
-        transform: rotate(90deg);
+        border-color: #fff;
     }
 `;

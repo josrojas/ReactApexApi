@@ -86,43 +86,146 @@
     object-fit: cover;
 }
 
-/* Responsive */
+/* ================================ */
+/* RESPONSIVE - TABLET (768px - 1024px) */
+/* ================================ */
+@media (max-width: 1024px) {
+    .Container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .CharacterContainer h3 {
+        font-size: 1.3rem;
+    }
+
+    .characterImage {
+        width: 250px;
+        height: 400px;
+    }
+
+    .UpgradeContainer {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .upgradeImage {
+        max-width: 500px;
+    }
+
+    .tooltip {
+        min-width: 220px;
+        max-width: 300px;
+        padding: 0.875rem 1.25rem;
+    }
+
+    .tooltip h4 {
+        font-size: 1rem;
+    }
+
+    .tooltip p {
+        font-size: 0.875rem;
+    }
+}
+
+/* ================================ */
+/* RESPONSIVE - MOBILE (menos de 768px) */
+/* ================================ */
 @media (max-width: 768px) {
+    .Container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .CharacterContainer h3 {
+        font-size: 1.2rem;
+    }
+
     .characterImage {
         width: 200px;
         height: 350px;
     }
-    
-    .upgradeImage {
+
+    .UpgradeContainer {
         width: 100%;
-        height: auto;
+        max-width: 400px;
+    }
+
+    .upgradeImage {
+        max-width: 400px;
+    }
+
+    .tooltip {
+        min-width: 180px;
+        max-width: 250px;
+        padding: 0.75rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .tooltip h4 {
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .tooltip p {
+        font-size: 0.8rem;
+        line-height: 1.3;
     }
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+/* ================================ */
+/* RESPONSIVE - MOBILE PEQUEÑO (menos de 480px) */
+/* ================================ */
+@media (max-width: 480px) {
     .Container {
-        max-width: 600px;
+        padding: 0.75rem;
+        gap: 0.75rem;
     }
 
-    .SensitiveZone {
-        margin-left: 300px;
+    .CharacterContainer h3 {
+        font-size: 1rem;
     }
 
-    .CharacterContainer {
-        margin-left: 300px;
-        max-width: 600px;
+    .characterImage {
+        width: 150px;
+        height: 280px;
     }
 
     .UpgradeContainer {
-        margin-top: 0px;
-        margin-left: 0;
-        max-width: 600px;
+        max-width: 300px;
     }
 
-    h3 {
-        margin-left: -300px;
-        font-size: 1.5em;
+    .upgradeImage {
+        max-width: 300px;
+    }
+
+    .tooltip {
+        min-width: 150px;
+        max-width: 200px;
+        padding: 0.6rem 0.8rem;
+    }
+
+    .tooltip h4 {
+        font-size: 0.85rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .tooltip p {
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+
+    .Zone1 .tooltip,
+    .Zone2 .tooltip {
+        top: 10px !important;
+    }
+
+    .Zone3 .tooltip,
+    .Zone4 .tooltip {
+        bottom: 10px !important;
+        top: auto !important;
     }
 }
-

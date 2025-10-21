@@ -55,7 +55,7 @@ h2 {
     margin-bottom: 25px;
 }
 
-.nextMap{
+.nextMap {
     font-size: 22px;
     color: #fff;
     margin-top: 35px;
@@ -75,7 +75,6 @@ h2 {
     margin-top: 0px;
 }
 
-/* Map.module.css */
 .warningBanner {
     background: #fff3cd;
     border: 1px solid #ffc107;
@@ -127,10 +126,42 @@ h2 {
     background: #c82333;
 }
 
-@media (max-width: 768px) {
-    
+/* ================================ */
+/* RESPONSIVE - TABLET (768px - 1024px) */
+/* ================================ */
+@media (max-width: 1280px) {
     .mapContainer {
-        width: 700px;
-        height: 650px;
+        width: 95%;
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mapContainer {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    h1 {
+        margin-top: 80px;
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        margin-top: -350px;
+    }
+
+    .imgAsset {
+        height: 450px;
+    }
+
+    .currentMap,
+    .nextMap {
+        font-size: 20px;
+    }
+
+    .remainingTimer,
+    .p {
+        font-size: 18px;
     }
 }
