@@ -180,8 +180,8 @@ export const MIRAGE_DATA = {
 
 export const NEWCASTLE_DATA = {
     name: 'NEWCASTLE',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/fuse.jpg',
-    upgradeImage: '/assets/Newscastle.webp',
+    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/support/newcastle.jpg',
+    upgradeImage: '/assets/Newcastle.webp',
     upgrades: [
         {
             id: 1,

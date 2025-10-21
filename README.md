@@ -38,9 +38,9 @@ This will initialize the server and you can access the app in your browser with 
 
 *Updated S26 Showdown*
 
-![image](https://github.com/user-attachments/assets/bf26ac5a-c6fc-4b2d-8887-5326f0bb9523)
+![image](https://github.com/user-attachments/assets/b49e7c9d-4031-4b4d-aa50-815d457b1bcb)
 
-![image](https://github.com/user-attachments/assets/59f0d07e-99c9-40fb-85c7-58caf958deb7)
+![image](https://github.com/user-attachments/assets/10124e70-4b9c-4be0-9cc4-7bd4cf2fe8f6)
 
 Data from `ea.com/games/apex-legends`
 <br><br><br>
