@@ -36,7 +36,7 @@ This will initialize the server and you can access the app in your browser with 
 
 **LEGENDS UPGRADES** 
 
-*Updated S26 Showdown*
+*Updated S27 Amped*
 
 ![image](https://github.com/user-attachments/assets/b49e7c9d-4031-4b4d-aa50-815d457b1bcb)
 
