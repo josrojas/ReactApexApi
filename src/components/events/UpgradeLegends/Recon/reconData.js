@@ -114,29 +114,29 @@ export const VALKYRIE_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'AFTERBURNERS',
-            description: 'Launch 15% higher with Skyward Dive.',
+            title: 'EYES IN THE SKY',
+            description: 'Enemies are revealed from further away and through walls while skydiving.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
             title: 'FULL COVERAGE',
-            description: 'Widen Missile Swarm pattern from 4x3 to 3x5.',
+            description: '-5s tac cooldown. Missile Swarm pattern from 4x3 to 4x5.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'EYES IN THE SKY',
-            description: 'Enemies are revealed from further away and through walls while skydiving.',
+            title: 'SUPERSONIC',
+            description: 'Ult launches players much faster.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'FULL TANK',
-            description: 'Increase Jetpack fuel by 25%.',
+            title: 'AERIAL EXPERT',
+            description: 'Decrease Jetpack activation cost, increase horizontal speed. Consume fuel slightly faster',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]

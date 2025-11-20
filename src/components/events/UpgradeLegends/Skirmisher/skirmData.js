@@ -78,15 +78,15 @@ export const HORIZON_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'TACTICAL COOLDOWN',
-            description: 'Reduce Tactical cooldown by 5 seconds.',
+            title: 'GRAVITY BOOTS',
+            description: 'Pressing Crouch while in the air makes the player fall faster.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'ULTIMATE COOLDOWN',
-            description: 'Reduce Ultimate cooldown by 30 seconds.',
+            title: 'NEWT SCOOT',
+            description: 'After leaving Gravity Lift, pressing Jump key while in the air makes you fall slower.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
@@ -99,8 +99,8 @@ export const HORIZON_DATA = {
         {
             id: 4,
             zone: 'Zone4',
-            title: 'COMBAT RESERVE',
-            description: 'Access Assault Bins, carry extra ammo per stack, and extra grenade slots.',
+            title: 'KNOCK EXPERT',
+            description: 'Gain an extra ability charge on knock.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]

@@ -78,15 +78,15 @@ export const RAMPART_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'ULTIMATE COOLDOWN',
-            description: 'Reduce Ultimate cooldown by 30 seconds.',
+            title: 'COMBAT RESERVE',
+            description: 'Gain access to Red bins, extra ammo per stack and extra grenade slots.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'BANDOLIER',
-            description: 'Carry extra ammo per stack.',
+            title: 'LOCKED AND LOADED',
+            description: 'Reload faster and infinite ammo when behind Amped Cover and amped shield is intact.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
@@ -99,8 +99,8 @@ export const RAMPART_DATA = {
         {
             id: 4,
             zone: 'Zone4',
-            title: 'AMPED RELOADS',
-            description: 'Reload faster with Sheila & when behind Amped Cover.',
+            title: 'REBUILD MODULE',
+            description: 'Amped cover will regenerate after not being damaged for a period of time.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
