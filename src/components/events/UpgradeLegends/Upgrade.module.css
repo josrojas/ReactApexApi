@@ -38,7 +38,7 @@
     height: 80px;
     display: flex;
     background-color: transparent;
-    border: 3px solid ;
+    border: 3px solid transparent;
     justify-content: center;
     align-items: center;
 }

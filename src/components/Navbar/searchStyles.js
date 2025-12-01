@@ -14,6 +14,7 @@ const getClassColor = (className) => {
 
 // Main container
 export const Container = styled.div`
+    margin-left: -30px;
     width: 100%;
     padding: 2rem;
     background-color: #2d2d2d;
