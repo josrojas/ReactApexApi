@@ -115,28 +115,28 @@ export const OCTANE_DATA = {
             id: 1,
             zone: 'Zone1',
             title: 'THICK SKIN',
-            description: 'Take 5 less Stim damage.',
+            description: 'Take 10 less Stim damage.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'MAD HOPS',
-            description: 'Gain an extra Launch Pad charge.',
+            title: 'SQUAD RUSH',
+            description: 'Allies gain stim after landing from a jump pad.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'THICK SKIN',
-            description: 'Take 5 less Stim damage.',
+            title: 'DAREDEVIL',
+            description: 'Breaking enemy shields increases reload speed and stim surge last longer the less health you have.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'AIRBONE AGILITY',
-            description: 'Change directions with Launch Pad double-jump.',
+            title: 'TRIPLE JUMP',
+            description: 'Upgrades the jump pad to give three jumps.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
