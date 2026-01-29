@@ -49,22 +49,22 @@ export const CRYPTO_DATA = {
         {
             id: 2,
             zone: 'Zone2',
-            title: 'OFF THE GRID',
-            description: 'Crypto cloaks when in drone.',
+            title: 'ALLY.MOVETO()',
+            description: 'Crypto places a tracker on allies, allowing him to trailblaze to them.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'SATELLITE IMAGERY',
-            description: '+1.5s scan duration. Scans on Ult hit.',
+            title: 'POWER COUPLING',
+            description: 'Gain ult charge from using Survey Beacons and scanning enemies with drone.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
             title: 'HACKATHON',
-            description: 'Double drone recharge rate; gain speed boost when it explodes.',
+            description: 'Double drone recharge rate; gain speed boost when it explodes. (EMP or destroyed)',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]

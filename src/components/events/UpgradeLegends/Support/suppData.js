@@ -186,15 +186,15 @@ export const NEWCASTLE_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'HERO\'S HUSTLE',
-            description: 'Increased move speed while reviving.',
+            title: 'STRONGHOLD',
+            description: '+500 castle wall HP. Extend energized duration to 4min.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'SWIFT SHIELD',
-            description: 'Increase Mobile Shield speed.',
+            title: 'READY TO RUMBLE',
+            description: 'Reload all weapons and begin full regen after reviving allies.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
@@ -207,8 +207,8 @@ export const NEWCASTLE_DATA = {
         {
             id: 4,
             zone: 'Zone4',
-            title: 'STRONGHOLD',
-            description: 'Castle Wall HP increased by 500. Extends energized duration to 3min.',
+            title: 'DEFENSIVE LINE',
+            description: 'Tactical and passive shields will repel the first enemy that comes near them.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
