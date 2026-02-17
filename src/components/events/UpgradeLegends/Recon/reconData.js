@@ -6,29 +6,29 @@ export const BLOODHOUND_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'ODIN\'S GLARE',
-            description: 'Double the duration of Tactical\'s full-body highlight.',
+            title: 'TASTE OF BLOOD',
+            description: 'Regen 50 health when getting a knock while your ultimate is active.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'RAVEN\'S BLESSING',
-            description: 'White Ravens charge Ultimate by 20% when activated.',
+            title: 'RAVEN\'S FLIGHT',
+            description: 'When activating your white ravens, they can ping enemies twice as far as normal.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'FLOCK',
-            description: 'Remove enemy range requirement for White Raven spawns.',
+            title: 'HUNTER\'S AGILITY',
+            description: 'Your tactical is faster to use and has -5s cooldown.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'SIGHTHOUND',
-            description: 'Reduce Tactical cooldown by 50% while Ultimate is active.',
+            title: 'ODIN\'S GLARE',
+            description: 'Double the duration of Tactical\'s full-body highlight.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]

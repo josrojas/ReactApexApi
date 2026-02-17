@@ -152,22 +152,22 @@ export const FUSE_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'RING MASTER',
-            description: 'Gain access to Ring Consoles.',
+            title: 'PYRO TECHNIQUES',
+            description: 'Ultimate explosives create flames for 8 seconds after the bombs explode.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'SCAR TISSUE',
-            description: 'Take 20 damage and ignore slow effects from The Motherlode.',
+            title: 'KNUCKLE JUMPER',
+            description: 'Jump near your tactical for a boost and a 50% cooldown recharge (destroys the cluster afterwards)',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'KNUCLE HUSTLER',
-            description: 'Short speed boost on successful Knuckle Cluster hit.',
+            title: 'REIGNITION',
+            description: 'Dealing explosive damage to enemies recharges your ultimate (for every 2 damage dealt, reduces cooldown by 1 second)',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
