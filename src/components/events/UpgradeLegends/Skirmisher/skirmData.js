@@ -193,8 +193,8 @@ export const WRAITH_DATA = {
         {
             id: 2,
             zone: 'Zone2',
-            title: 'ULTIMATE COOLDOWN+',
-            description: 'Ultimate cooldown by 90 seconds.',
+            title: 'PHASE DOME',
+            description: 'Players within radius of the dome will enter phase.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
@@ -207,8 +207,8 @@ export const WRAITH_DATA = {
         {
             id: 4,
             zone: 'Zone4',
-            title: 'TACTICAL COOLDOWN',
-            description: 'Tactical cooldown by 15s.',
+            title: 'PHASE JUMPER',
+            description: 'Gain double jump while in the void and longer time in the void (6s).',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
