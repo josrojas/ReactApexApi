@@ -42,29 +42,29 @@ export const GIBRALTAR_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'BIG BRUDDAH',
-            description: 'Increase Ult Radius by 20%.',
+            title: 'THUNDER DOME',
+            description: 'First enemy to enter the dome will take 50 damage and EMP.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'FAST SHOTTIES',
-            description: 'Move faster with Shotguns and Auto-Reload on knocks.',
+            title: 'HEALING DOME',
+            description: 'Dome duration increases 4s and any player in the dome will get double small meds healing.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'BABY BUBBLE',
-            description: 'Smaller Tac: faster cooldown.',
+            title: 'TRIPLE BOMBARDMENT',
+            description: 'Gain 3 charges of the ultimate reducing the radius and number of missiles for each.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'BUBBLE BUNKER',
-            description: 'Increase Tac lifetime by 4s.',
+            title: 'FAST SHOTTIES',
+            description: 'Move faster with shotguns. Auto-reload shotguns on knocks.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
