@@ -28,7 +28,7 @@ export const ALTER_DATA = {
             id: 4,
             zone: 'Zone4',
             title: 'VOID BREACHER',
-            description: 'Using a friendly Void Passage grants move speed and improved reloads.',
+            description: 'Using a friendly Void Passage grants 15% movement speed and improved reloads.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
@@ -207,13 +207,48 @@ export const WRAITH_DATA = {
         {
             id: 4,
             zone: 'Zone4',
-            title: 'PHASE JUMPER',
+            title: 'VOID JUMPER',
             description: 'Gain double jump while in the void and longer time in the void (6s).',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
 };
 
+export const AXLE_DATA = {
+    name: 'AXLE',
+    characterImage: 'https://i.redd.it/0lnc1ommnzxg1.png',
+    upgradeImage: '/assets/Axle.webp',
+    upgrades: [
+        {
+            id: 1,
+            zone: 'Zone1',
+            title: 'SUPER SLIDER',
+            description: 'Gain a second Tactical charge.',
+            tooltipPosition: { top: -10, left: -460 }
+        },
+        {
+            id: 2,
+            zone: 'Zone2',
+            title: 'AUTOMATA',
+            description: 'Gain a second Ultimate charge.',
+            tooltipPosition: { top: -10, left: 100 }
+        },
+        {
+            id: 3,
+            zone: 'Zone3',
+            title: 'JUMP GATE',
+            description: 'Upgrades the Nitro Gate to give a double-jump.',
+            tooltipPosition: { top: 100, left: -460 }
+        },
+        {
+            id: 4,
+            zone: 'Zone4',
+            title: 'SLIDING SHOOTER',
+            description: 'Bullets shot while sliding come straight from inventory instead of magazine.',
+            tooltipPosition: { top: 100, left: 100 }
+        }
+    ]
+};
 
 export const SKIRM_LEGENDS = [
     ALTER_DATA,
@@ -221,5 +256,6 @@ export const SKIRM_LEGENDS = [
     HORIZON_DATA,
     OCTANE_DATA,
     PATHFINDER_DATA,
-    WRAITH_DATA
+    WRAITH_DATA,
+    AXLE_DATA
 ];

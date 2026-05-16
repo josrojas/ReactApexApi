@@ -26,7 +26,7 @@ const Upgrades = () => {
         return (
             <div>
                 <>
-                    <Link to="/maps" className={`${styles.button}`}>
+                    <Link to="/" className={`${styles.button}`}>
                         Maps rotation
                     </Link>
 

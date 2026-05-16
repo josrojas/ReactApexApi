@@ -28,7 +28,7 @@ const Home = () => {
         return (
             <div>
                 <>
-                    <Link to="/" className={`${styles.homeLink} ${styles.button}`}>
+                    <Link to="/legends-upgrades" className={`${styles.homeLink} ${styles.button}`}>
                         Legends Upgrades
                     </Link>
                     
