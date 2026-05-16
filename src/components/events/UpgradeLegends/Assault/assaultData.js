@@ -51,7 +51,7 @@ export const BANGALORE_DATA = {
         {
             id: 2,
             zone: 'Zone2',
-            title: 'COVER ME',
+            title: 'COVER ME!',
             description: 'Allies regenerate HP while inside Smoke. Auto-Ping enemies who trigger Passive.',
             tooltipPosition: { top: -10, left: 100 }
         },
@@ -80,29 +80,29 @@ export const MAGGIE_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'WARLORD\'S BOON',
-            description: 'Increases the bonus speed from 25% to 35%.',
+            title: 'GUNRUNNING',
+            description: 'Your passive move speed applies to SMGs and Pistols.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'DRILL SERGEANT',
-            description: 'The drill lasts 50% longer.',
+            title: 'FIRE BALL',
+            description: 'Wrecking ball drops lines of magma, and Maggie takes 50% less fire damage.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'DRILLBIT',
-            description: 'Drills travel through walls.',
+            title: 'DRILLSLINGER',
+            description: 'Gain a Riot Drill charge and reduce activation duration by 25%.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'BOUNCE HOUSE',
-            description: 'Wrecking Ball bounces off walls 4 additional times.',
+            title: 'BIG DRILL',
+            description: 'Increase depth and width of Tac by 50%.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
@@ -116,29 +116,29 @@ export const REVENANT_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'ASSASSIN\'S INSTINCT',
-            description: 'Shadow Pounce range increased by 50%.',
+            title: 'ULTIMATE COOLDOWN',
+            description: 'Reduce ultimate cooldown by 30 secs.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'SHADOW BOOST',
-            description: 'Shadow Pounce recharges 50% faster.',
+            title: 'TRY TO HIDE',
+            description: 'Doubles the duration low health enemies are marked.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'IMPENDING DOOM',
-            description: 'Mark lasts twice as long.',
+            title: 'TACTICAL COOLDOWN',
+            description: 'Reduce tactical cooldown by 5s.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'DEADLY APPROACH',
-            description: 'Creates a field that suppresses and slows enemies for 5s.',
+            title: 'AGILE ASSASSIN',
+            description: 'Total Shadow Pounce attack and charge time reduce by 50%.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]

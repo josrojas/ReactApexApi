@@ -20,15 +20,15 @@ export const CONDUIT_DATA = {
         {
             id: 3,
             zone: 'Zone3',
-            title: 'SPLIT CHARGE',
-            description: 'Gain a Tactical charge but half shield regen duration.',
+            title: 'INSTANT BARRIER',
+            description: 'Gain a portion of Radiant Transfer`s Temp Shields instantly, but Regen Duration is reduced by 2s.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'RADIANT TRANSFER',
-            description: 'Increase Tactical range by 10 meters.',
+            title: 'ENDURING BARRIER',
+            description: 'Radiant Transfer`s Temp Shield Regeneration persists through taking damage.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
@@ -49,7 +49,7 @@ export const GIBRALTAR_DATA = {
         {
             id: 2,
             zone: 'Zone2',
-            title: 'HEALING DOME',
+            title: 'DOME HEALING',
             description: 'Dome duration increases 4s and any player in the dome will get double small meds healing.',
             tooltipPosition: { top: -10, left: 100 }
         },

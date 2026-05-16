@@ -164,8 +164,8 @@ export const VANTAGE_DATA = {
         {
             id: 3,
             zone: 'Zone3',
-            title: 'TACTICAL COOLDOWN',
-            description: 'Reduce Tac cooldown by 5s.',
+            title: 'HERD TRACKER',
+            description: 'Pinging an enemy will track the entire team.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
@@ -186,29 +186,29 @@ export const SPARROW_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'EXTRA TRAPS',
-            description: 'Gain an additional Tactical charge and +1 traps in world.',
+            title: 'HUNT TARGET',
+            description: 'Gains a speed boost when running towards a marked enemy.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'HUNT TARGET',
-            description: 'Gains a speed boost when running towards a marked enemy.',
+            title: 'EXTRA TRAPS',
+            description: 'Gain an additional Tactical charge and +1 traps in world.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'ALTERNATE MODE',
-            description: 'Ult now has 3 charges that fire fewer pulses in a smaller radius.',
+            title: 'LIFE SIPHON',
+            description: 'Sparrow\'s health and shields are recovered if enemies are damaged by his Ult.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'LIFE SIPHON',
-            description: 'Sparrow\'s health and shields are recovered if enemies are damaged by his Ult.',
+            title: 'ALTERNATE MODE',
+            description: 'Ult now has 3 charges that fire fewer pulses in a smaller radius.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
