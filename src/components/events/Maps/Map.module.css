@@ -1,9 +1,8 @@
-body {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: #2D2D2D;
 }
 
 .mapContainer {
@@ -12,156 +11,119 @@ body {
     align-items: center;
     justify-content: flex-start;
     margin-top: 50px;
-    width: 1280px;
-}
-
-h1 {
-    margin-top: 100px;
-    color: #ffffff;
-}
-
-h2 {
-    visibility: hidden;
-    color: #ffffff;
-    margin-top: -400px;
-}
-
-.imgContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
-.imgAsset {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.mapCard {
+    width: 70%;
     height: 520px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
-}
-
-.currentMap {
-    font-size: 22px;
-    color: #fff;
-    margin-top: -10px;
-    margin-bottom: 25px;
-}
-
-.nextMap {
-    font-size: 22px;
-    color: #fff;
-    margin-top: 35px;
-    margin-bottom: 25px;
-}
-
-.remainingTimer,
-.p {
-    font-size: 20px;
-    color: #fff;
-    font-style: italic;
-    margin-top: 25px;
-    margin-bottom: 12px;
-}
-
-.footer {
-    margin-top: 0px;
-}
-
-.warningBanner {
-    background: #fff3cd;
-    border: 1px solid #ffc107;
-    color: #856404;
-    padding: 0.75rem 1rem;
-    border-radius: 4px;
-    margin-bottom: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    font-size: 0.9rem;
-}
-
-.retrySmall {
-    background: #ffc107;
-    border: none;
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background 0.2s;
-}
-
-.retrySmall:hover {
-    background: #e0a800;
-}
-
-.error {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    gap: 1rem;
+    position: relative;
 }
 
-.error button {
-    background: #dc3545;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
+/* overlay oscuro para que el texto se lea bien */
+.mapCard::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    pointer-events: none;
 }
 
-.error button:hover {
-    background: #c82333;
+.mapRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 32px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1; /* encima del overlay */
+    gap: 16px;
 }
 
-/* ================================ */
-/* RESPONSIVE - TABLET (768px - 1024px) */
-/* ================================ */
-@media (max-width: 1280px) {
-    .mapContainer {
-        width: 95%;
-        max-width: 1000px;
-    }
+.mapLabel {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    font-size: clamp(13px, 2vw, 32px);
+    font-weight: 500;
+    min-width: 0;
+    word-break: break-word;
+}
+
+.mapLabel span {
+    display: block;
+    font-size: clamp(9px, 1vw, 11px);
+    color: #ddd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.mapLabel small {
+    display: block;
+    font-size: clamp(11px, 1.5vw, 22px);
+    color: #fff;
+    margin-top: 4px;
+    font-weight: 400;
 }
 
 @media (max-width: 1024px) {
+    .mapCard {
+        height: 420px;
+    }
+}
+
+@media (max-width: 768px) {
     .mapContainer {
-        width: 90%;
-        margin-top: 40px;
+        padding: 0 16px;
+        margin-top: 30px;
     }
 
-    h1 {
-        margin-top: 80px;
-        font-size: 1.8rem;
+    .mapCard {
+        height: auto;
+        padding: 20px 0;
+        border-radius: 10px;
     }
 
-    h2 {
-        margin-top: -350px;
+    .mapRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapCard {
+        height: auto;
+        padding: 20px 0;
+        border-radius: 10px;
     }
 
-    .imgAsset {
-        height: 450px;
+    .mapRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 12px;
     }
 
-    .currentMap,
-    .nextMap {
-        font-size: 20px;
+    .mapLabel {
+        font-size: 16px;
+        width: 100%;
     }
 
-    .remainingTimer,
-    .p {
-        font-size: 18px;
+    .mapLabel span {
+        font-size: 10px;
     }
 }
