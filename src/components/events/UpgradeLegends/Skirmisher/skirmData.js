@@ -151,28 +151,28 @@ export const PATHFINDER_DATA = {
             id: 1,
             zone: 'Zone1',
             title: 'FIELD RESEARCH',
-            description: 'Gain access to Survey Beacons.',
+            description: 'Now grants all Recon perks.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
             title: 'RINGMASTER',
-            description: 'Gain access to Ring Consoles.',
+            description: 'Now grants all Controller perks.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'GRAPPLE GOD',
-            description: 'Gain a second Grappling Hook charge.',
+            title: 'LANDING GEAR',
+            description: 'Grants more air control and faster recovery from hard landings.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
             title: 'FEELING ZIPPY',
-            description: 'Gain a second Zipline Gun charge.',
+            description: 'Gain a second Zipline charge.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
@@ -223,7 +223,7 @@ export const AXLE_DATA = {
             id: 1,
             zone: 'Zone1',
             title: 'SUPER SLIDER',
-            description: 'Gain a second Tactical charge.',
+            description: '-5% Tactical Cooldown, +1 max active tac.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {

@@ -21,7 +21,7 @@ export const CONDUIT_DATA = {
             id: 3,
             zone: 'Zone3',
             title: 'INSTANT BARRIER',
-            description: 'Gain a portion of Radiant Transfer`s Temp Shields instantly, but Regen Duration is reduced by 2s.',
+            description: 'Gain a portion of Radiant Transfer`s Temp Shields instantly, but Regen Duration is reduced by 6s.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {

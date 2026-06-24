@@ -9,28 +9,28 @@ export const BALLISTIC_DATA = {
             id: 1,
             zone: 'Zone1',
             title: 'EXTRA BULLETS',
-            description: 'Doubles the number of Tac charges.',
+            description: 'Gain 1 extra bullet for the Tactical.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'KILLING TIME',
-            description: 'Increases duration of Ult by 15s.',
+            title: 'TRAP MODE',
+            description: 'Tac lasts 15s and deals 35 dmg if and enemy walks into it.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'LASTING BULLET',
-            description: 'Smart Bullet duration is tripled.',
+            title: 'QUIET TIME',
+            description: 'No longer overheat, will Silence and slow on hit for 6s.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'QUIET TIME',
-            description: 'Overheat now also silences enemy for 6s.',
+            title: 'KILLING TIME',
+            description: 'Increase ult duration by 15 sec.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
