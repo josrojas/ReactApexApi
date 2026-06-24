@@ -47,8 +47,8 @@ Data from `ea.com/games/apex-legends`
 
 **CURRENT MAP ROTATION**
 
-![image](https://github.com/user-attachments/assets/944f9346-f118-42f8-b135-d7bc16ebf716)
+![image](https://github.com/user-attachments/assets/057cdbfb-491d-4d32-956b-a7769fd61481)
 
-![image](https://github.com/user-attachments/assets/b9cd23ff-ec9d-4c28-80f6-0e087e915e08)
+![image](https://github.com/user-attachments/assets/26e40c08-4526-4330-b0e2-07340a73a593)
 
 Data from `apexlegendsstatus.com`
