@@ -1,6 +1,6 @@
 export const CONDUIT_DATA = {
     name: 'CONDUIT',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/support/conduit.jpg',
+    characterImage: '/assets/ConduitP.webp',
     upgradeImage: '/assets/Conduit.webp',
     upgrades: [
         {
@@ -36,7 +36,7 @@ export const CONDUIT_DATA = {
 
 export const GIBRALTAR_DATA = {
     name: 'GIBRALTAR',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/support/gibby.jpg',
+    characterImage: '/assets/GibbyP.webp',
     upgradeImage: '/assets/Gibby.webp',
     upgrades: [
         {
@@ -72,7 +72,7 @@ export const GIBRALTAR_DATA = {
 
 export const LIFELINE_DATA = {
     name: 'LIFELINE',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/support/lifeline.jpg',
+    characterImage: '/assets/LifelineP.webp',
     upgradeImage: '/assets/Lifeline.webp',
     upgrades: [
         {
@@ -108,7 +108,7 @@ export const LIFELINE_DATA = {
 
 export const LOBA_DATA = {
     name: 'LOBA',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/support/loba.jpg',
+    characterImage: '/assets/LobaP.webp',
     upgradeImage: '/assets/Loba.webp',
     upgrades: [
         {
@@ -136,7 +136,7 @@ export const LOBA_DATA = {
             id: 4,
             zone: 'Zone4',
             title: 'BRAND NEW BAG',
-            description: 'Squad gains gold backpacks.',
+            description: 'Squad gains purple backpacks.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
@@ -144,7 +144,7 @@ export const LOBA_DATA = {
 
 export const MIRAGE_DATA = {
     name: 'MIRAGE',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/support/mirage.jpg',
+    characterImage: '/assets/MirageP.webp',
     upgradeImage: '/assets/Mirage.webp',
     upgrades: [
         {
@@ -180,7 +180,7 @@ export const MIRAGE_DATA = {
 
 export const NEWCASTLE_DATA = {
     name: 'NEWCASTLE',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/support/newcastle.jpg',
+    characterImage: '/assets/NewcastleP.webp',
     upgradeImage: '/assets/Newcastle.webp',
     upgrades: [
         {

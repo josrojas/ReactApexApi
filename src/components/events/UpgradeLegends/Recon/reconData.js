@@ -1,34 +1,34 @@
 export const BLOODHOUND_DATA = {
     name: 'BLOODHOUND',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/recon/bloodhound.jpg',
+    characterImage: '/assets/BloodhoundP.webp',
     upgradeImage: '/assets/Bloodhound.webp',
     upgrades: [
         {
             id: 1,
             zone: 'Zone1',
-            title: 'TASTE OF BLOOD',
-            description: 'Regen 50 health when getting a knock while your ultimate is active.',
+            title: 'HIDDEN SIGHT',
+            description: 'Using the Ult refreshes your Tactical, and using your Tactical while cloaked hides the visuals effect from enemies.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'RAVEN\'S FLIGHT',
-            description: 'When activating your white ravens, they can ping enemies twice as far as normal.',
+            title: 'BIRD\'S EYE',
+            description: 'White ravens mark an extra enemy from another squad.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'HUNTER\'S AGILITY',
-            description: 'Your tactical is faster to use and has -5s cooldown.',
+            title: 'TRUE PREDATOR',
+            description: 'Recloack after firing while cloaked.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'ODIN\'S GLARE',
-            description: 'Double the duration of Tactical\'s full-body highlight.',
+            title: 'HUNTER\'S AGILITY',
+            description: 'Your tactical is faster to use and has -5s cooldown.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
@@ -36,7 +36,7 @@ export const BLOODHOUND_DATA = {
 
 export const CRYPTO_DATA = {
     name: 'CRYPTO',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/recon/crypto.jpg',
+    characterImage: '/assets/CryptoP.webp',
     upgradeImage: '/assets/Crypto.webp',
     upgrades: [
         {
@@ -72,7 +72,7 @@ export const CRYPTO_DATA = {
 
 export const SEER_DATA = {
     name: 'SEER',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/recon/seer.jpg',
+    characterImage: '/assets/SeerP.webp',
     upgradeImage: '/assets/Seer.webp',
     upgrades: [
         {
@@ -108,7 +108,7 @@ export const SEER_DATA = {
 
 export const VALKYRIE_DATA = {
     name: 'VALKYRIE',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/valkyrie.jpg',
+    characterImage: '/assets/ValkP.webp',
     upgradeImage: '/assets/Valk.webp',
     upgrades: [
         {
@@ -144,7 +144,7 @@ export const VALKYRIE_DATA = {
 
 export const VANTAGE_DATA = {
     name: 'VANTAGE',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/recon/vantage.jpg',
+    characterImage: '/assets/VantageP.webp',
     upgradeImage: '/assets/Vantage.webp',
     upgrades: [
         {
@@ -180,7 +180,7 @@ export const VANTAGE_DATA = {
 
 export const SPARROW_DATA = {
     name: 'SPARROW',
-    characterImage: 'https://i0.wp.com/ultimasnoticias.com.ve/wp-content/uploads/2025/04/Apex-Legends-revela-a-Sparrow-la-nueva-leyenda-que-llega-en-la-Temporada-25-ProGamers.life_.png',
+    characterImage: '/assets/SparrowP.webp',
     upgradeImage: '/assets/Sparrow.webp',
     upgrades: [
         {

@@ -36,11 +36,11 @@ This will initialize the server and you can access the app in your browser with 
 
 **LEGENDS UPGRADES** 
 
-*Updated S29 Overclocked*
+*Updated S30 Marked*
 
-![image](https://github.com/user-attachments/assets/b49e7c9d-4031-4b4d-aa50-815d457b1bcb)
+![image](https://github.com/user-attachments/assets/bee88c3f-afba-4182-bacf-48a71b574ed3=)
 
-![image](https://github.com/user-attachments/assets/10124e70-4b9c-4be0-9cc4-7bd4cf2fe8f6)
+![image](https://github.com/user-attachments/assets/fb0a6cee-034a-4adc-a595-41048db80fad)
 
 Data from `ea.com/games/apex-legends`
 <br><br><br>
