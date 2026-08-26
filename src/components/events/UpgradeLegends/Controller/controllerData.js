@@ -1,6 +1,6 @@
 export const CATALYST_DATA = {
     name: 'CATALYST',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/controller/catalyst.jpg',
+    characterImage: '/assets/CatalystP.webp',
     upgradeImage: '/assets/Catalyst.webp',
     upgrades: [
         {
@@ -36,7 +36,7 @@ export const CATALYST_DATA = {
 
 export const CAUSTIC_DATA = {
     name: ' CAUSTIC',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/controller/caustic.jpg',
+    characterImage: '/assets/CausticP.webp',
     upgradeImage: '/assets/Caustic.webp',
     upgrades: [
         {
@@ -72,14 +72,14 @@ export const CAUSTIC_DATA = {
 
 export const RAMPART_DATA = {
     name: 'RAMPART',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/controller/rampart.jpg',
+    characterImage: '/assets/RampartP.webp',
     upgradeImage: '/assets/Rampart.webp',
     upgrades: [
         {
             id: 1,
             zone: 'Zone1',
             title: 'COMBAT RESERVE',
-            description: 'Gain access to Red bins, extra ammo per stack and extra grenade slots.',
+            description: 'Gain extra ammo per stack, extra grenade slots and stowed reload.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
@@ -108,7 +108,7 @@ export const RAMPART_DATA = {
 
 export const WATTSON_DATA = {
     name: 'WATTSON',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/controller/wattson.jpg',
+    characterImage: '/assets/WattsonP.webp',
     upgradeImage: '/assets/Wattson.webp',
     upgrades: [
         {

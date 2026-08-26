@@ -36,7 +36,7 @@ export const ALTER_DATA = {
 
 export const ASH_DATA = {
     name: 'ASH',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/assault/ash.jpg',
+    characterImage: '/assets/AshP.webp',
     upgradeImage: '/assets/Ash.webp',
     upgrades: [
         {
@@ -72,7 +72,7 @@ export const ASH_DATA = {
 
 export const HORIZON_DATA = {
     name: 'HORIZON',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/horizon.jpg',
+    characterImage: '/assets/HorizonP.webp',
     upgradeImage: '/assets/Horizon.webp',
     upgrades: [
         {
@@ -108,7 +108,7 @@ export const HORIZON_DATA = {
 
 export const OCTANE_DATA = {
     name: 'OCTANE',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/octane.jpg',
+    characterImage: '/assets/OctaneP.webp',
     upgradeImage: '/assets/Octane.webp',
     upgrades: [
         {
@@ -144,7 +144,7 @@ export const OCTANE_DATA = {
 
 export const PATHFINDER_DATA = {
     name: 'PATHFINDER',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/pathfinder.jpg',
+    characterImage: '/assets/PathP.webp',
     upgradeImage: '/assets/Path.webp',
     upgrades: [
         {
@@ -180,7 +180,7 @@ export const PATHFINDER_DATA = {
 
 export const WRAITH_DATA = {
     name: 'WRAITH',
-    characterImage: 'https://media.contentapi.ea.com/content/dam/apex-legends/common/breakout-patch-notes/legend-assets/skirmisher/wraith.jpg',
+    characterImage: '/assets/WraithP.webp',
     upgradeImage: '/assets/Wraith.webp',
     upgrades: [
         {
@@ -216,35 +216,35 @@ export const WRAITH_DATA = {
 
 export const AXLE_DATA = {
     name: 'AXLE',
-    characterImage: 'https://i.redd.it/0lnc1ommnzxg1.png',
+    characterImage: '/assets/AxleP.webp',
     upgradeImage: '/assets/Axle.webp',
     upgrades: [
         {
             id: 1,
             zone: 'Zone1',
-            title: 'SUPER SLIDER',
-            description: '-5% Tactical Cooldown, +1 max active tac.',
+            title: 'SLIDING SHOOTER',
+            description: 'Bullets shot while sliding come straight from inventory instead of magazine.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'AUTOMATA',
-            description: 'Gain a second Ultimate charge.',
+            title: 'LONG HAUL',
+            description: 'Upgrades the Nitro Gate to give a +2s max boosted slide.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'JUMP GATE',
-            description: 'Upgrades the Nitro Gate to give a double-jump.',
+            title: 'ULTIMATE COOLDOWN',
+            description: 'Reduce Ultimate cooldown by 30s.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'SLIDING SHOOTER',
-            description: 'Bullets shot while sliding come straight from inventory instead of magazine.',
+            title: 'SUPER SLIDER',
+            description: '-5% Tactical Cooldown, +1 max active tac.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
