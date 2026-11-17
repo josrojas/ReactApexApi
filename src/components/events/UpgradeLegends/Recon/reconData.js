@@ -49,8 +49,8 @@ export const CRYPTO_DATA = {
         {
             id: 2,
             zone: 'Zone2',
-            title: 'ALLY.MOVETO()',
-            description: 'Crypto places a tracker on allies, allowing him to trailblaze to them.',
+            title: 'GOT EYES ON YOU',
+            description: 'Enemies are marked for 4s longer.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
@@ -63,8 +63,8 @@ export const CRYPTO_DATA = {
         {
             id: 4,
             zone: 'Zone4',
-            title: 'HACKATHON',
-            description: 'Double drone recharge rate; gain speed boost when it explodes. (EMP or destroyed)',
+            title: 'CHARGE UP',
+            description: 'Drone battery life is 10s longer.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]

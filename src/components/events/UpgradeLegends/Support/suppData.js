@@ -6,15 +6,15 @@ export const CONDUIT_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'BATTPACK',
-            description: 'Stack up to 3 batteries per inventory slot.',
+            title: 'CONCURRENCY',
+            description: 'Refire Ultimate once with no cooldown within 10s. Spawns in a tighter formation with 2 less jammers.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'BIGGER JAM',
-            description: 'Jammer damage radius increased by 20%.',
+            title: 'JAMMED UP',
+            description: 'Ultimate has a 25% larger radius and enemies damaged by it have their HUD jammed for 10s.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
@@ -78,29 +78,29 @@ export const LIFELINE_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'EXTENDED FLIGHT',
-            description: 'Increase time before D.O.C. runs out of fuel by 1.5s.',
+            title: 'IMPROVED FLIGHT',
+            description: 'Increase glide duration by 1.5s and improve flight control.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'BATTPACK',
-            description: '+1 Battery per stack. See Battery Count in Death Boxes.',
+            title: 'ENHANCED RADIO',
+            description: 'Increased D.O.C. assignment range by 50%.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'ENHANCED RADIO',
-            description: 'Increased D.O.C. assignment range by 50%.',
+            title: 'ULTIMATE COOLDOWN',
+            description: 'Reduce ultimate cooldown by 60s.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'TACTICAL COOLDOWN+',
-            description: 'Reduce Tac cooldown by 10s.',
+            title: 'REVIVE SHIELD',
+            description: 'D.O.C. deploys a protective shield while reviving teammates.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]

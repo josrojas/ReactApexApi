@@ -6,29 +6,29 @@ export const CATALYST_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'HIDDEN SPIKES',
-            description: 'Spike are hidden to enemies while inactive.',
+            title: 'FERRO-DOOR',
+            description: 'Fully rebuild and reinforce missing doors. Max reinforcements increase by 6.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
             id: 2,
             zone: 'Zone2',
-            title: 'SOLE PIERCER',
-            description: 'Spike traps activate 50% faster and deal 5 more damage per hit.',
+            title: 'RESILIENT VEIL',
+            description: 'Increase Ultimate lifetime by 5 seconds and decrease cooldown by 30s.',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'FERRO-DOOR',
-            description: 'Fully rebuild and reinforce missing doors.',
+            title: 'FERRO-FRENZY',
+            description: 'Gain +1 max Spikes. Spikes are smaller but deal faster tick damage.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'RESILIENT VEIL',
-            description: 'Increase Ultimate lifetime by 5 seconds.',
+            title: 'HIDDEN SPIKES',
+            description: 'Spike are hidden to enemies while inactive.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
