@@ -116,8 +116,8 @@ export const REVENANT_DATA = {
         {
             id: 1,
             zone: 'Zone1',
-            title: 'ULTIMATE COOLDOWN',
-            description: 'Reduce ultimate cooldown by 30 secs.',
+            title: 'EVERLASTING',
+            description: 'Increase Ultimate time by 10s after a knock.',
             tooltipPosition: { top: -10, left: -460 }
         },
         {
@@ -130,15 +130,15 @@ export const REVENANT_DATA = {
         {
             id: 3,
             zone: 'Zone3',
-            title: 'TACTICAL COOLDOWN',
-            description: 'Reduce tactical cooldown by 5s.',
+            title: 'SILENCE',
+            description: 'Silence AOE when landing from a Shadow Pounce.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {
             id: 4,
             zone: 'Zone4',
-            title: 'AGILE ASSASSIN',
-            description: 'Total Shadow Pounce attack and charge time reduce by 50%.',
+            title: 'NO ESCAPE',
+            description: 'Tactical resets after marking an enemy.',
             tooltipPosition: { top: 100, left: 100 }
         }
     ]
@@ -159,15 +159,15 @@ export const FUSE_DATA = {
         {
             id: 2,
             zone: 'Zone2',
-            title: 'KNUCKLE JUMPER',
-            description: 'Jump near your tactical for a boost and a 50% cooldown recharge (destroys the cluster afterwards)',
+            title: 'REIGNITION',
+            description: 'Dealing explosive damage to enemies recharges your ultimate (for every 3 damage dealt, reduces cooldown by 1s).',
             tooltipPosition: { top: -10, left: 100 }
         },
         {
             id: 3,
             zone: 'Zone3',
-            title: 'REIGNITION',
-            description: 'Dealing explosive damage to enemies recharges your ultimate (for every 2 damage dealt, reduces cooldown by 1 second)',
+            title: 'BIG BANG',
+            description: 'Tactical\'s explosions cover a 50% larger area.',
             tooltipPosition: { top: 100, left: -460 }
         },
         {

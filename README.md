@@ -38,7 +38,9 @@ This will initialize the server and you can access the app in your browser with 
 
 *Updated S30 Marked*
 
-![image](https://github.com/user-attachments/assets/bee88c3f-afba-4182-bacf-48a71b574ed3=)
+![alt text](image.png)
+
+![image](https://github.com/user-attachments/assets/bee88c3f-afba-4182-bacf-48a71b574ed3)
 
 ![image](https://github.com/user-attachments/assets/fb0a6cee-034a-4adc-a595-41048db80fad)
 
